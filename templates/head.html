@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">  
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<title>Berea Human Rights</title>
+ 
+  <script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
+ 
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" crossorigin="anonymous"></script>
+ 
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"  crossorigin="anonymous">
+
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"  crossorigin="anonymous">
+</head>
+
+<style>	
+.navbar-nav.navbar-right> li {display: inline-block; float:none;}
+ .navbar-nav li a {
+    color: white;
+    font-size:25;
+}
+
+
+
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-header {
+    padding: 2px 16px;
+    background-color: #428bca;
+    color: white;
+}
+
+.modal-body {padding: 2px 16px;}
+
+.modal-footer {
+    padding: 2px 16px;
+    background-color: #428bca;
+    color: white;
+}
+</style>
+
+<script>
+
+/* ------------------------- Redirection Functions ---------------------------------- */
+function home_redirect() {
+        window.location.href="http://tango.berea.edu:5006/home";
+}
+
+function survey_redirect() {
+        window.location.href="http://tango.berea.edu:5006/survey";
+}
+
+function other_redirect() {
+        window.location.href="http://tango.berea.edu:5006/other";
+}
+
+
+function report_redirect() {
+        window.location.href="http://tango.berea.edu:5006/reports";
+}
+
+function sign_redirect(){
+         window.location.href="http://tango.berea.edu:5006";
+}
+
+/* ----------------------------------------------------------------------------------*/
+
+/* --------------------------- Other Details Functions -------------------------------*/
+
+function ODSubmit() { 
+   // this function gets the user's inputs. Then it checks to see if it is empty. If it is empty, it asks the user to fill it out
+  // if it is not empty it displays a modal as a confirmation box
+   var get_type=document.getElementById("type").value;       //gets the value from the drop down
+   var get_finance=document.getElementById("finance").value;   // gets the value from the finance
+   var get_attendance=document.getElementById("attendance").value;     // gets the value from attendance
+   var get_response=document.getElementById("response_rate").value;    // gets the value from response rate
+  if (get_type===""|| get_finance==="" || get_attendance==="" ||get_response==="") {         // checks if the values are empty
+      alert("You must fill out all the fields to continue.");
+}   
+
+else
+  {
+
+   var modal=document.getElementById('myModal');        // if it is not empty it displays modal box. 
+   modal.style.display = "block";
+}
+
+}
+
+
+function closed (){   
+  // this function closes the modal box when the user clicks x
+   var span = document.getElementsByClassName("close")[0];
+    var modal=document.getElementById('myModal');
+     modal.style.display="none";
+}
+
+
+
+function reset_other(){
+  // this function is the event listener for the other details page. It deselects the use's choices.
+  document.getElementById("type").value="";
+  document.getElementById("finance").value="";
+  document.getElementById("attendance").value="";
+  document.getElementById("response_rate").value="";
+}
+
+window.onclick = function(event) {
+  // this function hides the modal box once the user clicks on any part of the window
+   var modal=document.getElementById('myModal');
+
+    if (event.target == modal) {
+        modal.style.display = "none"; // hides the modal
+    }
+}
+
+/* --------------------------------------------------------------------------- */
+
+
+/*---------------------------- Report Functions ---------------------------------*/
+function ReportSubmit() {
+
+
+    var selected  = document.getElementById('report_selection');
+    var strReport = selected.options[selected.selectedIndex].text;
+    
+    if (strReport === "Select Information Type") {
+      alert("Please select a information type to report.");
+    }
+    else {  
+      //GenerateReportHTML(strReport);
+      var report_modal=document.getElementById('report_modal');
+      report_modal.style.display = "block";
+    }
+
+}
+
+function report_close () {
+  //This function will close the report modal box after clicking 'X'
+  var span = document.getElementsByClassName("close")[0];
+  var report_modal = document.getElementById('report_modal');
+  report_modal.style.display="none";
+}
+
+/*
+function GenerateReportHTML(report_selection) {
+  // This function will take in the selection made by the user 'report_selection'. 
+  Then the python script will be called to send the report_selection string to then
+  generate queries.
+
+}
+
+*/
+
+/*--------------------------------------------------------------------------------*/
+
+
+function Survey () {
+ // this function displays the modal for the survey page
+  
+   var get_title=document.getElementById("title").value;       //gets the value from the drop down
+   var get_date=document.getElementById("date").value;   // gets the value from the finance
+   var get_location=document.getElementById("location").value;     // gets the value from attendance
+   //var get_response=document.getElementById("response_rate").value; 
+ 
+ 
+  var survey_modal=document.getElementById('surveyModal');
+  survey_modal.style.display = "block";
+
+}
+
+
+function Survey_closed (){
+  // this function closes the modal box when the user clicks x
+   var span = document.getElementsByClassName("close")[0];
+    var survey_modal=document.getElementById('surveyModal');
+     survey_modal.style.display="none";
+}
+
+
+function yes (){
+   // this function reloads the survey page
+     window.location.href="http://tango.berea.edu:5006/survey";
+
+}
+
+function no (){
+    //this function redirects the user to the home page
+     window.location.href="http://tango.berea.edu:5006/home";
+
+}
+
+
+</script>
+<body> 
+<!--this block of code creates the navigation bar-->
+<div class=" navbar-fixed-top">
+   <nav style="background-color:#003F72; margin-bottom: 60px; height: 100%;">
+      <div class="container-fluid">
+	     <div class="nav-bar header">
+         <ul class="nav navbar-nav">
+               <li><a onclick=home_redirect()>Home</a></li>
+               <li><a onclick=survey_redirect()>Survey</a></li>
+               <li><a onclick=other_redirect()>Other Details</a></li>
+               <li><a onclick=report_redirect()>Report</a></li>
+			   
+             </ul>
+		 <ul class="nav navbar-nav navbar-right">
+		 <li><a onclick=sign_redirect()>Sign out</a></li>
+		 </ul>
+         </div>
+      	</div>
+    </nav>
+</div>	
+{% block body %}{% endblock %}
+ </body>
+ </html>

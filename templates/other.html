@@ -1,0 +1,61 @@
+<!--contains the header, and the navigation bar-->
+{% extends "head.html" %}  
+{% block body %}
+
+ <!----------------------------------------------------------------------------------------> 
+ 
+<!--Container for the contents of the page-->
+<div class="container-fluid">
+<div style="margin-top:160px; margin-left:280px;">
+<div class="row">
+<div class="col-sm-8">
+<div class="panel panel-default">
+<div class="panel-heading"><h3 style="text-align:center;">Other Details</h3></div>
+<div class="panel-body">
+<label for = "info">Event Type</label>
+<!---------------------------------------------------------------------------------------->   
+              
+      <!-- Drop down menue for event type-->  
+      <select  id = "type">
+      <option value="" disabled selected>Select Event Type</option>
+      <option value="Speaker">Speaker</option>
+      <option value="Panel">Panel</option>
+      <option value="Training">Training</option>
+      <option value="Forun">Forum</option>
+      <option value="Festival Celebration">Festival/Celebration</option>
+      <option value="Other">Other</option>
+      </select>
+<!----------------------------------------------------------------------------------------> 
+
+           <!--Options to be populated with user input-->
+           <br/>
+           <h5>Finance: <input type="text" id="finance"></h5>
+           <h5>Attendance: <input type="text" id="attendance"></h5>
+           <h5>Response Rate: <input type="text" id="response_rate"></h5> <!--element by name-->               
+           <br/>
+           <br/>
+<!---------------------------------------------------------------------------------------->   
+ 
+                  <!--Onlick submit and reset buttons-->
+                  <button  onclick="ODSubmit()"  id="myBtn" class="btn  btn-primary" style="margin-left:34.5%; margin-bottom:10px;"type="submit">Submit</button>
+                  <button  onclick="reset_other()" class="btn  btn-success" style="margin-left:160px;"type="reset">Reset</button>
+                   
+ <!--end of container opened at the beginning -->
+</div></div></div></div></div></div></div>
+ <!----------------------------------------------------------------------------------------> 
+ 
+<!-- The confirmation message Modal -->
+<div id="myModal" class="modal">
+<div class="modal-content">
+<div class="modal-header">
+<span class="close" onclick="closed()">×</span>
+<h2>Confirmation Box</h2>
+</div>
+<div class="modal-body">
+<h3>Your responses have been submitted. Your request is being processed.</h3>
+</div>
+<div class="modal-footer">   
+</div>
+</div>
+</div>
+{% endblock %}

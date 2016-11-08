@@ -1,0 +1,58 @@
+{% extends "head.html" %}
+{% block body %}
+
+<script>
+function reset_report() {
+/* Reset and redirect to the reports page*/
+	window.location.href="http://tango.berea.edu:5006/reports";
+}
+</script>
+
+<div class = "container-fluid">
+	<div style="margin-top:250px; margin-left:280px;">
+	<div class="row">
+	<div class="col-sm-8">
+	<div class="panel panel-default" id = "report-panel">
+		<div style="text-align: center;" class = "panel-heading"><h3><b>Report</b></h3></div>
+		<div class="panel-body">
+			<div class = "form-group">
+				<label for = "info">Information</label>
+				<select class = "form-control" id = "report_selection">
+					<option value="report_selection" disabled selected>Select Information Type</option>
+					<option>Attendance</option>
+					<option>Finance</option>
+					<option>Other</option>
+				</select>
+			</div>
+			<div style="margin-left: 27.5%;padding: 10px;" class="container">
+			<button onclick = "ReportSubmit()" style="margin-right: 10%;" class = "btn btn-primary" id = "submit">Submit</button>
+      
+<!-- The Modal -->
+<div id="report_modal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close" onclick="report_close()">×</span>
+      <h2>Report</h2>
+    </div>
+    <div class="modal-body">
+      {% include "report_modal.html" %}
+    </div>
+    <div class="modal-footer">
+     
+    </div>
+  </div>
+
+</div>
+
+      
+			<div onclick = "reset_report()" class = "btn btn-success" id = "cancel" role = "button">Reset</div>
+			</div>
+		</div>
+	</div>
+	</div>
+	</div>
+	</div>
+</div>
+{% endblock %}
