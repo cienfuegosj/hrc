@@ -189,7 +189,7 @@ function ReportSubmit() {
       alert("Please select a information type to report.");
     }
     else {  
-      //GenerateReportHTML(strReport);
+      GenerateReportHTML(strReport);
       var report_modal=document.getElementById('report_modal');
       report_modal.style.display = "block";
     }
@@ -203,15 +203,15 @@ function report_close () {
   report_modal.style.display="none";
 }
 
-/*
+
 function GenerateReportHTML(report_selection) {
-  // This function will take in the selection made by the user 'report_selection'. 
-  Then the python script will be called to send the report_selection string to then
-  generate queries.
-
+  /*This function will take in the selection made by the user 'report_selection'. 
+  Then it will execute a GET request from the report/<report selection> page so that
+  we can extract the report selection and start generating the report html.
+  */
+  
+  $.get("http://tango.berea.edu:5006/report/<report_selection>");
 }
-
-*/
 
 /*--------------------------------------------------------------------------------*/
 
