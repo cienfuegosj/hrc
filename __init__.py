@@ -1,5 +1,8 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, redirect, url_for
 from db_connect import connection
+from DBConnection import DBConnection
+import logging
+import datetime
 
 app = Flask(__name__)
 
@@ -29,8 +32,9 @@ def register_page():
     	c, conn=connection()
      except Exception as e:
         return (str(e))
-        
-@app.route('/report/<report_selection>')
+
+      
+@app.route('/report/<report_selection>', methods = ['GET'])
 def BuildReport(report_selection):
 
   '''
@@ -39,24 +43,25 @@ def BuildReport(report_selection):
     param: selection is of type string so we can use it to query to the database.
   '''
   
+  logging.basicConfig(filename='Report.log',level=logging.DEBUG)
+  
   #Connect to the database
+  
   try:
-    c, conn = connection()
+    conn = DBConnection()
+    logging.info("Database Connection Success \t" + str(datetime.date.today()))
   except Exception as e:
-    return str(e)
+    logging.info("Database Connection Failed \t" + str(datetime.date.today()))
     
-  #Query the database and extract data in a form of a container datatype
+  # Query the database and extract data in a form of a container datatype
+  data = conn.query("SELECT * FROM event")
+
   
+  # Use Jinja in currentreport.html to display informationls
   
-  #render the template 'report_modal.html' with the list parameter.
-  
-  
-  #Use Jinja in report_modal.html to display informationls
-  
-@app.route('/reportinformation')
-def ReportInfo(data):
-  return render_template ("report_modal.html", data)
-  
+  del conn  
+    
+  return render_template("currentreport.html", selection = report_selection, data = data)
 
 if __name__ == "__main__":
     app.run(debug = True, host="0.0.0.0", port=5006)

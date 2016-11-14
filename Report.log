@@ -1,0 +1,201 @@
+INFO:werkzeug:10.8.90.86 - - [13/Nov/2016 20:19:01] "GET / HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/var/www/html/hrc/hrc/__init__.py', reloading
+INFO:root:Database Connection Success 	2016-11-13
+INFO:werkzeug:10.8.90.86 - - [13/Nov/2016 20:24:11] "GET /report/other HTTP/1.1" 200 -
+INFO:root:Database Connection Success 	2016-11-13
+INFO:werkzeug:10.8.90.86 - - [13/Nov/2016 20:24:12] "GET /report/other HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/var/www/html/hrc/hrc/__init__.py', reloading
+INFO:root:Database Connection Success 	2016-11-13
+INFO:root:({'attendance': 100L, 'finance': 890.45, 'title': 'Javier: Life after College', 'EID': 1L, 'date': datetime.date(2016, 11, 1), 'response_rate': 3499.0, 'type': 'Speaker', 'location': '101 Chestnut Street'},)
+INFO:werkzeug:10.8.90.86 - - [13/Nov/2016 21:34:26] "GET /report/other HTTP/1.1" 200 -
+INFO:werkzeug:10.8.90.86 - - [13/Nov/2016 21:34:38] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:10.8.90.86 - - [13/Nov/2016 21:36:24] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:10.40.117.58 - - [13/Nov/2016 21:39:32] "GET /home HTTP/1.1" 200 -
+INFO:werkzeug:10.40.117.58 - - [13/Nov/2016 21:39:32] "GET /favicon.ico HTTP/1.1" 404 -
+INFO:werkzeug:10.40.117.58 - - [13/Nov/2016 21:39:34] "GET /survey HTTP/1.1" 200 -
+INFO:werkzeug:10.40.117.58 - - [13/Nov/2016 21:39:34] "GET /other HTTP/1.1" 200 -
+INFO:werkzeug:10.40.117.58 - - [13/Nov/2016 21:39:36] "GET /reports HTTP/1.1" 200 -
+INFO:werkzeug:10.40.117.58 - - [13/Nov/2016 21:39:38] "GET /other HTTP/1.1" 200 -
+INFO:werkzeug:10.40.117.58 - - [13/Nov/2016 21:41:43] "GET /reports HTTP/1.1" 200 -
+INFO:werkzeug:10.40.117.58 - - [13/Nov/2016 21:41:47] "GET /reports HTTP/1.1" 200 -
+INFO:root:Database Connection Success 	2016-11-13
+INFO:root:({'attendance': 100L, 'finance': 890.45, 'title': 'Javier: Life after College', 'EID': 1L, 'date': datetime.date(2016, 11, 1), 'response_rate': 3499.0, 'type': 'Speaker', 'location': '101 Chestnut Street'}, {'attendance': 899L, 'finance': 3499.9, 'title': 'Lakshiya: Life after Life', 'EID': 2L, 'date': datetime.date(2016, 11, 3), 'response_rate': 11.0, 'type': 'Panel', 'location': '102 Chestnut Street'}, {'attendance': 600L, 'finance': 9048.45, 'title': 'Ali: Life after Work', 'EID': 3L, 'date': datetime.date(2016, 11, 3), 'response_rate': 346.0, 'type': 'Training', 'location': '103 Chestnut Street'}, {'attendance': 409L, 'finance': 459.56, 'title': 'China: Life after Graduate School', 'EID': 4L, 'date': datetime.date(2016, 11, 12), 'response_rate': 48.0, 'type': 'Festival', 'location': '104 Chestnut Street'})
+INFO:werkzeug:10.40.117.58 - - [13/Nov/2016 21:41:50] "GET /report/attendance HTTP/1.1" 200 -
+INFO:root:Database Connection Success 	2016-11-13
+INFO:root:({'attendance': 100L, 'finance': 890.45, 'title': 'Javier: Life after College', 'EID': 1L, 'date': datetime.date(2016, 11, 1), 'response_rate': 3499.0, 'type': 'Speaker', 'location': '101 Chestnut Street'}, {'attendance': 899L, 'finance': 3499.9, 'title': 'Lakshiya: Life after Life', 'EID': 2L, 'date': datetime.date(2016, 11, 3), 'response_rate': 11.0, 'type': 'Panel', 'location': '102 Chestnut Street'}, {'attendance': 600L, 'finance': 9048.45, 'title': 'Ali: Life after Work', 'EID': 3L, 'date': datetime.date(2016, 11, 3), 'response_rate': 346.0, 'type': 'Training', 'location': '103 Chestnut Street'}, {'attendance': 409L, 'finance': 459.56, 'title': 'China: Life after Graduate School', 'EID': 4L, 'date': datetime.date(2016, 11, 12), 'response_rate': 48.0, 'type': 'Festival', 'location': '104 Chestnut Street'})
+INFO:werkzeug:10.40.117.58 - - [13/Nov/2016 21:41:52] "GET /report/attendance HTTP/1.1" 200 -
+INFO:root:Database Connection Success 	2016-11-13
+INFO:werkzeug:10.40.117.58 - - [13/Nov/2016 21:55:52] "GET /report/finance HTTP/1.1" 500 -
+INFO:root:Database Connection Success 	2016-11-13
+INFO:werkzeug:10.40.117.58 - - [13/Nov/2016 21:55:58] "GET /report/attendance HTTP/1.1" 500 -
+INFO:root:Database Connection Success 	2016-11-13
+INFO:werkzeug:10.40.117.58 - - [13/Nov/2016 21:56:02] "GET /report/other HTTP/1.1" 500 -
+INFO:werkzeug:10.40.117.58 - - [13/Nov/2016 21:57:05] "GET /reports HTTP/1.1" 200 -
+INFO:werkzeug:10.40.117.58 - - [13/Nov/2016 21:57:07] "GET /reports HTTP/1.1" 200 -
+INFO:root:Database Connection Success 	2016-11-13
+INFO:werkzeug:10.40.117.58 - - [13/Nov/2016 21:57:14] "GET /report/attendance HTTP/1.1" 200 -
+INFO:werkzeug:10.40.117.58 - - [13/Nov/2016 21:57:19] "GET /home HTTP/1.1" 200 -
+INFO:werkzeug:10.40.117.58 - - [13/Nov/2016 21:57:21] "GET /reports HTTP/1.1" 200 -
+INFO:root:Database Connection Success 	2016-11-13
+INFO:werkzeug:10.40.117.58 - - [13/Nov/2016 21:57:24] "GET /report/finance HTTP/1.1" 200 -
+INFO:root:Database Connection Success 	2016-11-13
+INFO:werkzeug:10.40.117.58 - - [13/Nov/2016 21:57:25] "GET /report/finance HTTP/1.1" 200 -
+INFO:root:Database Connection Success 	2016-11-13
+INFO:werkzeug:10.40.117.58 - - [13/Nov/2016 21:58:09] "GET /report/finance HTTP/1.1" 200 -
+INFO:root:Database Connection Success 	2016-11-13
+INFO:werkzeug:10.40.117.58 - - [13/Nov/2016 21:58:56] "GET /report/finance HTTP/1.1" 200 -
+INFO:werkzeug:10.40.117.58 - - [13/Nov/2016 22:26:24] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:10.40.117.58 - - [13/Nov/2016 22:26:24] "GET /static/images/logo.png HTTP/1.1" 200 -
+INFO:werkzeug:10.40.117.58 - - [13/Nov/2016 22:26:30] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:10.40.117.58 - - [13/Nov/2016 22:26:35] "GET /home HTTP/1.1" 200 -
+INFO:werkzeug:10.40.117.58 - - [13/Nov/2016 22:26:42] "GET /reports HTTP/1.1" 200 -
+INFO:root:Database Connection Success 	2016-11-13
+INFO:werkzeug:10.40.117.58 - - [13/Nov/2016 22:26:50] "GET /report/attendance HTTP/1.1" 200 -
+INFO:root:Database Connection Success 	2016-11-13
+INFO:werkzeug:10.40.117.58 - - [13/Nov/2016 22:27:02] "GET /report/attendance HTTP/1.1" 200 -
+INFO:werkzeug:10.40.117.58 - - [13/Nov/2016 22:32:59] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:10.40.117.58 - - [13/Nov/2016 22:33:08] "GET /home HTTP/1.1" 200 -
+INFO:werkzeug:10.40.117.58 - - [13/Nov/2016 22:33:09] "GET /home HTTP/1.1" 200 -
+INFO:werkzeug:10.40.117.58 - - [13/Nov/2016 22:33:12] "GET /survey HTTP/1.1" 200 -
+INFO:werkzeug:10.40.117.58 - - [13/Nov/2016 22:33:13] "GET /other HTTP/1.1" 200 -
+INFO:werkzeug:10.40.117.58 - - [13/Nov/2016 22:33:14] "GET /reports HTTP/1.1" 200 -
+INFO:werkzeug:10.40.117.58 - - [13/Nov/2016 22:33:24] "GET /other HTTP/1.1" 200 -
+INFO:werkzeug:10.40.117.58 - - [13/Nov/2016 22:33:31] "GET /reports HTTP/1.1" 200 -
+INFO:werkzeug:10.40.117.58 - - [13/Nov/2016 22:33:41] "GET /reports HTTP/1.1" 200 -
+INFO:root:Database Connection Success 	2016-11-13
+INFO:werkzeug:10.40.117.58 - - [13/Nov/2016 22:33:57] "GET /report/attendance HTTP/1.1" 200 -
+INFO:root:Database Connection Success 	2016-11-13
+INFO:werkzeug:10.40.117.58 - - [13/Nov/2016 22:34:08] "GET /report/attendance HTTP/1.1" 200 -
+INFO:root:Database Connection Success 	2016-11-13
+INFO:werkzeug:10.40.117.58 - - [13/Nov/2016 22:38:36] "GET /report/attendance HTTP/1.1" 200 -
+INFO:root:Database Connection Success 	2016-11-13
+INFO:werkzeug:10.40.117.58 - - [13/Nov/2016 22:39:04] "GET /report/attendance HTTP/1.1" 200 -
+INFO:root:Database Connection Success 	2016-11-13
+INFO:werkzeug:10.40.117.58 - - [13/Nov/2016 22:42:39] "GET /report/attendance HTTP/1.1" 200 -
+INFO:werkzeug:10.40.117.58 - - [13/Nov/2016 22:42:50] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:10.40.117.58 - - [13/Nov/2016 22:42:53] "GET /home HTTP/1.1" 200 -
+INFO:werkzeug:10.40.117.58 - - [13/Nov/2016 22:42:54] "GET /home HTTP/1.1" 200 -
+INFO:werkzeug:10.40.117.58 - - [13/Nov/2016 22:42:55] "GET /reports HTTP/1.1" 200 -
+INFO:root:Database Connection Success 	2016-11-13
+INFO:werkzeug:10.40.117.58 - - [13/Nov/2016 22:43:03] "GET /report/attendance HTTP/1.1" 200 -
+INFO:root:Database Connection Success 	2016-11-13
+INFO:werkzeug:10.40.117.58 - - [13/Nov/2016 22:43:05] "GET /report/attendance HTTP/1.1" 200 -
+INFO:root:Database Connection Success 	2016-11-13
+INFO:werkzeug:10.40.117.58 - - [13/Nov/2016 22:43:22] "GET /report/finance HTTP/1.1" 200 -
+INFO:root:Database Connection Success 	2016-11-13
+INFO:werkzeug:10.40.117.58 - - [13/Nov/2016 22:43:23] "GET /report/finance HTTP/1.1" 200 -
+INFO:werkzeug:10.40.117.58 - - [13/Nov/2016 22:44:14] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:10.40.117.58 - - [13/Nov/2016 22:44:21] "GET /home HTTP/1.1" 200 -
+INFO:werkzeug:10.40.117.58 - - [13/Nov/2016 22:44:23] "GET /other HTTP/1.1" 200 -
+INFO:werkzeug:10.40.117.58 - - [13/Nov/2016 22:44:25] "GET /survey HTTP/1.1" 200 -
+INFO:werkzeug:10.40.117.58 - - [13/Nov/2016 22:44:26] "GET /reports HTTP/1.1" 200 -
+INFO:werkzeug:10.40.117.58 - - [13/Nov/2016 22:44:30] "GET /other HTTP/1.1" 200 -
+INFO:werkzeug:10.40.117.58 - - [13/Nov/2016 22:44:31] "GET /reports HTTP/1.1" 200 -
+INFO:werkzeug:10.40.117.58 - - [13/Nov/2016 22:44:32] "GET /other HTTP/1.1" 200 -
+INFO:werkzeug:10.40.117.58 - - [13/Nov/2016 22:44:34] "GET /survey HTTP/1.1" 200 -
+INFO:werkzeug:10.40.117.58 - - [13/Nov/2016 22:44:36] "GET /other HTTP/1.1" 200 -
+INFO:werkzeug:10.40.117.58 - - [13/Nov/2016 22:44:37] "GET /reports HTTP/1.1" 200 -
+INFO:root:Database Connection Success 	2016-11-13
+INFO:werkzeug:10.40.117.58 - - [13/Nov/2016 22:44:42] "GET /report/finance HTTP/1.1" 200 -
+INFO:root:Database Connection Success 	2016-11-13
+INFO:werkzeug:10.40.117.58 - - [13/Nov/2016 22:44:46] "GET /report/finance HTTP/1.1" 200 -
+INFO:root:Database Connection Success 	2016-11-13
+INFO:werkzeug:10.40.117.58 - - [13/Nov/2016 22:44:55] "GET /report/attendance HTTP/1.1" 200 -
+INFO:root:Database Connection Success 	2016-11-13
+INFO:werkzeug:10.40.117.58 - - [13/Nov/2016 22:44:57] "GET /report/attendance HTTP/1.1" 200 -
+INFO:werkzeug:10.40.117.58 - - [13/Nov/2016 22:46:05] "GET /reports HTTP/1.1" 200 -
+INFO:werkzeug:10.40.117.58 - - [13/Nov/2016 22:46:06] "GET /other HTTP/1.1" 200 -
+INFO:werkzeug:10.40.117.58 - - [13/Nov/2016 22:46:07] "GET /survey HTTP/1.1" 200 -
+INFO:werkzeug:10.40.117.58 - - [13/Nov/2016 22:46:08] "GET /reports HTTP/1.1" 200 -
+INFO:root:Database Connection Success 	2016-11-13
+INFO:werkzeug:10.40.117.58 - - [13/Nov/2016 22:46:11] "GET /report/finance HTTP/1.1" 200 -
+INFO:root:Database Connection Success 	2016-11-13
+INFO:werkzeug:10.40.117.58 - - [13/Nov/2016 22:46:12] "GET /report/finance HTTP/1.1" 200 -
+INFO:root:Database Connection Success 	2016-11-13
+INFO:werkzeug:10.40.117.58 - - [13/Nov/2016 22:47:00] "GET /report/attendance HTTP/1.1" 200 -
+INFO:root:Database Connection Success 	2016-11-13
+INFO:werkzeug:10.40.117.58 - - [13/Nov/2016 22:47:03] "GET /report/attendance HTTP/1.1" 200 -
+INFO:root:Database Connection Success 	2016-11-13
+INFO:werkzeug:10.40.117.58 - - [13/Nov/2016 22:48:20] "GET /report/attendance HTTP/1.1" 200 -
+INFO:werkzeug:10.8.90.86 - - [13/Nov/2016 22:59:29] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:10.8.90.86 - - [13/Nov/2016 22:59:35] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:10.40.117.66 - - [13/Nov/2016 23:01:27] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:10.40.117.66 - - [13/Nov/2016 23:01:31] "GET /home HTTP/1.1" 200 -
+INFO:werkzeug:10.40.117.66 - - [13/Nov/2016 23:01:40] "GET /reports HTTP/1.1" 200 -
+INFO:root:Database Connection Success 	2016-11-13
+INFO:werkzeug:10.40.117.66 - - [13/Nov/2016 23:01:49] "GET /report/other HTTP/1.1" 200 -
+INFO:root:Database Connection Success 	2016-11-13
+INFO:werkzeug:10.40.117.66 - - [13/Nov/2016 23:01:54] "GET /report/other HTTP/1.1" 200 -
+INFO:werkzeug:10.40.117.66 - - [13/Nov/2016 23:03:15] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:10.40.117.66 - - [13/Nov/2016 23:03:15] "GET /static/images/logo.png HTTP/1.1" 200 -
+INFO:werkzeug:10.40.117.66 - - [13/Nov/2016 23:03:16] "GET /apple-touch-icon-precomposed.png HTTP/1.1" 404 -
+INFO:werkzeug:10.40.117.66 - - [13/Nov/2016 23:03:19] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:10.40.117.66 - - [13/Nov/2016 23:03:20] "GET /home HTTP/1.1" 200 -
+INFO:werkzeug:10.40.117.66 - - [13/Nov/2016 23:03:22] "GET /home HTTP/1.1" 200 -
+INFO:werkzeug:10.40.117.66 - - [13/Nov/2016 23:03:23] "GET /reports HTTP/1.1" 200 -
+INFO:werkzeug:10.40.117.66 - - [13/Nov/2016 23:03:24] "GET /reports HTTP/1.1" 200 -
+INFO:werkzeug:10.40.117.66 - - [13/Nov/2016 23:03:24] "GET /apple-touch-icon-precomposed.png HTTP/1.1" 404 -
+INFO:root:Database Connection Success 	2016-11-13
+INFO:werkzeug:10.40.117.66 - - [13/Nov/2016 23:03:26] "GET /report/finance HTTP/1.1" 200 -
+INFO:root:Database Connection Success 	2016-11-13
+INFO:werkzeug:10.40.117.66 - - [13/Nov/2016 23:03:30] "GET /report/finance HTTP/1.1" 200 -
+INFO:werkzeug:10.40.117.66 - - [13/Nov/2016 23:03:31] "GET /apple-touch-icon.png HTTP/1.1" 404 -
+INFO:werkzeug:10.30.74.73 - - [13/Nov/2016 23:04:59] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:10.30.74.73 - - [13/Nov/2016 23:05:00] "GET /static/images/logo.png HTTP/1.1" 200 -
+INFO:werkzeug:10.30.74.73 - - [13/Nov/2016 23:05:11] "GET /favicon.ico HTTP/1.1" 404 -
+INFO:werkzeug:10.30.74.73 - - [13/Nov/2016 23:05:12] "GET /home HTTP/1.1" 200 -
+INFO:root:Database Connection Success 	2016-11-13
+INFO:werkzeug:10.30.74.73 - - [13/Nov/2016 23:06:42] "GET /report/attendance HTTP/1.1" 200 -
+INFO:root:Database Connection Success 	2016-11-13
+INFO:werkzeug:10.30.74.73 - - [13/Nov/2016 23:06:44] "GET /report/attendance HTTP/1.1" 200 -
+INFO:root:Database Connection Success 	2016-11-13
+INFO:werkzeug:10.30.74.73 - - [13/Nov/2016 23:06:52] "GET /report/finance HTTP/1.1" 200 -
+INFO:root:Database Connection Success 	2016-11-13
+INFO:werkzeug:10.30.74.73 - - [13/Nov/2016 23:07:05] "GET /report/finance HTTP/1.1" 200 -
+INFO:root:Database Connection Success 	2016-11-14
+INFO:werkzeug:10.8.90.198 - - [14/Nov/2016 10:42:22] "GET /report/attendance HTTP/1.1" 200 -
+INFO:root:Database Connection Success 	2016-11-14
+INFO:werkzeug:10.8.90.198 - - [14/Nov/2016 10:42:29] "GET /report/attendance HTTP/1.1" 200 -
+INFO:werkzeug:10.8.94.139 - - [14/Nov/2016 10:42:31] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:10.8.94.139 - - [14/Nov/2016 10:42:31] "GET /static/images/logo.png HTTP/1.1" 200 -
+INFO:werkzeug:10.8.90.198 - - [14/Nov/2016 10:42:35] "GET /reports HTTP/1.1" 200 -
+INFO:werkzeug:10.8.94.139 - - [14/Nov/2016 10:42:36] "GET /survey HTTP/1.1" 200 -
+INFO:werkzeug:10.8.94.139 - - [14/Nov/2016 10:42:58] "GET /survey HTTP/1.1" 200 -
+INFO:werkzeug:10.8.90.198 - - [14/Nov/2016 10:43:29] "GET /survey HTTP/1.1" 200 -
+INFO:werkzeug:10.8.94.139 - - [14/Nov/2016 10:43:38] "GET /home HTTP/1.1" 200 -
+INFO:werkzeug:10.8.90.198 - - [14/Nov/2016 10:43:39] "GET /reports HTTP/1.1" 200 -
+INFO:root:Database Connection Success 	2016-11-14
+INFO:werkzeug:10.8.90.198 - - [14/Nov/2016 10:43:47] "GET /report/finance HTTP/1.1" 200 -
+INFO:root:Database Connection Success 	2016-11-14
+INFO:werkzeug:10.8.90.198 - - [14/Nov/2016 10:43:50] "GET /report/finance HTTP/1.1" 200 -
+INFO:werkzeug:10.8.94.139 - - [14/Nov/2016 10:44:07] "GET /reports HTTP/1.1" 200 -
+INFO:werkzeug:10.8.94.139 - - [14/Nov/2016 10:44:27] "GET /other HTTP/1.1" 200 -
+INFO:werkzeug:10.8.94.139 - - [14/Nov/2016 10:44:32] "GET /reports HTTP/1.1" 200 -
+INFO:werkzeug:10.8.94.139 - - [14/Nov/2016 10:44:39] "GET /reports HTTP/1.1" 200 -
+INFO:root:Database Connection Success 	2016-11-14
+INFO:werkzeug:10.8.94.139 - - [14/Nov/2016 10:44:43] "GET /report/finance HTTP/1.1" 200 -
+INFO:root:Database Connection Success 	2016-11-14
+INFO:werkzeug:10.8.94.139 - - [14/Nov/2016 10:44:54] "GET /report/finance HTTP/1.1" 200 -
+INFO:werkzeug:10.8.90.198 - - [14/Nov/2016 10:50:42] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:10.8.90.198 - - [14/Nov/2016 10:50:44] "GET /static/images/logo.png HTTP/1.1" 304 -
+INFO:werkzeug:10.8.90.198 - - [14/Nov/2016 10:50:45] "GET /favicon.ico HTTP/1.1" 404 -
+INFO:root:Database Connection Success 	2016-11-14
+INFO:werkzeug:10.8.90.198 - - [14/Nov/2016 11:02:44] "GET /report/attendance HTTP/1.1" 200 -
+INFO:root:Database Connection Success 	2016-11-14
+INFO:werkzeug:10.8.90.198 - - [14/Nov/2016 11:02:46] "GET /report/attendance HTTP/1.1" 200 -
+INFO:werkzeug:10.8.90.198 - - [14/Nov/2016 11:02:53] "GET /reports HTTP/1.1" 200 -
+INFO:werkzeug:10.8.90.198 - - [14/Nov/2016 11:03:03] "GET /home HTTP/1.1" 200 -
+INFO:werkzeug:10.8.90.91 - - [14/Nov/2016 11:09:19] "GET /reports HTTP/1.1" 200 -
+INFO:werkzeug:10.8.90.91 - - [14/Nov/2016 11:09:20] "GET /apple-touch-icon-precomposed.png HTTP/1.1" 404 -
+INFO:werkzeug:10.8.90.91 - - [14/Nov/2016 11:09:20] "GET /apple-touch-icon.png HTTP/1.1" 404 -
+INFO:werkzeug:10.8.90.91 - - [14/Nov/2016 11:09:20] "GET /favicon.ico HTTP/1.1" 404 -
+INFO:werkzeug:10.8.90.91 - - [14/Nov/2016 11:09:20] "GET /apple-touch-icon-precomposed.png HTTP/1.1" 404 -
+INFO:werkzeug:10.8.90.91 - - [14/Nov/2016 11:09:20] "GET /apple-touch-icon.png HTTP/1.1" 404 -
+INFO:werkzeug:10.8.90.91 - - [14/Nov/2016 11:09:20] "GET /favicon.ico HTTP/1.1" 404 -
+INFO:werkzeug:10.8.90.91 - - [14/Nov/2016 11:09:20] "GET /reports HTTP/1.1" 200 -
+INFO:werkzeug:10.8.90.91 - - [14/Nov/2016 11:09:20] "GET /apple-touch-icon-precomposed.png HTTP/1.1" 404 -
+INFO:werkzeug:10.8.90.91 - - [14/Nov/2016 11:09:20] "GET /apple-touch-icon.png HTTP/1.1" 404 -
+INFO:werkzeug:10.8.90.91 - - [14/Nov/2016 11:09:20] "GET /favicon.ico HTTP/1.1" 404 -
+INFO:werkzeug:10.8.90.91 - - [14/Nov/2016 11:09:20] "GET /apple-touch-icon-precomposed.png HTTP/1.1" 404 -
+INFO:werkzeug:10.8.90.91 - - [14/Nov/2016 11:09:20] "GET /apple-touch-icon.png HTTP/1.1" 404 -
+INFO:werkzeug:10.8.90.91 - - [14/Nov/2016 11:09:20] "GET /favicon.ico HTTP/1.1" 404 -

@@ -5,7 +5,8 @@
 function reset_report() {
 /* Reset and redirect to the reports page*/
 	window.location.href="http://tango.berea.edu:5006/reports";
-}
+}	
+
 </script>
 
 <div class = "container-fluid">
@@ -18,10 +19,10 @@ function reset_report() {
 			<div class = "form-group">
 				<label for = "info">Information</label>
 				<select class = "form-control" id = "report_selection">
-					<option value="report_selection" disabled selected>Select Information Type</option>
-					<option>Attendance</option>
-					<option>Finance</option>
-					<option>Other</option>
+					<option value="no selection" disabled selected>Select Information Type</option>
+					<option value="attendance">Attendance</option>
+					<option value="finance">Finance</option>
+					<option value="other">Other</option>
 				</select>
 			</div>
 			<div style="margin-left: 27.5%;padding: 10px;" class="container">
@@ -34,15 +35,17 @@ function reset_report() {
   <div class="modal-content">
     <div class="modal-header">
       <span class="close" onclick="report_close()">×</span>
-      <h2>Report</h2>
+      <h2>Confirmation - Report</h2>
     </div>
     <div class="modal-body">
-      {% include "report_modal.html" %}
+	<h3>Your request has been made. Select View Now or Cancel.</h3>
     </div>
     <div class="modal-footer">
-     
+	<div style="padding:10px;">
+    <button onclick = "ViewReport(document.getElementById('report_selection').value)" style="margin-right: 10%;" class = "btn btn-primary" id = "viewreport">View Report</button>
+    <button onclick = "GoHome()" class = "btn btn-success" id = "home" role = "button">Cancel</div>
     </div>
-  </div>
+   </div>
 
 </div>
 

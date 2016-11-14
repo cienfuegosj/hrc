@@ -179,21 +179,26 @@ window.onclick = function(event) {
 
 
 /*---------------------------- Report Functions ---------------------------------*/
+
+function DisplayModal() {
+
+	  var report_modal=document.getElementById('report_modal');
+      report_modal.style.display = "block";    
+}
+
 function ReportSubmit() {
 
-
-    var selected  = document.getElementById('report_selection');
-    var strReport = selected.options[selected.selectedIndex].text;
+    var report_selection  = document.getElementById("report_selection").value;
     
-    if (strReport === "Select Information Type") {
+    if (report_selection == "no selection") {
       alert("Please select a information type to report.");
     }
     else {  
-      GenerateReportHTML(strReport);
-      var report_modal=document.getElementById('report_modal');
-      report_modal.style.display = "block";
+    
+	  var preurl = "http://tango.berea.edu:5006/report/";
+  	  $.get("http://tango.berea.edu:5006/report/".concat(report_selection), DisplayModal);
+  	  	  
     }
-
 }
 
 function report_close () {
@@ -203,15 +208,14 @@ function report_close () {
   report_modal.style.display="none";
 }
 
-
-function GenerateReportHTML(report_selection) {
-  /*This function will take in the selection made by the user 'report_selection'. 
-  Then it will execute a GET request from the report/<report selection> page so that
-  we can extract the report selection and start generating the report html.
-  */
-  
-  $.get("http://tango.berea.edu:5006/report/<report_selection>");
+function ViewReport(report) {
+	window.location.href="http://tango.berea.edu:5006/report/".concat(report);
 }
+
+function GoHome() {
+	window.location.href="http://tango.berea.edu:5006/home"
+}
+
 
 /*--------------------------------------------------------------------------------*/
 
@@ -222,8 +226,16 @@ function Survey () {
    var get_title=document.getElementById("title").value;       //gets the value from the drop down
    var get_date=document.getElementById("date").value;   // gets the value from the finance
    var get_location=document.getElementById("location").value;     // gets the value from attendance
-   //var get_response=document.getElementById("response_rate").value; 
- 
+   var get_type=document.getElementById("type").value;          // gets the value from event type
+   var get_govt=document.getElementById("govt").value;      // gets the value from the government
+   var get_residency=document.getElementById("residency").value;     // gets the value from the residency
+   var get_race=document.getElementById("race").value;      // gets the value for the race
+   var get_sex=document.getElementById("sex").value;          // gets the value for the sex
+   var get_age=document.getElementById("age").value;     // gets the value for the age
+   alert (get_race);
+   alert (get_sex); 
+   alert (get_age);
+
  
   var survey_modal=document.getElementById('surveyModal');
   survey_modal.style.display = "block";

@@ -17,12 +17,12 @@
 	    <!--Creates drop down menue for event type-->
 	   <select id="type"> 
            <option value="" disabled selected>Select an event type</option>
-		   <option>Speaker</option>
-           <option>Panel</option>
-           <option>Training</option>
-           <option>Forum</option>
-           <option>Festival/Celebration</option>
-           <option>Other</option>
+           <option value"Speaker">Speaker</option>
+           <option value"Panel">Panel</option>
+           <option value="Training">Training</option>
+           <option value="Forum">Forum</option>
+           <option value="Festival/Celebration">Festival/Celebration</option>
+           <option value="Other">Other</option>
 
        </select></p>
 	   
@@ -30,12 +30,12 @@
 		<p style="font-size:18px;">Government Official:
 		<select id="govt">
 		    <option value="" disabled selected>Are you an elected/appointed government official of</option>
-			<option>City of Berea</option>
-			<option>City of Richmond</option>
-			<option>Other</option>
-			<option>Madison County</option>
-			<option>Commonwealth of KY</option>
-			<option>Not Applicable</option>
+			<option value="City of Berea">City of Berea</option>
+			<option value="City of Richmond">City of Richmond</option>
+			<option value="Other">Other</option>
+			<option value="Madison County">Madison County</option>
+			<option value="Commonwealth of KY">Commonwealth of KY</option>
+			<option value="Not Applicable">Not Applicable</option>
 			</select></p>
 			</br>
 		<h3><u>Demographic Information (optional)</u></h3>
@@ -44,23 +44,23 @@
 		<p style="font-size:18px;">Residence:
 		<select id="residency">
 		    <option value="" disabled selected>Select your residence(optional)</option>
-			<option>Berea</option>
-			<option>Richmond</option>
-			<option>Madison County(excluding Berea and Richmond)</option>
-			<option>Other</option>
+			<option value="Berea">Berea</option>
+			<option value="Richmond">Richmond</option>
+			<option "Madison County(excluding Berea and Richmond)">Madison County(excluding Berea and Richmond)</option>
+			<option value="Other">Other</option>
 			</select></p>
 		<!--Creates text boxes for race and sex-->
-		 <p style="font-size:18px;">Race/Ethnicity:<input type="text" name="race"></p>
-		 <p style="font-size:18px;">Sex:<input type="text" name="sex"></p>
+		 <p style="font-size:18px;">Race/Ethnicity:<input type="text" id="race"></p>
+		 <p style="font-size:18px;">Sex:<input type="text" id="sex"></p>
 		 <p style="font-size:18px;">Age:
 		 <!--Creates drop down menu for age-->
-		<select>
-		    <option value="age" disabled selected>Select your age</option>
-			<option>Under 18</option>
-			<option>18-30</option>
-			<option>30-45</option>
-			<option>45-60</option>
-			<option>60+</option>
+		<select id="age">
+		    <option value="" disabled selected>Select your age</option>
+			<option value="Under 18">Under 18</option>
+			<option value="18-30">18-30</option>
+			<option value="30-45">30-45</option>
+			<option value="45-60">45-60</option>
+			<option value="60+">60+</option>
 			</select></p>
 		</br>
 		<h3><u>Workshop Evaluation</u></h3>
