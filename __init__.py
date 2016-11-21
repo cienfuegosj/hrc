@@ -1,4 +1,4 @@
-from flask import Flask, render_template, redirect, url_for
+from flask import Flask, render_template, redirect, url_for, request
 from db_connect import connection
 from DBConnection import DBConnection
 import logging
@@ -14,9 +14,30 @@ def homepage():
 def home():
     return render_template ("home.html")
 
-@app.route('/other')
+
+@app.route('/other/')
 def otherpage():
-    return render_template ("other.html")
+
+   return render_template ("other.html")
+
+
+
+@app.route('/result/', methods=['POST', 'GET'])
+def result():
+   
+   if request.method == 'POST':
+      #result = request.form
+      types = request.form['type_data']
+      finances = request.form['finance_data']
+      attendances = request.form['attendance_data']
+      rates = request.form['rate_data']
+      return render_template("result.html",result = )
+   
+   return 'OK'
+
+
+
+
 
 @app.route('/reports')
 def reportspage():
@@ -32,6 +53,7 @@ def register_page():
     	c, conn=connection()
      except Exception as e:
         return (str(e))
+
 
       
 @app.route('/report/<report_selection>', methods = ['GET'])
@@ -54,10 +76,8 @@ def BuildReport(report_selection):
     logging.info("Database Connection Failed \t" + str(datetime.date.today()))
     
   # Query the database and extract data in a form of a container datatype
-  data = conn.query("SELECT * FROM event")
-
   
-  # Use Jinja in currentreport.html to display informationls
+  data = conn.query("SELECT * FROM event")
   
   del conn  
     

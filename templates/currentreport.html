@@ -16,12 +16,12 @@
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 	
-</head>
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 
-<body>	
+<script type="text/javascript">
+
 
 {% block body %}
-
 {% if selection == "attendance" %}
 {% set select = "Attendance" %}
 {% elif selection == "finance" %}
@@ -30,49 +30,59 @@
 {% set select = "Other" %}
 {% endif %}
 
+//This will load the Visualization API and the packages.
+google.charts.load('current', {'packages':['corechart']});
+// Set a callback when the Google Visualization API is loaded.
+google.charts.setOnLoadCallback(drawChart);
+
+function drawChart() {
+
+	var data = new google.visualization.DataTable();
+	data.addColumn('string', 'Event Type');
+	
+
+	{% if select == "Attendance" %}
+		data.addColumn('number', 'Number of Attendees');
+		data.addRows([
+		{% for item in data %}
+			['{{item['type']}}', {{item['attendance']}}],
+		{% endfor %}
+		]);
+	{% elif select == "Finance" %}
+		data.addColumn('number', 'Money Spent');
+		data.addRows([
+		{% for item in data %}
+			['{{item['type']}}', {{item['finance']}}],
+		{% endfor %}
+		]);	
+	{% endif %}
+
+	
+	// Set the table options here
+	var options = {'title': '{{select}} vs Event Type',
+				'width': 700,
+				'height': 500};
+				
+	// Instantiate our chart object with the above options
+	
+	var chart = new google.visualization.BarChart(document.getElementById('chart_body'));
+	chart.draw(data, options);
+}
+
+</script>
+
+</head>
+
+<body>	
+
+
+
 <div class="panel panel-default" id = "report-panel">
 	<div style="text-align: center;" class = "panel-heading"><h3><b>{{select}} Report</b></h3></div>
-	<div class="panel-body">
-		<table class="table table-striped">
-		{% if select == "Attendance" %}
-			<thead>
-				<th>Event Type</th>
-				<th>Event Title</th>
-				<th>Attendance</th>
-			</thead>
-			<tbody>
-				{% for item in data %}
-					<tr>
-						<td>{{item['type']}}</td>
-						<td>{{item['title']}}</td>
-						<td>{{item['attendance']}}</td>
-					</tr>
-				{% endfor %}
-			</tbody>
-		{% elif select == "Finance" %}
-		
-			<thead>
-				<th>Event Type</th>
-				<th>Event Title</th>
-				<th>Finance</th>
-			</thead>
-			<tbody>
-				{% for item in data %}
-					<tr>
-						<td>{{item['type']}}</td>
-						<td>{{item['title']}}</td>
-						<td>{{item['finance']}}</td>
-					</tr>
-				{% endfor %}
-			</tbody>
-			
-		{% endif %}
-		</table>
-	</div>
+	<div class="panel-body" id="chart_body" style="margin-left: 32.5%"></div>
 </div>
 
 </body>
 
 </html>
-
 {% endblock %}
