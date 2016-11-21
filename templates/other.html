@@ -3,9 +3,7 @@
 {% block body %}
 
  <!----------------------------------------------------------------------------------------> 
- 
 <!--Container for the contents of the page-->
-
 <div class="container-fluid">
 <div style="margin-top:160px; margin-left:280px;">
 <div class="row">
@@ -14,10 +12,9 @@
 <div class="panel-heading"><h3 style="text-align:center;">Other Details</h3></div>
 <div class="panel-body">
 
- <form action="{{ url_for('result') }}" method="POST">
- 
+ <form action="/result/" method="POST">
       <label for="type">Event Type</label>
-      <select  id = "type" name="tt">
+      <select  id = "type" name="type_data">
       <option value="" disabled selected>Select Event Type</option>
       <option value="Speaker" >Speaker</option>
       <option value="Panel" >Panel</option>
@@ -26,24 +23,18 @@
       <option value="Festival Celebration">Festival/Celebration</option>
       <option value="Other">Other</option>
       </select>
-
-        
            <br/>
-
-           <h5>Finance: <input type="text" id="finance" name="fin"></h5>
-           <h5>Attendance: <input type="text" id="attendance" name="att"></h5>
-           <h5>Response Rate: <input type="text" id="response_rate" name="rate"></h5>             
-           
+           <h5>Finance: <input type="text" id="finance" name="finance_data"></h5>
+           <h5>Attendance: <input type="text" id="attendance" name="attendance_data"></h5>
+           <h5>Response Rate: <input type="text" id="response_rate" name="rate_data"></h5>             
            <br/>
            <br/>
- 
- 
                   <!--Onlick submit and reset buttons-->
                   <button  onclick="ODSubmit()"  id="myBtn" class="btn  btn-primary" style="margin-left:34.5%; margin-bottom:10px;"type="submit">Submit</button>
                   <button  onclick="reset_other()" class="btn  btn-success" style="margin-left:160px;"type="reset">Reset</button>
-           </form>        
- <!--end of container opened at the beginning -->
+           </form>
 </div></div></div></div></div></div></div>
+ <!--End of container opened at the beginning -->
  
 <!-- The confirmation message Modal -->
 <div id="myModal" class="modal">

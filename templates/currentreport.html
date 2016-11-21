@@ -44,17 +44,25 @@ function drawChart() {
 	{% if select == "Attendance" %}
 		data.addColumn('number', 'Number of Attendees');
 		data.addRows([
-		{% for item in data %}
-			['{{item['type']}}', {{item['attendance']}}],
+		{% for item in adata.keys() %}
+			['{{item}}', {{adata[item]}}],
 		{% endfor %}
 		]);
 	{% elif select == "Finance" %}
 		data.addColumn('number', 'Money Spent');
 		data.addRows([
-		{% for item in data %}
-			['{{item['type']}}', {{item['finance']}}],
+		{% for item in fdata.keys() %}
+			['{{item}}', {{fdata[item]}}],
 		{% endfor %}
-		]);	
+		]);
+		
+	{% else %}
+		data.addColumn('number', 'Other');
+		data.addRows([
+		{% for item in odata.keys() %}
+			['{{item}}', {{odata[item]}}],
+		{% endfor %}
+		]);		
 	{% endif %}
 
 	
@@ -79,7 +87,10 @@ function drawChart() {
 
 <div class="panel panel-default" id = "report-panel">
 	<div style="text-align: center;" class = "panel-heading"><h3><b>{{select}} Report</b></h3></div>
-	<div class="panel-body" id="chart_body" style="margin-left: 32.5%"></div>
+	<div class="panel-body" id="chart_body" style="margin-left: 22.5%"></div>
+	<div class="panel-footer">
+		
+	</div>
 </div>
 
 </body>
