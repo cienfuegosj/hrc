@@ -1,32 +1,33 @@
-<!--contains the header, and the navigation bar-->
+<!--extends the header file-->
 {% extends "head.html" %}  
-{% block body %}
+{% block body %}  <!--allows the body of the page to be inserted-->
 
- <!----------------------------------------------------------------------------------------> 
+ 
 <!--Container for the contents of the page-->
-<div class="container-fluid">
+<div class="container-fluid">    <!--creates the container class-->
 <div style="margin-top:160px; margin-left:280px;">
 <div class="row">
 <div class="col-sm-8">
 <div class="panel panel-default">
-<div class="panel-heading"><h3 style="text-align:center;">Other Details</h3></div>
+<div class="panel-heading"><h3 style="text-align:center;">Other Details</h3></div>  <!--creates the header for the container-->
 <div class="panel-body">
 
- <form action="/result/" method="POST">
-      <label for="type">Event Type</label>
+ <!--creates a drop down menue for the selection of the event type-->
+ <form action="{{ url_for('result') }}" method="POST">   <!--creates a form region-->
+      <label for="type">Event Type</label>  
       <select  id = "type" name="type_data">
       <option value="" disabled selected>Select Event Type</option>
       <option value="Speaker" >Speaker</option>
       <option value="Panel" >Panel</option>
       <option value="Training" >Training</option>
       <option value="Forum">Forum</option>
-      <option value="Festival Celebration">Festival/Celebration</option>
+      <option value="Festival/Celebration">Festival/Celebration</option>
       <option value="Other">Other</option>
       </select>
            <br/>
-           <h5>Finance: <input type="text" id="finance" name="finance_data"></h5>
-           <h5>Attendance: <input type="text" id="attendance" name="attendance_data"></h5>
-           <h5>Response Rate: <input type="text" id="response_rate" name="rate_data"></h5>             
+           <h5>Finance: <input type="text" id="finance" name="finance_data"></h5>  <!--creates a text box for finance-->
+           <h5>Attendance: <input type="text" id="attendance" name="attendance_data"></h5>  <!--creates a text box for attendance-->
+           <h5>Response Rate: <input type="text" id="response_rate" name="rate_data"></h5>   <!--creates a text box for response rate-->          
            <br/>
            <br/>
                   <!--Onlick submit and reset buttons-->
@@ -36,18 +37,4 @@
 </div></div></div></div></div></div></div>
  <!--End of container opened at the beginning -->
  
-<!-- The confirmation message Modal -->
-<div id="myModal" class="modal">
-<div class="modal-content">
-<div class="modal-header">
-<span class="close" onclick="closed()">×</span>
-<h2>Confirmation Box</h2>
-</div>
-<div class="modal-body">
-<h3>Your responses have been submitted. Your request is being processed.</h3>
-</div>
-<div class="modal-footer">   
-</div>
-</div>
-</div>
 {% endblock %}

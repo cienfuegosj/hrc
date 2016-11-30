@@ -6,69 +6,78 @@ import datetime
 
 app = Flask(__name__)
 
-/* ---------- Open Login Page ------------------*/
-
 @app.route('/')                      
 def loginpage():
+    '''this function displays the loginpage'''
     return render_template ("index.html")
 
-/* ---------- Open Home Page -------------------*/
+
 
 @app.route('/home')                  
 def home():
+    '''this function displays the home page'''
     return render_template ("home.html")
 
-/* ---------- Open Other Page ------------------*/
+
 
 @app.route('/other/')                
 def otherpage():
+   '''this function displays the other details page'''
    return render_template ("other.html")
 
 
-/* ----------- Open Results Page ---------------*/
+
 
 @app.route('/result/', methods=['POST', 'GET']) 
 def result():
+   '''this function handles the post method and sends the values to the database'''
 
-   if request.method == 'POST':
+   if request.method == 'POST':       # Checks if the method is a post method
       #result = request.form
      try:
-        types = request.form['type_data']
-        finances = request.form['finance_data']
-        attendances = request.form['attendance_data']
-        rates = request.form['rate_data']
-        c, conn = connection()
-        c.execute("INSERT INTO event(type, finance, attendance, response_rate) VALUES (%s, %s, %s, %s)",(types,finances,attendances,rates) )
-        con.commit()
-        msg = "Data successfully added"
+        types = request.form['type_data']       # gets the event type value
+        finances = request.form['finance_data']    # gets the value of the finances
+        attendances = request.form['attendance_data']   # gets the attendance value
+        rates = request.form['rate_data']          # gets the rates value
+        c, conn = connection()        # connects to the database
+        c.execute("INSERT INTO event(type, finance, attendance, response_rate) VALUES (%s, %s, %s, %s)",(types,finances,attendances,rates) ) #gets the query
+        conn.commit()     # inserts the query into the database
+        msg = "Data successfully added"  # gets a successful message
+        c.close()     # closes the connection 
+        conn.close()    # closes the final connnection 
+
      except:
-         con.rollback()
-         msg = "error in insert operation"
-     finally:
-         return render_template("result.html", msg = msg)
-         con.close()
+         msg = "error in insert operation"       # gets message if the connection fails
+     
+     return render_template("result.html", msg = msg)
+   
+   return "Ok"
+       
 
       
 
 @app.route('/reports')
 def reportspage():
+    '''this function displays the reports page'''
     return render_template ("reports.html")
 
-/* ------------ Open Survey Page ---------------*/
+
 
 @app.route('/survey')
 def survey():
+    '''this function displays the survey page'''
     return render_template ("survey.html")
 
 
 @app.route('/register')
 def register_page():
+     '''this is a test function'''
      try:
     	c, conn=connection()
      except Exception as e:
         return (str(e))
 
-/* -----Build the reports for the reports page ----*/
+
 
 @app.route('/report/<report_selection>', methods = ['GET'])
 def BuildReport(report_selection):
