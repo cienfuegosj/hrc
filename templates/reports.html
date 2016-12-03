@@ -22,7 +22,7 @@ function reset_report() {
 					<option value="no selection" disabled selected>Select Information Type</option>
 					<option value="attendance">Attendance</option>
 					<option value="finance">Finance</option>
-					<option value="other">Other</option>
+					<option value="survey">Survey Statistics</option>
 				</select>
 			</div>
 			<div style="margin-left: 27.5%;padding: 10px;" class="container">
@@ -37,13 +37,13 @@ function reset_report() {
       <span class="close" onclick="report_close()">×</span>
       <h2>Confirmation - Report</h2>
     </div>
-    <div class="modal-body">
-	<h3>Your request has been made. Select View Now or Cancel.</h3>
+    <div class="modal-body" style="padding-bottom:40px">
+	<h3>Your request has been made. Select View Report or Cancel.</h3>
     </div>
     <div class="modal-footer">
 	<div style="padding:10px;">
-    <button onclick = "ViewReport(document.getElementById('report_selection').value)" style="margin-right: 5%;" class = "btn btn-primary" id = "viewreport">View Report</button>
-    <button onclick = "GoHome()" class = "btn btn-success" id = "home" role = "button">Cancel</div>
+    <button onclick = "ViewReport(document.getElementById('report_selection').value)" style="margin-right: 30%;" class = "btn btn-primary" id = "viewreport">View Report</button>
+    <button onclick = "GoHome()" class = "btn btn-success" style="margin-right: 30%" id = "home" role = "button">Cancel</div>
     </div>
    </div>
 

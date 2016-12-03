@@ -1,0 +1,113 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Berea Human Rights</title>
+
+  <script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
+
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" crossorigin="anonymous"></script>
+
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"  crossorigin="anonymous">
+
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"  crossorigin="anonymous">
+</head>
+
+<style>
+/* The Modal (background) */
+.modal {
+    display: block; /* display modal */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+  border: 1px solid #888;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+
+.modal-header {
+    padding: 2px 16px;
+    background-color: #428bca;
+    color: white;
+}
+
+.modal-body {padding: 2px 16px;}
+
+.modal-footer {
+    padding: 2px 16px;
+    background-color: #428bca;
+    color: white;
+}
+</style>
+
+<script>
+function yes (){
+   // this function reloads the survey page
+     window.location.href="http://tango.berea.edu:5006/survey";
+
+}
+
+function no (){
+    //this function redirects the user to the home page
+     window.location.href="http://tango.berea.edu:5006/home";
+
+}
+</script>
+
+
+
+<div id="surveyModal" class="modal">
+<div class="modal-content">
+<div class="modal-header">
+<span class="close" onclick="Survey_closed()">×</span>
+<h2>Confirmation Box</h2>
+</div>
+<div class="modal-body">
+<h3>{{msg}}</h3>
+<h3>Do you want to add another survey?</h3>
+</div>
+<div class="modal-footer">
+<button onclick="yes()" class="btn  btn-warning" style="margin-bottom:10px; margin-right:140px;" type="submit">Yes</button>
+<button onclick="no()" class="btn  btn-danger" style="margin-right:540px;" type="submit">No</button>
+
+</div>
+</div>
+</div>
+

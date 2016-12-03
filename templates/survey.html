@@ -8,14 +8,18 @@
     <div class="panel panel-default">
 	<div class="panel-heading"><h1><b>Berea Human Rights Comission Event Evaluation Survey</b></h1></div>
       <div class="panel-body">
-	    <p style="font-size:18px;">Event Title: <input type="text" id="title"></p>   <!--Creates text boxe for Event Title-->
-      
-	   <p style="font-size:18px;">Event Date: <input type="text" id="date"></p>      <!--Creates text boxe for event date-->
+      <form action="{{ url_for('result2') }}" method="POST">   <!--creates a form region-->
 
-	   <p style="font-size:18px;">Event Location: <input type="text" id="location"></p>
-       <p style="font-size:18px;">Event Type:
+	    <p style="font-size:18px;">Event Title: <input type="text" id="title" name="title_data"></p>   <!--Creates text boxe for Event Title-->
+      
+	   <p style="font-size:18px;">Event Date: <input type="text" id="date" name="date_data"></p>      <!--Creates text boxe for event date-->
+
+	   <p style="font-size:18px;">Event Location: <input type="text" id="location" name="location_data"></p>
+           
+           <p style="font-size:18px;">Event Type:
+
 	    <!--Creates drop down menue for event type-->
-	   <select id="type"> 
+	   <select id="types" name="types_data"> 
            <option value="" disabled selected>Select an event type</option>
            <option value"Speaker">Speaker</option>
            <option value"Panel">Panel</option>
@@ -28,7 +32,7 @@
 	   
 	    <!--Creates drop down menue for government official-->
 		<p style="font-size:18px;">Government Official:
-		<select id="govt">
+		<select id="govt" name="govt_data">
 		    <option value="" disabled selected>Are you an elected/appointed government official of</option>
 			<option value="City of Berea">City of Berea</option>
 			<option value="City of Richmond">City of Richmond</option>
@@ -42,7 +46,7 @@
 		</br>
 		<!--Creates drop down menue for residence-->
 		<p style="font-size:18px;">Residence:
-		<select id="residency">
+		<select id="residency" name="residency_data">
 		    <option value="" disabled selected>Select your residence(optional)</option>
 			<option value="Berea">Berea</option>
 			<option value="Richmond">Richmond</option>
@@ -50,11 +54,11 @@
 			<option value="Other">Other</option>
 			</select></p>
 		<!--Creates text boxes for race and sex-->
-		 <p style="font-size:18px;">Race/Ethnicity:<input type="text" id="race"></p>
-		 <p style="font-size:18px;">Sex:<input type="text" id="sex"></p>
+		 <p style="font-size:18px;">Race/Ethnicity:<input type="text" id="race" name="race_data"></p>
+		 <p style="font-size:18px;">Sex:<input type="text" id="sex" name="sex_data"></p>
 		 <p style="font-size:18px;">Age:
 		 <!--Creates drop down menu for age-->
-		<select id="age">
+		<select id="age" name="age_data">
 		    <option value="" disabled selected>Select your age</option>
 			<option value="Under 18">Under 18</option>
 			<option value="18-30">18-30</option>
@@ -68,99 +72,99 @@
 		</br>
 		<!--Creates radio buttons for question 1-->
 		<ol style="margin-right=200px;">
-		<li><p style="font-size:17px;">I found this program topic to be timely, stimulating and engaging</li>
-		<label class="radio-inline"><input type="radio" name="q1">N/A</label>
-        <label class="radio-inline"><input type="radio" name="q1">Stronly Disagree</label>
-        <label class="radio-inline"><input type="radio" name="q1">Disagree</label>
-		<label class="radio-inline"><input type="radio" name="q1">No opinion</label>
-        <label class="radio-inline"><input type="radio" name="q1">Agree</label>
-        <label class="radio-inline"><input type="radio" name="q1">Strongly Agree</label></p>
+		<li><p style="font-size:17px;">I found this program topic to be timely, stimulating and engaging.</li>
+		<label class="radio-inline"><input type="radio" id="d1" name="q1" value="N/A">N/A</label>
+        <label class="radio-inline"><input type="radio" name="q1" id="d2" value="Strongly Disagree">Strongly Disagree</label>
+        <label class="radio-inline"><input type="radio" name="q1" id="d3" value="Disagree">Disagree</label>
+		<label class="radio-inline"><input type="radio" id="d4"   name="q1" value="No opinion">No opinion</label>
+        <label class="radio-inline"><input type="radio" name="q1" id="d5" value="Agree">Agree</label>
+        <label class="radio-inline"><input type="radio" name="q1" id="d6" value="Strongly Agree">Strongly Agree</label></p>
 		</br>
 		<!--Creates radio buttons for question 2-->
-		<li><p style="font-size:17px;">The organization of the event was user friendly?</li>
-		<label class="radio-inline"><input type="radio" name="q2">N/A</label>
-        <label class="radio-inline"><input type="radio" name="q2">Stronly Disagree</label>
-        <label class="radio-inline"><input type="radio" name="q2">Disagree</label>
-		<label class="radio-inline"><input type="radio" name="q2">No opinion</label>
-        <label class="radio-inline"><input type="radio" name="q2">Agree</label>
-        <label class="radio-inline"><input type="radio" name="q2">Strongly Agree</label></p>
+		<li><p style="font-size:17px;">The organization of the event was user friendly.</li>
+		<label class="radio-inline"><input type="radio" name="q2" value="N/A">N/A</label>
+        <label class="radio-inline"><input type="radio" name="q2" value="Strongly Disagree">Strongly Disagree</label>
+        <label class="radio-inline"><input type="radio" name="q2" value="Disagree">Disagree</label>
+		<label class="radio-inline"><input type="radio" name="q2" value="No opinion">No opinion</label>
+        <label class="radio-inline"><input type="radio" name="q2" value="Agree">Agree</label>
+        <label class="radio-inline"><input type="radio" name="q2" value="Strongly Agree">Strongly Agree</label></p>
 		</br>
 		
 		<!--Creates radio buttons for question 3-->
-		<li><p style="font-size:17px;">I found the speaker(s)/panel/film to be knowledgeable and relevant</li>
-		<label class="radio-inline"><input type="radio" name="q3">N/A</label>
-        <label class="radio-inline"><input type="radio" name="q3">Stronly Disagree</label>
-        <label class="radio-inline"><input type="radio" name="q3">Disagree</label>
-		<label class="radio-inline"><input type="radio" name="q3">No opinion</label>
-        <label class="radio-inline"><input type="radio" name="q3">Agree</label>
-        <label class="radio-inline"><input type="radio" name="q3">Strongly Agree</label></p>
+		<li><p style="font-size:17px;">I found the speaker(s)/panel/film to be knowledgeable and relevant.</li>
+		<label class="radio-inline"><input type="radio" name="q3" value="N/A">N/A</label>
+        <label class="radio-inline"><input type="radio" name="q3" value="Strongly Disagree">Strongly Disagree</label>
+        <label class="radio-inline"><input type="radio" name="q3" value="Disagree">Disagree</label>
+		<label class="radio-inline"><input type="radio" name="q3" value="No opinion">No opinion</label>
+        <label class="radio-inline"><input type="radio" name="q3" value="Agree">Agree</label>
+        <label class="radio-inline"><input type="radio" name="q3" value="Strongly Agree">Strongly Agree</label></p>
 		</br>
 		<!--Creates radio buttons for question 4-->
-		<li><p style="font-size:17px;">I was able to ask questions, receive answers and comment</li>
-		<label class="radio-inline"><input type="radio" name="q4">N/A</label>
-        <label class="radio-inline"><input type="radio" name="q4">Stronly Disagree</label>
-        <label class="radio-inline"><input type="radio" name="q4">Disagree</label>
-		<label class="radio-inline"><input type="radio" name="q4">No opinion</label>
-        <label class="radio-inline"><input type="radio" name="q4">Agree</label>
-        <label class="radio-inline"><input type="radio" name="q4">Strongly Agree</label></p>
+		<li><p style="font-size:17px;">I was able to ask questions, receive answers and comment.</li>
+		<label class="radio-inline"><input type="radio" name="q4" value="N/A">N/A</label>
+        <label class="radio-inline"><input type="radio" name="q4" value="Strongly Disagree">Strongly Disagree</label>
+        <label class="radio-inline"><input type="radio" name="q4" value="Disagree">Disagree</label>
+		<label class="radio-inline"><input type="radio" name="q4" value="No opinion">No opinion</label>
+        <label class="radio-inline"><input type="radio" name="q4" value="Agree">Agree</label>
+        <label class="radio-inline"><input type="radio" name="q4" value="Strongly Agree">Strongly Agree</label></p>
 		</br>
 		<!--Creates radio buttons for question 5-->
-		<li><p style="font-size:17px;">The speaker/presenter/panel was effective</li>
-		<label class="radio-inline"><input type="radio" name="q5">N/A</label>
-        <label class="radio-inline"><input type="radio" name="q5">Stronly Disagree</label>
-        <label class="radio-inline"><input type="radio" name="q5">Disagree</label>
-		<label class="radio-inline"><input type="radio" name="q5">No opinion</label>
-        <label class="radio-inline"><input type="radio" name="q5">Agree</label>
-        <label class="radio-inline"><input type="radio" name="q5">Strongly Agree</label></p>
+		<li><p style="font-size:17px;">The speaker/presenter/panel was effective.</li>
+		<label class="radio-inline"><input type="radio" name="q5" value="N/A">N/A</label>
+        <label class="radio-inline"><input type="radio" name="q5" value="Strongly Disagree">Strongly Disagree</label>
+        <label class="radio-inline"><input type="radio" name="q5" value="Disagree">Disagree</label>
+		<label class="radio-inline"><input type="radio" name="q5" value="No opinion">No opinion</label>
+        <label class="radio-inline"><input type="radio" name="q5" value="Agree">Agree</label>
+        <label class="radio-inline"><input type="radio" name="q5" value="Strongly Agree">Strongly Agree</label></p>
 		</br>
 		
 		<!--Creates radio buttons for question 6-->
-		<li><p style="font-size:17px;">The handout materials were useful</li>
-		<label class="radio-inline"><input type="radio" name="q6">N/A</label>
-        <label class="radio-inline"><input type="radio" name="q6">Stronly Disagree</label>
-        <label class="radio-inline"><input type="radio" name="q6">Disagree</label>
-		<label class="radio-inline"><input type="radio" name="q6">No opinion</label>
-        <label class="radio-inline"><input type="radio" name="q6">Agree</label>
-        <label class="radio-inline"><input type="radio" name="q6">Strongly Agree</label></p>
+		<li><p style="font-size:17px;">The handout materials were useful.</li>
+		<label class="radio-inline"><input type="radio" name="q6" value="N/A">N/A</label>
+        <label class="radio-inline"><input type="radio" name="q6" value="Strongly Disagree">Strongly Disagree</label>
+        <label class="radio-inline"><input type="radio" name="q6" value="Disagree">Disagree</label>
+		<label class="radio-inline"><input type="radio" name="q6" value="No opinion">No opinion</label>
+        <label class="radio-inline"><input type="radio" name="q6" value="Agree">Agree</label>
+        <label class="radio-inline"><input type="radio" name="q6" value="Strongly Agree">Strongly Agree</label></p>
 		</br>
 		
 		<!--Creates radio buttons for question 7-->
-		<li><p style="font-size:17px;">There was opportunity for questions?</li>
-		<label class="radio-inline"><input type="radio" name="q7">N/A</label>
-        <label class="radio-inline"><input type="radio" name="q7">Stronly Disagree</label>
-        <label class="radio-inline"><input type="radio" name="q7">Disagree</label>
-		<label class="radio-inline"><input type="radio" name="q7">No opinion</label>
-        <label class="radio-inline"><input type="radio" name="q7">Agree</label>
-        <label class="radio-inline"><input type="radio" name="q7">Strongly Agree</label></p>
+		<li><p style="font-size:17px;">There was opportunity for questions</li>
+		<label class="radio-inline"><input type="radio" name="q7" value="N/A">N/A</label>
+        <label class="radio-inline"><input type="radio" name="q7" value="Strongly Disagree">Strongly Disagree</label>
+        <label class="radio-inline"><input type="radio" name="q7" value="Disagree">Disagree</label>
+		<label class="radio-inline"><input type="radio" name="q7" value="No opinion">No opinion</label>
+        <label class="radio-inline"><input type="radio" name="q7" value="Agree">Agree</label>
+        <label class="radio-inline"><input type="radio" name="q7" value="Strongly Agree">Strongly Agree</label></p>
 		</br>
 		
 		<!--Creates radio buttons for question 8-->
-		<li><p style="font-size:17px;">The overall program was what I expected</li>
-		<label class="radio-inline"><input type="radio" name="q8">N/A</label>
-        <label class="radio-inline"><input type="radio" name="q8">Stronly Disagree</label>
-        <label class="radio-inline"><input type="radio" name="q8">Disagree</label>
-		<label class="radio-inline"><input type="radio" name="q8">No opinion</label>
-        <label class="radio-inline"><input type="radio" name="q8">Agree</label>
-        <label class="radio-inline"><input type="radio" name="q8">Strongly Agree</label></p>
+		<li><p style="font-size:17px;">The overall program was what I expected.</li>
+		<label class="radio-inline"><input type="radio" name="q8" value="N/A">N/A</label>
+        <label class="radio-inline"><input type="radio" name="q8" value="Strongly Disagree">Strongly Disagree</label>
+        <label class="radio-inline"><input type="radio" name="q8" value="Disagree">Disagree</label>
+		<label class="radio-inline"><input type="radio" name="q8" value="No opinion">No opinion</label>
+        <label class="radio-inline"><input type="radio" name="q8" value="Agree">Agree</label>
+        <label class="radio-inline"><input type="radio" name="q8" value="Strongly Agree">Strongly Agree</label></p>
 		</br>
 		
 		<!--Creates radio buttons for question 9-->
-		<li><p style="font-size:17px;">The information was relevant?</li>
-		<label class="radio-inline"><input type="radio" name="q9">N/A</label>
-        <label class="radio-inline"><input type="radio" name="q9">Stronly Disagree</label>
-        <label class="radio-inline"><input type="radio" name="q9">Disagree</label>
-		<label class="radio-inline"><input type="radio" name="q9">No opinion</label>
-        <label class="radio-inline"><input type="radio" name="q9">Agree</label>
-        <label class="radio-inline"><input type="radio" name="q9">Strongly Agree</label></p>
+		<li><p style="font-size:17px;">The information was relevant.</li>
+		<label class="radio-inline"><input type="radio" name="q9" value="N/A">N/A</label>
+        <label class="radio-inline"><input type="radio" name="q9" value="Strongly Disagree">Strongly Disagree</label>
+        <label class="radio-inline"><input type="radio" name="q9" value="Disagree">Disagree</label>
+		<label class="radio-inline"><input type="radio" name="q9" value="No opinion">No opinion</label>
+        <label class="radio-inline"><input type="radio" name="q9" value="Agree">Agree</label>
+        <label class="radio-inline"><input type="radio" name="q9" value="Strongly Agree">Strongly Agree</label></p>
 		</br>
 		
 		<!--Creates comment boxes for questions 10 and 11-->
-		<label for="comment"><li><p style="font-size:16px;">What were the strengths of the workshop?:</li></label>
-        <textarea class="form-control" rows="5" maxlength="500"  id="q10"></textarea>
+		<label for="comment"><li><p style="font-size:16px;">What were the strengths of the workshop?</li></label>
+        <textarea class="form-control" rows="5" maxlength="500"  id="q10" name="q10_data"></textarea>
 		</br>
 		
-		<label for="comment"><li><p style="font-size:16px;">What were the weaknesses of the workshop?:</li></label>
-        <textarea class="form-control" rows="5" maxlength="500" id="q11"></textarea>
+		<label for="comment"><li><p style="font-size:16px;">What were the weaknesses of the workshop?</li></label>
+        <textarea class="form-control" rows="5" maxlength="500" id="q11" name="q11_data"></textarea>
 		
 		
 		</ol>
@@ -169,62 +173,63 @@
 		</br>
 		<!--Creates radio buttons for question 1 in accomodations section-->
 		<ol style="margin-right=200px;">
-		<li><p style="font-size:17px;">The accommodations(location, seating, sound,lighting, room) were adequate</li>
-		<label class="radio-inline"><input type="radio" name="q12">N/A</label>
-        <label class="radio-inline"><input type="radio" name="q12">Stronly Disagree</label>
-        <label class="radio-inline"><input type="radio" name="q12">Disagree</label>
-		<label class="radio-inline"><input type="radio" name="q12">No opinion</label>
-        <label class="radio-inline"><input type="radio" name="q12">Agree</label>
-        <label class="radio-inline"><input type="radio" name="q12">Strongly Agree</label></p>
+		<li><p style="font-size:17px;">The accommodations(location, seating, sound,lighting, room) were adequate.</li>
+		<label class="radio-inline"><input type="radio" name="q12" value="N/A">N/A</label>
+        <label class="radio-inline"><input type="radio" name="q12" value="Strongly Disagree">Strongly Disagree</label>
+        <label class="radio-inline"><input type="radio" name="q12" value="Disagree">Disagree</label>
+		<label class="radio-inline"><input type="radio" name="q12" value="No opinion">No opinion</label>
+        <label class="radio-inline"><input type="radio" name="q12" value="Agree">Agree</label>
+        <label class="radio-inline"><input type="radio" name="q12" value="Strongly Agree">Strongly Agree</label></p>
 		</br>
 		
 		<!--Creates radio buttons for question 2 in accomodations section-->
-		<li><p style="font-size:17px;">The refreshments were adequate</li>
-		<label class="radio-inline"><input type="radio" name="q13">N/A</label>
-        <label class="radio-inline"><input type="radio" name="q13">Stronly Disagree</label>
-        <label class="radio-inline"><input type="radio" name="q13">Disagree</label>
-		<label class="radio-inline"><input type="radio" name="q13">No opinion</label>
-        <label class="radio-inline"><input type="radio" name="q13">Agree</label>
-        <label class="radio-inline"><input type="radio" name="q13">Strongly Agree</label></p>
+		<li><p style="font-size:17px;">The refreshments were adequate.</li>
+		<label class="radio-inline"><input type="radio" name="q13" value="N/A">N/A</label>
+        <label class="radio-inline"><input type="radio" name="q13" value="Strongly Disagree">Strongly Disagree</label>
+        <label class="radio-inline"><input type="radio" name="q13" value="Disagree">Disagree</label>
+		<label class="radio-inline"><input type="radio" name="q13" value="No opinion">No opinion</label>
+        <label class="radio-inline"><input type="radio" name="q13" value="Agree">Agree</label>
+        <label class="radio-inline"><input type="radio" name="q13" value="Strongly Agree">Strongly Agree</label></p>
 		</br>
 		
 		<!--Creates radio buttons for question 3 in accomodations section-->
-		<li><p style="font-size:17px;">The event coordinators were pleasant and helpful</li>
-		<label class="radio-inline"><input type="radio" name="q14">N/A</label>
-        <label class="radio-inline"><input type="radio" name="q14">Stronly Disagree</label>
-        <label class="radio-inline"><input type="radio" name="q14">Disagree</label>
-		<label class="radio-inline"><input type="radio" name="q14">No opinion</label>
-        <label class="radio-inline"><input type="radio" name="q14">Agree</label>
-        <label class="radio-inline"><input type="radio" name="q14">Strongly Agree</label></p>
+		<li><p style="font-size:17px;">The event coordinators were pleasant and helpful.</li>
+		<label class="radio-inline"><input type="radio" name="q14" value="N/A">N/A</label>
+        <label class="radio-inline"><input type="radio" name="q14" value="Strongly Disagree">Strongly Disagree</label>
+        <label class="radio-inline"><input type="radio" name="q14" value="Disagree">Disagree</label>
+		<label class="radio-inline"><input type="radio" name="q14" value="No opinion">No opinion</label>
+        <label class="radio-inline"><input type="radio" name="q14" value="Agree">Agree</label>
+        <label class="radio-inline"><input type="radio" name="q14" value="Strongly Agree">Strongly Agree</label></p>
 		</br>
 		
 		<!--Creates radio buttons for question 4 in accomodations section-->
-		<li><p style="font-size:17px;">The event began and ended on time</li>
-		<label class="radio-inline"><input type="radio" name="q15">N/A</label>
-        <label class="radio-inline"><input type="radio" name="q15">Stronly Disagree</label>
-        <label class="radio-inline"><input type="radio" name="q15">Disagree</label>
-		<label class="radio-inline"><input type="radio" name="q15">No opinion</label>
-        <label class="radio-inline"><input type="radio" name="q15">Agree</label>
-        <label class="radio-inline"><input type="radio" name="q15">Strongly Agree</label></p>
+		<li><p style="font-size:17px;">The event began and ended on time.</li>
+		<label class="radio-inline"><input type="radio" name="q15" value="N/A">N/A</label>
+        <label class="radio-inline"><input type="radio" name="q15" value="Strongly Disagree">Strongly Disagree</label>
+        <label class="radio-inline"><input type="radio" name="q15" value="Disagree">Disagree</label>
+		<label class="radio-inline"><input type="radio" name="q15" value="No opinion">No opinion</label>
+        <label class="radio-inline"><input type="radio" name="q15" value="Agree">Agree</label>
+        <label class="radio-inline"><input type="radio" name="q15" value="Strongly Agree">Strongly Agree</label></p>
 		</br>
 		
 		<!--Creates radio buttons for question 5 in accomodations section-->
 		<li><p style="font-size:17px;">Would you recommend this event to others?</li>
-		<label class="radio-inline"><input type="radio" name="q16">Yes</label>
-        <label class="radio-inline"><input type="radio" name="q16">No</label></p>
+		<label class="radio-inline"><input type="radio" name="q16" value="yes">Yes</label>
+        <label class="radio-inline"><input type="radio" name="q16" value="No">No</label></p>
 		</br>
 		
 		<!--Creates text box for additional comments-->
 		<label for="comment"><li><p style="font-size:16px;">Additional Comments:</li></label>
-        <textarea class="form-control" rows="5" maxlength="500"  id="q17"></textarea>
+        <textarea class="form-control" rows="5" maxlength="500"  id="q17" name="q17_data"></textarea>
 		
 		</ol>
 		
 		<!--submit and reset buttons-->
 		 <br/>
-            <button    onclick="Survey()" class="btn  btn-primary" style="margin-left:34.5%; margin-bottom:10px;"type="submit">Submit</button>
-            <button class="btn  btn-success" style="margin-left:160px;"type="submit">Reset</button>
-
+            <button    onclick="Survey()" class="btn  btn-primary btn-block" style="margin-bottom:10px;"type="submit">Submit</button>
+            </form>
+            <button onclick="resurv()"  class="btn  btn-success btn-block" type="submit">Reset</button>
+           
 		
 		
 		
@@ -239,23 +244,5 @@
 </div>
 
 
-
-
-<div id="surveyModal" class="modal">
-<div class="modal-content">
-<div class="modal-header">
-<span class="close" onclick="Survey_closed()">×</span>
-<h2>Confirmation Box</h2>
-</div>
-<div class="modal-body">
-<h3>Your responses have been submitted. Do you want to add another survey?</h3>
-</div>
-<div class="modal-footer">
-<button onclick="yes()" class="btn  btn-warning" style="margin-bottom:10px; margin-right:140px;" type="submit">Yes</button>
-<button onclick="no()" class="btn  btn-danger" style="margin-right:540px;" type="submit">No</button>
-   
-</div>
-</div>
-</div>
 
 {% endblock %}

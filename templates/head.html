@@ -192,7 +192,7 @@ function ReportSubmit() {
     var report_selection  = document.getElementById("report_selection").value;
     
     if (report_selection == "no selection") {
-      alert("Please select a information type to report.");
+      alert("Please select an information type to report.");
     }
     else {  
     
@@ -227,22 +227,29 @@ function Survey () {
    var get_title=document.getElementById("title").value;       //gets the value from the drop down
    var get_date=document.getElementById("date").value;   // gets the value from the finance
    var get_location=document.getElementById("location").value;     // gets the value from attendance
-   var get_type=document.getElementById("type").value;          // gets the value from event type
+   var get_type=document.getElementById("types").value;          // gets the value from event type
    var get_govt=document.getElementById("govt").value;      // gets the value from the government
-   var get_residency=document.getElementById("residency").value;     // gets the value from the residency
-   var get_race=document.getElementById("race").value;      // gets the value for the race
-   var get_sex=document.getElementById("sex").value;          // gets the value for the sex
-   var get_age=document.getElementById("age").value;     // gets the value for the age
-  // alert (get_race);
-  //alert (get_sex); 
-  //alert (get_age);
+   var get_1=document.getElementById("d1").checked;     // gets the value from the residency
+   
+   var one = document.getElementsByName("q1");
+   var c1=false;
+     for (var i = 0, len = one.length; i < len; i++) {
+     
+          if (one[i].checked) {
+              var c1= true;
+              break;
+          }  
+       
+     }  
+    if (!c1){
+     //alert("Question 1 is not checked");
+ }
 
  
   var survey_modal=document.getElementById('surveyModal');
   survey_modal.style.display = "block";
 
 }
-
 
 function Survey_closed (){
   // this function closes the modal box when the user clicks x
@@ -252,15 +259,9 @@ function Survey_closed (){
 }
 
 
-function yes (){
+function resurv (){
    // this function reloads the survey page
      window.location.href="http://tango.berea.edu:5006/survey";
-
-}
-
-function no (){
-    //this function redirects the user to the home page
-     window.location.href="http://tango.berea.edu:5006/home";
 
 }
 
@@ -280,7 +281,7 @@ function no (){
 			   
              </ul>
 		 <ul class="nav navbar-nav navbar-right">
-		 <li><a onclick=sign_redirect()>Sign out</a></li>
+		 <li><a onclick=sign_redirect()>Return to index page</a></li>
 		 </ul>
          </div>
       	</div>

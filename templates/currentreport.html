@@ -15,10 +15,12 @@
 
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-	
+
 <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 
 <script type="text/javascript">
+
+
 
 
 {% block body %}
@@ -26,9 +28,19 @@
 {% set select = "Attendance" %}
 {% elif selection == "finance" %}
 {% set select = "Finance" %}
-{% elif selection == "other" %}
-{% set select = "Other" %}
+{% elif selection == "survey" %}
+{% set select = "Survey Statistics" %}
 {% endif %}
+
+function export2pdf() {
+	var selection = "{{select}}";
+	if (selection != "") {
+		window.location.href="http://tango.berea.edu:5006/reportpdf/".concat(selection);
+	}
+	else {
+		alert("Connections between database have not been made");
+	}
+}
 
 //This will load the Visualization API and the packages.
 google.charts.load('current', {'packages':['corechart']});
@@ -37,48 +49,248 @@ google.charts.setOnLoadCallback(drawChart);
 
 function drawChart() {
 
+	{% if select == "Attendance" or select == "Finance" %}
+
 	var data = new google.visualization.DataTable();
 	data.addColumn('string', 'Event Type');
 	
 
-	{% if select == "Attendance" %}
-		data.addColumn('number', 'Number of Attendees');
-		data.addRows([
-		{% for item in adata.keys() %}
-			['{{item}}', {{adata[item]}}],
-		{% endfor %}
-		]);
-	{% elif select == "Finance" %}
-		data.addColumn('number', 'Money Spent');
-		data.addRows([
-		{% for item in fdata.keys() %}
-			['{{item}}', {{fdata[item]}}],
-		{% endfor %}
-		]);
-		
-	{% else %}
-		data.addColumn('number', 'Other');
-		data.addRows([
-		{% for item in odata.keys() %}
-			['{{item}}', {{odata[item]}}],
-		{% endfor %}
-		]);		
-	{% endif %}
-
+		{% if select == "Attendance" %}
+			data.addColumn('number', 'Number of Attendees');
+			data.addRows([
+			{% for item in adata.keys() %}
+				['{{item}}', {{adata[item]}}],
+			{% endfor %}
+			]);
+		{% elif select == "Finance" %}
+			data.addColumn('number', 'Money Spent');
+			data.addRows([
+			{% for item in fdata.keys() %}
+				['{{item}}', {{fdata[item]}}],
+			{% endfor %}
+			]);
+		{% endif %}
 	
-	// Set the table options here
-	var options = {'title': '{{select}} vs Event Type',
+	{% elif select == "Survey Statistics" %}
+	
+	// Information about question 1
+	var dataq1 = google.visualization.arrayToDataTable([
+		['Response', 'Response Count'],
+		{% for item in qdata['q1'].keys() %}
+			['{{item}}', {{qdata['q1'][item]}}],
+		{% endfor %}
+	]);
+	
+		var dataq2 = google.visualization.arrayToDataTable([
+		['Response', 'Response Count'],
+		{% for item in qdata['q2'].keys() %}
+			['{{item}}', {{qdata['q2'][item]}}],
+		{% endfor %}
+	]);
+	
+		var dataq3 = google.visualization.arrayToDataTable([
+		['Response', 'Response Count'],
+		{% for item in qdata['q3'].keys() %}
+			['{{item}}', {{qdata['q3'][item]}}],
+		{% endfor %}
+	]);
+	
+		var dataq4 = google.visualization.arrayToDataTable([
+		['Response', 'Response Count'],
+		{% for item in qdata['q4'].keys() %}
+			['{{item}}', {{qdata['q4'][item]}}],
+		{% endfor %}
+	]);
+	
+		var dataq5 = google.visualization.arrayToDataTable([
+		['Response', 'Response Count'],
+		{% for item in qdata['q5'].keys() %}
+			['{{item}}', {{qdata['q5'][item]}}],
+		{% endfor %}
+	]);
+	
+		var dataq6 = google.visualization.arrayToDataTable([
+		['Response', 'Response Count'],
+		{% for item in qdata['q6'].keys() %}
+			['{{item}}', {{qdata['q6'][item]}}],
+		{% endfor %}
+	]);
+	
+		var dataq6 = google.visualization.arrayToDataTable([
+		['Response', 'Response Count'],
+		{% for item in qdata['q6'].keys() %}
+			['{{item}}', {{qdata['q6'][item]}}],
+		{% endfor %}
+	]);
+	
+		var dataq7 = google.visualization.arrayToDataTable([
+		['Response', 'Response Count'],
+		{% for item in qdata['q7'].keys() %}
+			['{{item}}', {{qdata['q7'][item]}}],
+		{% endfor %}
+	]);
+	
+		var dataq8 = google.visualization.arrayToDataTable([
+		['Response', 'Response Count'],
+		{% for item in qdata['q8'].keys() %}
+			['{{item}}', {{qdata['q8'][item]}}],
+		{% endfor %}
+	]);
+	
+		var dataq9 = google.visualization.arrayToDataTable([
+		['Response', 'Response Count'],
+		{% for item in qdata['q9'].keys() %}
+			['{{item}}', {{qdata['q9'][item]}}],
+		{% endfor %}
+	]);
+	
+		var dataq12 = google.visualization.arrayToDataTable([
+		['Response', 'Response Count'],
+		{% for item in qdata['q12'].keys() %}
+			['{{item}}', {{qdata['q12'][item]}}],
+		{% endfor %}
+	]);
+	
+		var dataq13 = google.visualization.arrayToDataTable([
+		['Response', 'Response Count'],
+		{% for item in qdata['q13'].keys() %}
+			['{{item}}', {{qdata['q13'][item]}}],
+		{% endfor %}
+	]);
+	
+		var dataq14 = google.visualization.arrayToDataTable([
+		['Response', 'Response Count'],
+		{% for item in qdata['q14'].keys() %}
+			['{{item}}', {{qdata['q14'][item]}}],
+		{% endfor %}
+	]);
+	
+		var dataq15 = google.visualization.arrayToDataTable([
+		['Response', 'Response Count'],
+		{% for item in qdata['q15'].keys() %}
+			['{{item}}', {{qdata['q15'][item]}}],
+		{% endfor %}
+	]);
+	
+	
+	{% endif %}
+		
+	{% if select == "Attendance" or select == "Finance" %}
+	
+		// Set the table options here
+		var options = {'title': '{{select}} vs Event Type',
 				'width': 700,
 				'height': 500};
 				
-	// Instantiate our chart object with the above options
+		// Instantiate our chart object with the above options
+		var chart_body = document.getElementById('chart_body');
+		var chart = new google.visualization.BarChart(document.getElementById('chart_body'));
 	
-	var chart = new google.visualization.BarChart(document.getElementById('chart_body'));
-	chart.draw(data, options);
+		chart.draw(data, options);
+	
+	{% elif select == "Survey Statistics" %}
+	
+		// Set the table options here
+		var optionsq1 = {
+		title: 'I found this program topic to be timely, stimulating and engaging.',
+		is3D: true,
+		};
+		
+		var optionsq2 = {
+		title: 'The organization of the event was user friendly.',
+		is3D: true,
+		};
+		
+		var optionsq3 = {
+		title: 'I found the speaker(s)/panel/film to be knowledgeable and relevant.',
+		is3D: true,
+		};
+		
+		var optionsq4 = {
+		title: 'I was able to ask questions, receive answers and comment.',
+		is3D: true,
+		};
+		
+		var optionsq5 = {
+		title: 'The speaker/presenter/panel was effective.',
+		is3D: true,
+		};
+		
+		var optionsq6 = {
+		title: 'The handout materials were useful.',
+		is3D: true,
+		};
+		
+		var optionsq7 = {
+		title: 'There was opportunity for questions.',
+		is3D: true,
+		};
+		
+		var optionsq8 = {
+		title: 'The overall program was what I expected.',
+		is3D: true,
+		};
+		
+		var optionsq9 = {
+		title: 'The information was relevant.',
+		is3D: true,
+		};
+		
+		var optionsq12 = {
+		title: 'The accommodations(location, seating, sound,lighting, room) were adequate.',
+		is3D: true,
+		};
+		
+		var optionsq13 = {
+		title: 'The refreshments were adequate.',
+		is3D: true,
+		};
+		
+		var optionsq14 = {
+		title: 'The event coordinators were pleasant and helpful.',
+		is3D: true,
+		};
+		
+		var optionsq15 = {
+		title: 'The event began and ended on time.',
+		is3D: true,
+		};
+
+		var chartq1 = new google.visualization.PieChart(document.getElementById('chart1'));
+		var chartq2 = new google.visualization.PieChart(document.getElementById('chart2'));
+		var chartq3 = new google.visualization.PieChart(document.getElementById('chart3'));
+		var chartq4 = new google.visualization.PieChart(document.getElementById('chart4'));
+		var chartq5 = new google.visualization.PieChart(document.getElementById('chart5'));
+		var chartq6 = new google.visualization.PieChart(document.getElementById('chart6'));
+		var chartq7 = new google.visualization.PieChart(document.getElementById('chart7'));
+		var chartq8 = new google.visualization.PieChart(document.getElementById('chart8'));
+		var chartq9 = new google.visualization.PieChart(document.getElementById('chart9'));
+		var chartq12 = new google.visualization.PieChart(document.getElementById('chart12'));
+		var chartq13 = new google.visualization.PieChart(document.getElementById('chart13'));
+		var chartq14 = new google.visualization.PieChart(document.getElementById('chart14'));
+		var chartq15 = new google.visualization.PieChart(document.getElementById('chart15'));
+			
+
+		chartq1.draw(dataq1, optionsq1);
+		chartq2.draw(dataq2, optionsq2);
+		chartq3.draw(dataq3, optionsq3);
+		chartq4.draw(dataq4, optionsq4);
+		chartq5.draw(dataq5, optionsq5);
+		chartq6.draw(dataq6, optionsq6);
+		chartq7.draw(dataq7, optionsq7);
+		chartq8.draw(dataq8, optionsq8);
+		chartq9.draw(dataq9, optionsq9);
+		chartq12.draw(dataq12, optionsq12);
+		chartq13.draw(dataq13, optionsq13);
+		chartq14.draw(dataq14, optionsq14);
+		chartq15.draw(dataq15, optionsq15);
+		
+
+
+	{% endif %}
 }
 
 </script>
-
 </head>
 
 <body>	
@@ -87,10 +299,52 @@ function drawChart() {
 
 <div class="panel panel-default" id = "report-panel">
 	<div style="text-align: center;" class = "panel-heading"><h3><b>{{select}} Report</b></h3></div>
-	<div class="panel-body" id="chart_body" style="margin-left: 22.5%"></div>
-	<div class="panel-footer">
-		
+	<div class="panel-body" id="chart_body" style=
+	{% if select == "Attendance" or select == "Finance" %}
+	
+	"margin-left: 22.5%">
+	
+	{% else %}
+		"">
+	{% endif %}
+	
+		{% if select == "Survey Statistics" %}		
+		<div class="row">
+    		<div class="col-md-6" id="chart1" style="padding:35px"></div>
+    		<div class="col-md-6" id="chart2" style="padding:35px"></div>
+  		</div>
+				<div class="row">
+    		<div class="col-md-6" id="chart3" style="padding:35px"></div>
+    		<div class="col-md-6" id="chart4" style="padding:35px"></div>
+  		</div>
+  				<div class="row">
+    		<div class="col-md-6" id="chart5" style="padding:35px"></div>
+    		<div class="col-md-6" id="chart6" style="padding:35px"></div>
+  		</div>
+  				<div class="row">
+    		<div class="col-md-6" id="chart7" style="padding:35px"></div>
+    		<div class="col-md-6" id="chart8" style="padding:35px"></div>
+  		</div>
+  		  		<div class="row">
+    		<div class="col-md-6" id="chart9" style="padding:35px"></div>
+    		<div class="col-md-6" id="chart12" style="padding:35px"></div>
+  		</div>
+  		
+  		  		<div class="row">
+    		<div class="col-md-6" id="chart13" style="padding:35px"></div>
+    		<div class="col-md-6" id="chart14" style="padding:35px"></div>
+  		</div>
+  		  		<div class="row">
+    		<div class="col-md-6" id="chart15" style="padding:35px"></div>
+    		<div class="col-md-6" id="empty" style="padding:35px"></div>
+  		</div>
+		{% endif %}	
 	</div>
+	
+	<div class="panel-footer">
+		<button onclick="export2pdf()" type="button" class="btn btn-primary btn-block">Export to PDF</button>
+	</div>
+
 </div>
 
 </body>
