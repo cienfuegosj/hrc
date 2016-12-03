@@ -1,10 +1,11 @@
 from flask import Flask, render_template, redirect, url_for, request
 from db_connect import connection
 from DBConnection import DBConnection
+from pdf import SurveyPDF
 import logging
 import datetime
-import pdfkit
 import copy
+
 
 app = Flask(__name__)
 
