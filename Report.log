@@ -1500,3 +1500,428 @@ INFO:werkzeug:10.30.63.52 - - [03/Dec/2016 18:18:11] "GET /reportpdf/Finance?__d
 INFO:werkzeug:10.30.63.52 - - [03/Dec/2016 18:18:11] "GET /reportpdf/Finance?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
 INFO:werkzeug:10.30.63.52 - - [03/Dec/2016 18:18:11] "GET /reportpdf/Finance?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
 INFO:werkzeug:10.30.63.52 - - [03/Dec/2016 18:18:11] "GET /reportpdf/Finance?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:root:Database Connection Success 	2016-12-03
+INFO:werkzeug:10.30.63.52 - - [03/Dec/2016 20:27:47] "GET /report/attendance HTTP/1.1" 200 -
+INFO:root:Database Connection Success 	2016-12-03
+INFO:werkzeug:10.30.63.52 - - [03/Dec/2016 20:27:48] "GET /report/attendance HTTP/1.1" 200 -
+INFO:werkzeug:10.30.63.52 - - [03/Dec/2016 20:27:50] "GET /Attendance.pdf HTTP/1.1" 500 -
+INFO:werkzeug:10.30.63.52 - - [03/Dec/2016 20:27:50] "GET /Attendance.pdf?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO:werkzeug:10.30.63.52 - - [03/Dec/2016 20:27:50] "GET /Attendance.pdf?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO:werkzeug:10.30.63.52 - - [03/Dec/2016 20:27:50] "GET /Attendance.pdf?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO:werkzeug:10.30.63.52 - - [03/Dec/2016 20:27:50] "GET /Attendance.pdf?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug:10.30.63.52 - - [03/Dec/2016 20:27:50] "GET /Attendance.pdf?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+INFO:werkzeug:10.30.63.52 - - [03/Dec/2016 20:27:50] "GET /Attendance.pdf?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug:10.30.63.52 - - [03/Dec/2016 20:29:07] "GET /Attendance.pdf HTTP/1.1" 500 -
+INFO:werkzeug:10.30.63.52 - - [03/Dec/2016 20:29:07] "GET /Attendance.pdf?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO:werkzeug:10.30.63.52 - - [03/Dec/2016 20:29:07] "GET /Attendance.pdf?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO:werkzeug:10.30.63.52 - - [03/Dec/2016 20:29:07] "GET /Attendance.pdf?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO:werkzeug:10.30.63.52 - - [03/Dec/2016 20:29:07] "GET /Attendance.pdf?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug:10.30.63.52 - - [03/Dec/2016 20:29:07] "GET /Attendance.pdf?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+INFO:root:Database Connection Success 	2016-12-03
+INFO:werkzeug:10.30.63.52 - - [03/Dec/2016 20:29:37] "GET /report/attendance HTTP/1.1" 200 -
+INFO:werkzeug:10.30.63.52 - - [03/Dec/2016 20:30:07] "GET /attendance.pdf?qdata=%7B%27q15%27%3A+%7B%27Disagree%27%3A+0%2C+%27No+opinion%27%3A+0%2C+%27Strongly+Agree%27%3A+0%2C+%27Agree%27%3A+0%2C+%27N%2FA%27%3A+0%2C+%27Strongly+Disagree%27%3A+0%7D%2C+%27q14%27%3A+%7B%27Disagree%27%3A+0%2C+%27No+opinion%27%3A+0%2C+%27Strongly+Agree%27%3A+0%2C+%27Agree%27%3A+0%2C+%27N%2FA%27%3A+0%2C+%27Strongly+Disagree%27%3A+0%7D%2C+%27q13%27%3A+%7B%27Disagree%27%3A+0%2C+%27No+opinion%27%3A+0%2C+%27Strongly+Agree%27%3A+0%2C+%27Agree%27%3A+0%2C+%27N%2FA%27%3A+0%2C+%27Strongly+Disagree%27%3A+0%7D%2C+%27q12%27%3A+%7B%27Disagree%27%3A+0%2C+%27No+opinion%27%3A+0%2C+%27Strongly+Agree%27%3A+0%2C+%27Agree%27%3A+0%2C+%27N%2FA%27%3A+0%2C+%27Strongly+Disagree%27%3A+0%7D%2C+%27q1%27%3A+%7B%27Disagree%27%3A+0%2C+%27No+opinion%27%3A+0%2C+%27Strongly+Agree%27%3A+0%2C+%27Agree%27%3A+0%2C+%27N%2FA%27%3A+0%2C+%27Strongly+Disagree%27%3A+0%7D%2C+%27q3%27%3A+%7B%27Disagree%27%3A+0%2C+%27No+opinion%27%3A+0%2C+%27Strongly+Agree%27%3A+0%2C+%27Agree%27%3A+0%2C+%27N%2FA%27%3A+0%2C+%27Strongly+Disagree%27%3A+0%7D%2C+%27q2%27%3A+%7B%27Disagree%27%3A+0%2C+%27No+opinion%27%3A+0%2C+%27Strongly+Agree%27%3A+0%2C+%27Agree%27%3A+0%2C+%27N%2FA%27%3A+0%2C+%27Strongly+Disagree%27%3A+0%7D%2C+%27q5%27%3A+%7B%27Disagree%27%3A+0%2C+%27No+opinion%27%3A+0%2C+%27Strongly+Agree%27%3A+0%2C+%27Agree%27%3A+0%2C+%27N%2FA%27%3A+0%2C+%27Strongly+Disagree%27%3A+0%7D%2C+%27q4%27%3A+%7B%27Disagree%27%3A+0%2C+%27No+opinion%27%3A+0%2C+%27Strongly+Agree%27%3A+0%2C+%27Agree%27%3A+0%2C+%27N%2FA%27%3A+0%2C+%27Strongly+Disagree%27%3A+0%7D%2C+%27q7%27%3A+%7B%27Disagree%27%3A+0%2C+%27No+opinion%27%3A+0%2C+%27Strongly+Agree%27%3A+0%2C+%27Agree%27%3A+0%2C+%27N%2FA%27%3A+0%2C+%27Strongly+Disagree%27%3A+0%7D%2C+%27q6%27%3A+%7B%27Disagree%27%3A+0%2C+%27No+opinion%27%3A+0%2C+%27Strongly+Agree%27%3A+0%2C+%27Agree%27%3A+0%2C+%27N%2FA%27%3A+0%2C+%27Strongly+Disagree%27%3A+0%7D%2C+%27q9%27%3A+%7B%27Disagree%27%3A+0%2C+%27No+opinion%27%3A+0%2C+%27Strongly+Agree%27%3A+0%2C+%27Agree%27%3A+0%2C+%27N%2FA%27%3A+0%2C+%27Strongly+Disagree%27%3A+0%7D%2C+%27q8%27%3A+%7B%27Disagree%27%3A+0%2C+%27No+opinion%27%3A+0%2C+%27Strongly+Agree%27%3A+0%2C+%27Agree%27%3A+0%2C+%27N%2FA%27%3A+0%2C+%27Strongly+Disagree%27%3A+0%7D%7D&fdata=%7B%27Training%27%3A+0%2C+%27Forum%27%3A+0%2C+%27Festival%27%3A+0%2C+%27Other%27%3A+0%2C+%27Speaker%27%3A+0%2C+%27Panel%27%3A+0%7D&adata=%7B%27Training%27%3A+1771L%2C+%27Forum%27%3A+500L%2C+%27Festival%27%3A+417L%2C+%27Other%27%3A+0%2C+%27Speaker%27%3A+1372L%2C+%27Panel%27%3A+999L%7D HTTP/1.1" 500 -
+INFO:werkzeug:10.30.63.52 - - [03/Dec/2016 20:30:07] "GET /attendance.pdf?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO:werkzeug:10.30.63.52 - - [03/Dec/2016 20:30:07] "GET /attendance.pdf?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO:werkzeug:10.30.63.52 - - [03/Dec/2016 20:30:07] "GET /attendance.pdf?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO:werkzeug:10.30.63.52 - - [03/Dec/2016 20:30:07] "GET /attendance.pdf?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug:10.30.63.52 - - [03/Dec/2016 20:30:07] "GET /attendance.pdf?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+INFO:werkzeug:10.30.63.52 - - [03/Dec/2016 20:30:07] "GET /attendance.pdf?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/var/www/html/hrc/hrc/__init__.py', reloading
+INFO:root:Database Connection Success 	2016-12-03
+INFO:werkzeug:10.30.63.52 - - [03/Dec/2016 20:32:07] "GET /report/finance HTTP/1.1" 200 -
+INFO:root:Database Connection Success 	2016-12-03
+INFO:werkzeug:10.30.63.52 - - [03/Dec/2016 20:32:08] "GET /report/finance HTTP/1.1" 200 -
+INFO:werkzeug:10.30.63.52 - - [03/Dec/2016 20:32:10] "GET /finance/.pdf?qdata=%7B%27q15%27%3A+%7B%27Disagree%27%3A+0%2C+%27No+opinion%27%3A+0%2C+%27Strongly+Agree%27%3A+0%2C+%27Agree%27%3A+0%2C+%27N%2FA%27%3A+0%2C+%27Strongly+Disagree%27%3A+0%7D%2C+%27q14%27%3A+%7B%27Disagree%27%3A+0%2C+%27No+opinion%27%3A+0%2C+%27Strongly+Agree%27%3A+0%2C+%27Agree%27%3A+0%2C+%27N%2FA%27%3A+0%2C+%27Strongly+Disagree%27%3A+0%7D%2C+%27q13%27%3A+%7B%27Disagree%27%3A+0%2C+%27No+opinion%27%3A+0%2C+%27Strongly+Agree%27%3A+0%2C+%27Agree%27%3A+0%2C+%27N%2FA%27%3A+0%2C+%27Strongly+Disagree%27%3A+0%7D%2C+%27q12%27%3A+%7B%27Disagree%27%3A+0%2C+%27No+opinion%27%3A+0%2C+%27Strongly+Agree%27%3A+0%2C+%27Agree%27%3A+0%2C+%27N%2FA%27%3A+0%2C+%27Strongly+Disagree%27%3A+0%7D%2C+%27q1%27%3A+%7B%27Disagree%27%3A+0%2C+%27No+opinion%27%3A+0%2C+%27Strongly+Agree%27%3A+0%2C+%27Agree%27%3A+0%2C+%27N%2FA%27%3A+0%2C+%27Strongly+Disagree%27%3A+0%7D%2C+%27q3%27%3A+%7B%27Disagree%27%3A+0%2C+%27No+opinion%27%3A+0%2C+%27Strongly+Agree%27%3A+0%2C+%27Agree%27%3A+0%2C+%27N%2FA%27%3A+0%2C+%27Strongly+Disagree%27%3A+0%7D%2C+%27q2%27%3A+%7B%27Disagree%27%3A+0%2C+%27No+opinion%27%3A+0%2C+%27Strongly+Agree%27%3A+0%2C+%27Agree%27%3A+0%2C+%27N%2FA%27%3A+0%2C+%27Strongly+Disagree%27%3A+0%7D%2C+%27q5%27%3A+%7B%27Disagree%27%3A+0%2C+%27No+opinion%27%3A+0%2C+%27Strongly+Agree%27%3A+0%2C+%27Agree%27%3A+0%2C+%27N%2FA%27%3A+0%2C+%27Strongly+Disagree%27%3A+0%7D%2C+%27q4%27%3A+%7B%27Disagree%27%3A+0%2C+%27No+opinion%27%3A+0%2C+%27Strongly+Agree%27%3A+0%2C+%27Agree%27%3A+0%2C+%27N%2FA%27%3A+0%2C+%27Strongly+Disagree%27%3A+0%7D%2C+%27q7%27%3A+%7B%27Disagree%27%3A+0%2C+%27No+opinion%27%3A+0%2C+%27Strongly+Agree%27%3A+0%2C+%27Agree%27%3A+0%2C+%27N%2FA%27%3A+0%2C+%27Strongly+Disagree%27%3A+0%7D%2C+%27q6%27%3A+%7B%27Disagree%27%3A+0%2C+%27No+opinion%27%3A+0%2C+%27Strongly+Agree%27%3A+0%2C+%27Agree%27%3A+0%2C+%27N%2FA%27%3A+0%2C+%27Strongly+Disagree%27%3A+0%7D%2C+%27q9%27%3A+%7B%27Disagree%27%3A+0%2C+%27No+opinion%27%3A+0%2C+%27Strongly+Agree%27%3A+0%2C+%27Agree%27%3A+0%2C+%27N%2FA%27%3A+0%2C+%27Strongly+Disagree%27%3A+0%7D%2C+%27q8%27%3A+%7B%27Disagree%27%3A+0%2C+%27No+opinion%27%3A+0%2C+%27Strongly+Agree%27%3A+0%2C+%27Agree%27%3A+0%2C+%27N%2FA%27%3A+0%2C+%27Strongly+Disagree%27%3A+0%7D%7D&fdata=%7B%27Training%27%3A+10073.45%2C+%27Forum%27%3A+500.0%2C+%27Festival%27%3A+526.56%2C+%27Other%27%3A+0%2C+%27Speaker%27%3A+9980.45%2C+%27Panel%27%3A+3599.9%7D&adata=%7B%27Training%27%3A+0%2C+%27Forum%27%3A+0%2C+%27Festival%27%3A+0%2C+%27Other%27%3A+0%2C+%27Speaker%27%3A+0%2C+%27Panel%27%3A+0%7D HTTP/1.1" 500 -
+INFO:werkzeug:10.30.63.52 - - [03/Dec/2016 20:32:10] "GET /finance/.pdf?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO:werkzeug:10.30.63.52 - - [03/Dec/2016 20:32:10] "GET /finance/.pdf?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO:werkzeug:10.30.63.52 - - [03/Dec/2016 20:32:10] "GET /finance/.pdf?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO:werkzeug:10.30.63.52 - - [03/Dec/2016 20:32:10] "GET /finance/.pdf?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug:10.30.63.52 - - [03/Dec/2016 20:32:10] "GET /finance/.pdf?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+INFO:werkzeug:10.30.63.52 - - [03/Dec/2016 20:32:10] "GET /finance/.pdf?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/var/www/html/hrc/hrc/__init__.py', reloading
+INFO:root:Database Connection Success 	2016-12-03
+INFO:werkzeug:10.30.63.52 - - [03/Dec/2016 20:46:09] "GET /report/attendance HTTP/1.1" 200 -
+INFO:root:Database Connection Success 	2016-12-03
+INFO:werkzeug:10.30.63.52 - - [03/Dec/2016 20:46:10] "GET /report/attendance HTTP/1.1" 200 -
+INFO:werkzeug:10.30.63.52 - - [03/Dec/2016 20:46:12] "GET /attendance/%7B%27Training%27:%201771L%2C%20%27Forum%27:%20500L%2C%20%27Festival%27:%20417L%2C%20%27Other%27:%200%2C%20%27Speaker%27:%201372L%2C%20%27Panel%27:%20999L%7D/%7B%27Training%27:%200%2C%20%27Forum%27:%200%2C%20%27Festival%27:%200%2C%20%27Other%27:%200%2C%20%27Speaker%27:%200%2C%20%27Panel%27:%200%7D/%7B%27q15%27:%20%7B%27Disagree%27:%200%2C%20%27No%20opinion%27:%200%2C%20%27Strongly%20Agree%27:%200%2C%20%27Agree%27:%200%2C%20%27N/A%27:%200%2C%20%27Strongly%20Disagree%27:%200%7D%2C%20%27q14%27:%20%7B%27Disagree%27:%200%2C%20%27No%20opinion%27:%200%2C%20%27Strongly%20Agree%27:%200%2C%20%27Agree%27:%200%2C%20%27N/A%27:%200%2C%20%27Strongly%20Disagree%27:%200%7D%2C%20%27q13%27:%20%7B%27Disagree%27:%200%2C%20%27No%20opinion%27:%200%2C%20%27Strongly%20Agree%27:%200%2C%20%27Agree%27:%200%2C%20%27N/A%27:%200%2C%20%27Strongly%20Disagree%27:%200%7D%2C%20%27q12%27:%20%7B%27Disagree%27:%200%2C%20%27No%20opinion%27:%200%2C%20%27Strongly%20Agree%27:%200%2C%20%27Agree%27:%200%2C%20%27N/A%27:%200%2C%20%27Strongly%20Disagree%27:%200%7D%2C%20%27q1%27:%20%7B%27Disagree%27:%200%2C%20%27No%20opinion%27:%200%2C%20%27Strongly%20Agree%27:%200%2C%20%27Agree%27:%200%2C%20%27N/A%27:%200%2C%20%27Strongly%20Disagree%27:%200%7D%2C%20%27q3%27:%20%7B%27Disagree%27:%200%2C%20%27No%20opinion%27:%200%2C%20%27Strongly%20Agree%27:%200%2C%20%27Agree%27:%200%2C%20%27N/A%27:%200%2C%20%27Strongly%20Disagree%27:%200%7D%2C%20%27q2%27:%20%7B%27Disagree%27:%200%2C%20%27No%20opinion%27:%200%2C%20%27Strongly%20Agree%27:%200%2C%20%27Agree%27:%200%2C%20%27N/A%27:%200%2C%20%27Strongly%20Disagree%27:%200%7D%2C%20%27q5%27:%20%7B%27Disagree%27:%200%2C%20%27No%20opinion%27:%200%2C%20%27Strongly%20Agree%27:%200%2C%20%27Agree%27:%200%2C%20%27N/A%27:%200%2C%20%27Strongly%20Disagree%27:%200%7D%2C%20%27q4%27:%20%7B%27Disagree%27:%200%2C%20%27No%20opinion%27:%200%2C%20%27Strongly%20Agree%27:%200%2C%20%27Agree%27:%200%2C%20%27N/A%27:%200%2C%20%27Strongly%20Disagree%27:%200%7D%2C%20%27q7%27:%20%7B%27Disagree%27:%200%2C%20%27No%20opinion%27:%200%2C%20%27Strongly%20Agree%27:%200%2C%20%27Agree%27:%200%2C%20%27N/A%27:%200%2C%20%27Strongly%20Disagree%27:%200%7D%2C%20%27q6%27:%20%7B%27Disagree%27:%200%2C%20%27No%20opinion%27:%200%2C%20%27Strongly%20Agree%27:%200%2C%20%27Agree%27:%200%2C%20%27N/A%27:%200%2C%20%27Strongly%20Disagree%27:%200%7D%2C%20%27q9%27:%20%7B%27Disagree%27:%200%2C%20%27No%20opinion%27:%200%2C%20%27Strongly%20Agree%27:%200%2C%20%27Agree%27:%200%2C%20%27N/A%27:%200%2C%20%27Strongly%20Disagree%27:%200%7D%2C%20%27q8%27:%20%7B%27Disagree%27:%200%2C%20%27No%20opinion%27:%200%2C%20%27Strongly%20Agree%27:%200%2C%20%27Agree%27:%200%2C%20%27N/A%27:%200%2C%20%27Strongly%20Disagree%27:%200%7D%7D.pdf HTTP/1.1" 404 -
+INFO:werkzeug:10.30.63.52 - - [03/Dec/2016 20:46:37] "GET /home HTTP/1.1" 200 -
+INFO:werkzeug:10.30.63.52 - - [03/Dec/2016 20:46:38] "GET /home HTTP/1.1" 200 -
+INFO:werkzeug:10.30.63.52 - - [03/Dec/2016 20:46:39] "GET /home HTTP/1.1" 200 -
+INFO:werkzeug:10.30.63.52 - - [03/Dec/2016 20:46:39] "GET /home HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/var/www/html/hrc/hrc/__init__.py', reloading
+INFO:root:Database Connection Success 	2016-12-03
+INFO:werkzeug:10.30.63.52 - - [03/Dec/2016 21:09:39] "GET /report/attendance HTTP/1.1" 200 -
+INFO:root:Database Connection Success 	2016-12-03
+INFO:werkzeug:10.30.63.52 - - [03/Dec/2016 21:09:40] "GET /report/attendance HTTP/1.1" 200 -
+INFO:werkzeug:10.30.63.52 - - [03/Dec/2016 21:09:41] "GET /attendance/%7B%27Training%27:%201771L%2C%20%27Forum%27:%20500L%2C%20%27Festival%27:%20417L%2C%20%27Other%27:%200%2C%20%27Speaker%27:%201372L%2C%20%27Panel%27:%20999L%7D/%7B%27Training%27:%200%2C%20%27Forum%27:%200%2C%20%27Festival%27:%200%2C%20%27Other%27:%200%2C%20%27Speaker%27:%200%2C%20%27Panel%27:%200%7D/%7B%27q15%27:%20%7B%27Disagree%27:%200%2C%20%27No%20opinion%27:%200%2C%20%27Strongly%20Agree%27:%200%2C%20%27Agree%27:%200%2C%20%27N/A%27:%200%2C%20%27Strongly%20Disagree%27:%200%7D%2C%20%27q14%27:%20%7B%27Disagree%27:%200%2C%20%27No%20opinion%27:%200%2C%20%27Strongly%20Agree%27:%200%2C%20%27Agree%27:%200%2C%20%27N/A%27:%200%2C%20%27Strongly%20Disagree%27:%200%7D%2C%20%27q13%27:%20%7B%27Disagree%27:%200%2C%20%27No%20opinion%27:%200%2C%20%27Strongly%20Agree%27:%200%2C%20%27Agree%27:%200%2C%20%27N/A%27:%200%2C%20%27Strongly%20Disagree%27:%200%7D%2C%20%27q12%27:%20%7B%27Disagree%27:%200%2C%20%27No%20opinion%27:%200%2C%20%27Strongly%20Agree%27:%200%2C%20%27Agree%27:%200%2C%20%27N/A%27:%200%2C%20%27Strongly%20Disagree%27:%200%7D%2C%20%27q1%27:%20%7B%27Disagree%27:%200%2C%20%27No%20opinion%27:%200%2C%20%27Strongly%20Agree%27:%200%2C%20%27Agree%27:%200%2C%20%27N/A%27:%200%2C%20%27Strongly%20Disagree%27:%200%7D%2C%20%27q3%27:%20%7B%27Disagree%27:%200%2C%20%27No%20opinion%27:%200%2C%20%27Strongly%20Agree%27:%200%2C%20%27Agree%27:%200%2C%20%27N/A%27:%200%2C%20%27Strongly%20Disagree%27:%200%7D%2C%20%27q2%27:%20%7B%27Disagree%27:%200%2C%20%27No%20opinion%27:%200%2C%20%27Strongly%20Agree%27:%200%2C%20%27Agree%27:%200%2C%20%27N/A%27:%200%2C%20%27Strongly%20Disagree%27:%200%7D%2C%20%27q5%27:%20%7B%27Disagree%27:%200%2C%20%27No%20opinion%27:%200%2C%20%27Strongly%20Agree%27:%200%2C%20%27Agree%27:%200%2C%20%27N/A%27:%200%2C%20%27Strongly%20Disagree%27:%200%7D%2C%20%27q4%27:%20%7B%27Disagree%27:%200%2C%20%27No%20opinion%27:%200%2C%20%27Strongly%20Agree%27:%200%2C%20%27Agree%27:%200%2C%20%27N/A%27:%200%2C%20%27Strongly%20Disagree%27:%200%7D%2C%20%27q7%27:%20%7B%27Disagree%27:%200%2C%20%27No%20opinion%27:%200%2C%20%27Strongly%20Agree%27:%200%2C%20%27Agree%27:%200%2C%20%27N/A%27:%200%2C%20%27Strongly%20Disagree%27:%200%7D%2C%20%27q6%27:%20%7B%27Disagree%27:%200%2C%20%27No%20opinion%27:%200%2C%20%27Strongly%20Agree%27:%200%2C%20%27Agree%27:%200%2C%20%27N/A%27:%200%2C%20%27Strongly%20Disagree%27:%200%7D%2C%20%27q9%27:%20%7B%27Disagree%27:%200%2C%20%27No%20opinion%27:%200%2C%20%27Strongly%20Agree%27:%200%2C%20%27Agree%27:%200%2C%20%27N/A%27:%200%2C%20%27Strongly%20Disagree%27:%200%7D%2C%20%27q8%27:%20%7B%27Disagree%27:%200%2C%20%27No%20opinion%27:%200%2C%20%27Strongly%20Agree%27:%200%2C%20%27Agree%27:%200%2C%20%27N/A%27:%200%2C%20%27Strongly%20Disagree%27:%200%7D%7D.pdf HTTP/1.1" 404 -
+INFO:werkzeug: * Detected change in '/var/www/html/hrc/hrc/__init__.py', reloading
+INFO:root:Database Connection Success 	2016-12-03
+INFO:werkzeug:10.30.63.52 - - [03/Dec/2016 21:14:55] "GET /report/finance HTTP/1.1" 200 -
+INFO:root:Database Connection Success 	2016-12-03
+INFO:werkzeug:10.30.63.52 - - [03/Dec/2016 21:14:56] "GET /report/finance HTTP/1.1" 200 -
+INFO:werkzeug:10.30.63.52 - - [03/Dec/2016 21:14:57] "GET /finance/%7B%27Training%27:%200%2C%20%27Forum%27:%200%2C%20%27Festival%27:%200%2C%20%27Other%27:%200%2C%20%27Speaker%27:%200%2C%20%27Panel%27:%200%7D/%7B%27Training%27:%2010073.45%2C%20%27Forum%27:%20500.0%2C%20%27Festival%27:%20526.56%2C%20%27Other%27:%200%2C%20%27Speaker%27:%209980.45%2C%20%27Panel%27:%203599.9%7D/%7B%27q15%27:%20%7B%27Disagree%27:%200%2C%20%27No%20opinion%27:%200%2C%20%27Strongly%20Agree%27:%200%2C%20%27Agree%27:%200%2C%20%27N/A%27:%200%2C%20%27Strongly%20Disagree%27:%200%7D%2C%20%27q14%27:%20%7B%27Disagree%27:%200%2C%20%27No%20opinion%27:%200%2C%20%27Strongly%20Agree%27:%200%2C%20%27Agree%27:%200%2C%20%27N/A%27:%200%2C%20%27Strongly%20Disagree%27:%200%7D%2C%20%27q13%27:%20%7B%27Disagree%27:%200%2C%20%27No%20opinion%27:%200%2C%20%27Strongly%20Agree%27:%200%2C%20%27Agree%27:%200%2C%20%27N/A%27:%200%2C%20%27Strongly%20Disagree%27:%200%7D%2C%20%27q12%27:%20%7B%27Disagree%27:%200%2C%20%27No%20opinion%27:%200%2C%20%27Strongly%20Agree%27:%200%2C%20%27Agree%27:%200%2C%20%27N/A%27:%200%2C%20%27Strongly%20Disagree%27:%200%7D%2C%20%27q1%27:%20%7B%27Disagree%27:%200%2C%20%27No%20opinion%27:%200%2C%20%27Strongly%20Agree%27:%200%2C%20%27Agree%27:%200%2C%20%27N/A%27:%200%2C%20%27Strongly%20Disagree%27:%200%7D%2C%20%27q3%27:%20%7B%27Disagree%27:%200%2C%20%27No%20opinion%27:%200%2C%20%27Strongly%20Agree%27:%200%2C%20%27Agree%27:%200%2C%20%27N/A%27:%200%2C%20%27Strongly%20Disagree%27:%200%7D%2C%20%27q2%27:%20%7B%27Disagree%27:%200%2C%20%27No%20opinion%27:%200%2C%20%27Strongly%20Agree%27:%200%2C%20%27Agree%27:%200%2C%20%27N/A%27:%200%2C%20%27Strongly%20Disagree%27:%200%7D%2C%20%27q5%27:%20%7B%27Disagree%27:%200%2C%20%27No%20opinion%27:%200%2C%20%27Strongly%20Agree%27:%200%2C%20%27Agree%27:%200%2C%20%27N/A%27:%200%2C%20%27Strongly%20Disagree%27:%200%7D%2C%20%27q4%27:%20%7B%27Disagree%27:%200%2C%20%27No%20opinion%27:%200%2C%20%27Strongly%20Agree%27:%200%2C%20%27Agree%27:%200%2C%20%27N/A%27:%200%2C%20%27Strongly%20Disagree%27:%200%7D%2C%20%27q7%27:%20%7B%27Disagree%27:%200%2C%20%27No%20opinion%27:%200%2C%20%27Strongly%20Agree%27:%200%2C%20%27Agree%27:%200%2C%20%27N/A%27:%200%2C%20%27Strongly%20Disagree%27:%200%7D%2C%20%27q6%27:%20%7B%27Disagree%27:%200%2C%20%27No%20opinion%27:%200%2C%20%27Strongly%20Agree%27:%200%2C%20%27Agree%27:%200%2C%20%27N/A%27:%200%2C%20%27Strongly%20Disagree%27:%200%7D%2C%20%27q9%27:%20%7B%27Disagree%27:%200%2C%20%27No%20opinion%27:%200%2C%20%27Strongly%20Agree%27:%200%2C%20%27Agree%27:%200%2C%20%27N/A%27:%200%2C%20%27Strongly%20Disagree%27:%200%7D%2C%20%27q8%27:%20%7B%27Disagree%27:%200%2C%20%27No%20opinion%27:%200%2C%20%27Strongly%20Agree%27:%200%2C%20%27Agree%27:%200%2C%20%27N/A%27:%200%2C%20%27Strongly%20Disagree%27:%200%7D%7D.pdf HTTP/1.1" 404 -
+INFO:werkzeug: * Detected change in '/var/www/html/hrc/hrc/__init__.py', reloading
+INFO:root:Database Connection Success 	2016-12-03
+INFO:werkzeug:10.30.63.52 - - [03/Dec/2016 21:17:05] "GET /report/attendance HTTP/1.1" 200 -
+INFO:root:Database Connection Success 	2016-12-03
+INFO:werkzeug:10.30.63.52 - - [03/Dec/2016 21:17:06] "GET /report/attendance HTTP/1.1" 200 -
+INFO:werkzeug:10.30.63.52 - - [03/Dec/2016 21:17:08] "GET /attendance/%7B%27Training%27:%201771L%2C%20%27Forum%27:%20500L%2C%20%27Festival%27:%20417L%2C%20%27Other%27:%200%2C%20%27Speaker%27:%201372L%2C%20%27Panel%27:%20999L%7D/%7B%27Training%27:%200%2C%20%27Forum%27:%200%2C%20%27Festival%27:%200%2C%20%27Other%27:%200%2C%20%27Speaker%27:%200%2C%20%27Panel%27:%200%7D/%7B%27q15%27:%20%7B%27Disagree%27:%200%2C%20%27No%20opinion%27:%200%2C%20%27Strongly%20Agree%27:%200%2C%20%27Agree%27:%200%2C%20%27N/A%27:%200%2C%20%27Strongly%20Disagree%27:%200%7D%2C%20%27q14%27:%20%7B%27Disagree%27:%200%2C%20%27No%20opinion%27:%200%2C%20%27Strongly%20Agree%27:%200%2C%20%27Agree%27:%200%2C%20%27N/A%27:%200%2C%20%27Strongly%20Disagree%27:%200%7D%2C%20%27q13%27:%20%7B%27Disagree%27:%200%2C%20%27No%20opinion%27:%200%2C%20%27Strongly%20Agree%27:%200%2C%20%27Agree%27:%200%2C%20%27N/A%27:%200%2C%20%27Strongly%20Disagree%27:%200%7D%2C%20%27q12%27:%20%7B%27Disagree%27:%200%2C%20%27No%20opinion%27:%200%2C%20%27Strongly%20Agree%27:%200%2C%20%27Agree%27:%200%2C%20%27N/A%27:%200%2C%20%27Strongly%20Disagree%27:%200%7D%2C%20%27q1%27:%20%7B%27Disagree%27:%200%2C%20%27No%20opinion%27:%200%2C%20%27Strongly%20Agree%27:%200%2C%20%27Agree%27:%200%2C%20%27N/A%27:%200%2C%20%27Strongly%20Disagree%27:%200%7D%2C%20%27q3%27:%20%7B%27Disagree%27:%200%2C%20%27No%20opinion%27:%200%2C%20%27Strongly%20Agree%27:%200%2C%20%27Agree%27:%200%2C%20%27N/A%27:%200%2C%20%27Strongly%20Disagree%27:%200%7D%2C%20%27q2%27:%20%7B%27Disagree%27:%200%2C%20%27No%20opinion%27:%200%2C%20%27Strongly%20Agree%27:%200%2C%20%27Agree%27:%200%2C%20%27N/A%27:%200%2C%20%27Strongly%20Disagree%27:%200%7D%2C%20%27q5%27:%20%7B%27Disagree%27:%200%2C%20%27No%20opinion%27:%200%2C%20%27Strongly%20Agree%27:%200%2C%20%27Agree%27:%200%2C%20%27N/A%27:%200%2C%20%27Strongly%20Disagree%27:%200%7D%2C%20%27q4%27:%20%7B%27Disagree%27:%200%2C%20%27No%20opinion%27:%200%2C%20%27Strongly%20Agree%27:%200%2C%20%27Agree%27:%200%2C%20%27N/A%27:%200%2C%20%27Strongly%20Disagree%27:%200%7D%2C%20%27q7%27:%20%7B%27Disagree%27:%200%2C%20%27No%20opinion%27:%200%2C%20%27Strongly%20Agree%27:%200%2C%20%27Agree%27:%200%2C%20%27N/A%27:%200%2C%20%27Strongly%20Disagree%27:%200%7D%2C%20%27q6%27:%20%7B%27Disagree%27:%200%2C%20%27No%20opinion%27:%200%2C%20%27Strongly%20Agree%27:%200%2C%20%27Agree%27:%200%2C%20%27N/A%27:%200%2C%20%27Strongly%20Disagree%27:%200%7D%2C%20%27q9%27:%20%7B%27Disagree%27:%200%2C%20%27No%20opinion%27:%200%2C%20%27Strongly%20Agree%27:%200%2C%20%27Agree%27:%200%2C%20%27N/A%27:%200%2C%20%27Strongly%20Disagree%27:%200%7D%2C%20%27q8%27:%20%7B%27Disagree%27:%200%2C%20%27No%20opinion%27:%200%2C%20%27Strongly%20Agree%27:%200%2C%20%27Agree%27:%200%2C%20%27N/A%27:%200%2C%20%27Strongly%20Disagree%27:%200%7D%7D.pdf HTTP/1.1" 404 -
+INFO:root:Database Connection Success 	2016-12-03
+INFO:werkzeug:10.30.63.52 - - [03/Dec/2016 22:27:00] "GET /report/finance HTTP/1.1" 200 -
+INFO:root:Database Connection Success 	2016-12-03
+INFO:werkzeug:10.30.63.52 - - [03/Dec/2016 22:27:01] "GET /report/finance HTTP/1.1" 200 -
+INFO:werkzeug:10.30.63.52 - - [03/Dec/2016 22:27:03] "GET /finance/%7B%27Training%27:%200%2C%20%27Forum%27:%200%2C%20%27Festival%27:%200%2C%20%27Other%27:%200%2C%20%27Speaker%27:%200%2C%20%27Panel%27:%200%7D/%7B%27Training%27:%2010073.45%2C%20%27Forum%27:%20500.0%2C%20%27Festival%27:%20526.56%2C%20%27Other%27:%200%2C%20%27Speaker%27:%209980.45%2C%20%27Panel%27:%203599.9%7D/%7B%27q15%27:%20%7B%27Disagree%27:%200%2C%20%27No%20opinion%27:%200%2C%20%27Strongly%20Agree%27:%200%2C%20%27Agree%27:%200%2C%20%27N/A%27:%200%2C%20%27Strongly%20Disagree%27:%200%7D%2C%20%27q14%27:%20%7B%27Disagree%27:%200%2C%20%27No%20opinion%27:%200%2C%20%27Strongly%20Agree%27:%200%2C%20%27Agree%27:%200%2C%20%27N/A%27:%200%2C%20%27Strongly%20Disagree%27:%200%7D%2C%20%27q13%27:%20%7B%27Disagree%27:%200%2C%20%27No%20opinion%27:%200%2C%20%27Strongly%20Agree%27:%200%2C%20%27Agree%27:%200%2C%20%27N/A%27:%200%2C%20%27Strongly%20Disagree%27:%200%7D%2C%20%27q12%27:%20%7B%27Disagree%27:%200%2C%20%27No%20opinion%27:%200%2C%20%27Strongly%20Agree%27:%200%2C%20%27Agree%27:%200%2C%20%27N/A%27:%200%2C%20%27Strongly%20Disagree%27:%200%7D%2C%20%27q1%27:%20%7B%27Disagree%27:%200%2C%20%27No%20opinion%27:%200%2C%20%27Strongly%20Agree%27:%200%2C%20%27Agree%27:%200%2C%20%27N/A%27:%200%2C%20%27Strongly%20Disagree%27:%200%7D%2C%20%27q3%27:%20%7B%27Disagree%27:%200%2C%20%27No%20opinion%27:%200%2C%20%27Strongly%20Agree%27:%200%2C%20%27Agree%27:%200%2C%20%27N/A%27:%200%2C%20%27Strongly%20Disagree%27:%200%7D%2C%20%27q2%27:%20%7B%27Disagree%27:%200%2C%20%27No%20opinion%27:%200%2C%20%27Strongly%20Agree%27:%200%2C%20%27Agree%27:%200%2C%20%27N/A%27:%200%2C%20%27Strongly%20Disagree%27:%200%7D%2C%20%27q5%27:%20%7B%27Disagree%27:%200%2C%20%27No%20opinion%27:%200%2C%20%27Strongly%20Agree%27:%200%2C%20%27Agree%27:%200%2C%20%27N/A%27:%200%2C%20%27Strongly%20Disagree%27:%200%7D%2C%20%27q4%27:%20%7B%27Disagree%27:%200%2C%20%27No%20opinion%27:%200%2C%20%27Strongly%20Agree%27:%200%2C%20%27Agree%27:%200%2C%20%27N/A%27:%200%2C%20%27Strongly%20Disagree%27:%200%7D%2C%20%27q7%27:%20%7B%27Disagree%27:%200%2C%20%27No%20opinion%27:%200%2C%20%27Strongly%20Agree%27:%200%2C%20%27Agree%27:%200%2C%20%27N/A%27:%200%2C%20%27Strongly%20Disagree%27:%200%7D%2C%20%27q6%27:%20%7B%27Disagree%27:%200%2C%20%27No%20opinion%27:%200%2C%20%27Strongly%20Agree%27:%200%2C%20%27Agree%27:%200%2C%20%27N/A%27:%200%2C%20%27Strongly%20Disagree%27:%200%7D%2C%20%27q9%27:%20%7B%27Disagree%27:%200%2C%20%27No%20opinion%27:%200%2C%20%27Strongly%20Agree%27:%200%2C%20%27Agree%27:%200%2C%20%27N/A%27:%200%2C%20%27Strongly%20Disagree%27:%200%7D%2C%20%27q8%27:%20%7B%27Disagree%27:%200%2C%20%27No%20opinion%27:%200%2C%20%27Strongly%20Agree%27:%200%2C%20%27Agree%27:%200%2C%20%27N/A%27:%200%2C%20%27Strongly%20Disagree%27:%200%7D%7D.pdf HTTP/1.1" 404 -
+INFO:root:Database Connection Success 	2016-12-03
+INFO:werkzeug:10.30.63.52 - - [03/Dec/2016 22:31:16] "GET /report/finance HTTP/1.1" 200 -
+INFO:root:Database Connection Success 	2016-12-03
+INFO:werkzeug:10.30.63.52 - - [03/Dec/2016 22:31:17] "GET /report/finance HTTP/1.1" 200 -
+INFO:werkzeug:10.30.63.52 - - [03/Dec/2016 22:31:18] "GET /finance/%7B%27Training%27:%200%2C%20%27Forum%27:%200%2C%20%27Festival%27:%200%2C%20%27Other%27:%200%2C%20%27Speaker%27:%200%2C%20%27Panel%27:%200%7D/%7B%27Training%27:%2010073.45%2C%20%27Forum%27:%20500.0%2C%20%27Festival%27:%20526.56%2C%20%27Other%27:%200%2C%20%27Speaker%27:%209980.45%2C%20%27Panel%27:%203599.9%7D/%7B%27q15%27:%20%7B%27Disagree%27:%200%2C%20%27No%20opinion%27:%200%2C%20%27Strongly%20Agree%27:%200%2C%20%27Agree%27:%200%2C%20%27N/A%27:%200%2C%20%27Strongly%20Disagree%27:%200%7D%2C%20%27q14%27:%20%7B%27Disagree%27:%200%2C%20%27No%20opinion%27:%200%2C%20%27Strongly%20Agree%27:%200%2C%20%27Agree%27:%200%2C%20%27N/A%27:%200%2C%20%27Strongly%20Disagree%27:%200%7D%2C%20%27q13%27:%20%7B%27Disagree%27:%200%2C%20%27No%20opinion%27:%200%2C%20%27Strongly%20Agree%27:%200%2C%20%27Agree%27:%200%2C%20%27N/A%27:%200%2C%20%27Strongly%20Disagree%27:%200%7D%2C%20%27q12%27:%20%7B%27Disagree%27:%200%2C%20%27No%20opinion%27:%200%2C%20%27Strongly%20Agree%27:%200%2C%20%27Agree%27:%200%2C%20%27N/A%27:%200%2C%20%27Strongly%20Disagree%27:%200%7D%2C%20%27q1%27:%20%7B%27Disagree%27:%200%2C%20%27No%20opinion%27:%200%2C%20%27Strongly%20Agree%27:%200%2C%20%27Agree%27:%200%2C%20%27N/A%27:%200%2C%20%27Strongly%20Disagree%27:%200%7D%2C%20%27q3%27:%20%7B%27Disagree%27:%200%2C%20%27No%20opinion%27:%200%2C%20%27Strongly%20Agree%27:%200%2C%20%27Agree%27:%200%2C%20%27N/A%27:%200%2C%20%27Strongly%20Disagree%27:%200%7D%2C%20%27q2%27:%20%7B%27Disagree%27:%200%2C%20%27No%20opinion%27:%200%2C%20%27Strongly%20Agree%27:%200%2C%20%27Agree%27:%200%2C%20%27N/A%27:%200%2C%20%27Strongly%20Disagree%27:%200%7D%2C%20%27q5%27:%20%7B%27Disagree%27:%200%2C%20%27No%20opinion%27:%200%2C%20%27Strongly%20Agree%27:%200%2C%20%27Agree%27:%200%2C%20%27N/A%27:%200%2C%20%27Strongly%20Disagree%27:%200%7D%2C%20%27q4%27:%20%7B%27Disagree%27:%200%2C%20%27No%20opinion%27:%200%2C%20%27Strongly%20Agree%27:%200%2C%20%27Agree%27:%200%2C%20%27N/A%27:%200%2C%20%27Strongly%20Disagree%27:%200%7D%2C%20%27q7%27:%20%7B%27Disagree%27:%200%2C%20%27No%20opinion%27:%200%2C%20%27Strongly%20Agree%27:%200%2C%20%27Agree%27:%200%2C%20%27N/A%27:%200%2C%20%27Strongly%20Disagree%27:%200%7D%2C%20%27q6%27:%20%7B%27Disagree%27:%200%2C%20%27No%20opinion%27:%200%2C%20%27Strongly%20Agree%27:%200%2C%20%27Agree%27:%200%2C%20%27N/A%27:%200%2C%20%27Strongly%20Disagree%27:%200%7D%2C%20%27q9%27:%20%7B%27Disagree%27:%200%2C%20%27No%20opinion%27:%200%2C%20%27Strongly%20Agree%27:%200%2C%20%27Agree%27:%200%2C%20%27N/A%27:%200%2C%20%27Strongly%20Disagree%27:%200%7D%2C%20%27q8%27:%20%7B%27Disagree%27:%200%2C%20%27No%20opinion%27:%200%2C%20%27Strongly%20Agree%27:%200%2C%20%27Agree%27:%200%2C%20%27N/A%27:%200%2C%20%27Strongly%20Disagree%27:%200%7D%7D.pdf HTTP/1.1" 404 -
+INFO:werkzeug: * Detected change in '/var/www/html/hrc/hrc/__init__.py', reloading
+INFO:root:Database Connection Success 	2016-12-03
+INFO:werkzeug:10.30.63.52 - - [03/Dec/2016 22:33:08] "GET /report/finance HTTP/1.1" 200 -
+INFO:werkzeug:10.30.63.52 - - [03/Dec/2016 22:33:09] "GET /finance/%7B%27Training%27:%200%2C%20%27Forum%27:%200%2C%20%27Festival%27:%200%2C%20%27Other%27:%200%2C%20%27Speaker%27:%200%2C%20%27Panel%27:%200%7D/%7B%27Training%27:%2010073.45%2C%20%27Forum%27:%20500.0%2C%20%27Festival%27:%20526.56%2C%20%27Other%27:%200%2C%20%27Speaker%27:%209980.45%2C%20%27Panel%27:%203599.9%7D/%7B%27q15%27:%20%7B%27Disagree%27:%200%2C%20%27No%20opinion%27:%200%2C%20%27Strongly%20Agree%27:%200%2C%20%27Agree%27:%200%2C%20%27N/A%27:%200%2C%20%27Strongly%20Disagree%27:%200%7D%2C%20%27q14%27:%20%7B%27Disagree%27:%200%2C%20%27No%20opinion%27:%200%2C%20%27Strongly%20Agree%27:%200%2C%20%27Agree%27:%200%2C%20%27N/A%27:%200%2C%20%27Strongly%20Disagree%27:%200%7D%2C%20%27q13%27:%20%7B%27Disagree%27:%200%2C%20%27No%20opinion%27:%200%2C%20%27Strongly%20Agree%27:%200%2C%20%27Agree%27:%200%2C%20%27N/A%27:%200%2C%20%27Strongly%20Disagree%27:%200%7D%2C%20%27q12%27:%20%7B%27Disagree%27:%200%2C%20%27No%20opinion%27:%200%2C%20%27Strongly%20Agree%27:%200%2C%20%27Agree%27:%200%2C%20%27N/A%27:%200%2C%20%27Strongly%20Disagree%27:%200%7D%2C%20%27q1%27:%20%7B%27Disagree%27:%200%2C%20%27No%20opinion%27:%200%2C%20%27Strongly%20Agree%27:%200%2C%20%27Agree%27:%200%2C%20%27N/A%27:%200%2C%20%27Strongly%20Disagree%27:%200%7D%2C%20%27q3%27:%20%7B%27Disagree%27:%200%2C%20%27No%20opinion%27:%200%2C%20%27Strongly%20Agree%27:%200%2C%20%27Agree%27:%200%2C%20%27N/A%27:%200%2C%20%27Strongly%20Disagree%27:%200%7D%2C%20%27q2%27:%20%7B%27Disagree%27:%200%2C%20%27No%20opinion%27:%200%2C%20%27Strongly%20Agree%27:%200%2C%20%27Agree%27:%200%2C%20%27N/A%27:%200%2C%20%27Strongly%20Disagree%27:%200%7D%2C%20%27q5%27:%20%7B%27Disagree%27:%200%2C%20%27No%20opinion%27:%200%2C%20%27Strongly%20Agree%27:%200%2C%20%27Agree%27:%200%2C%20%27N/A%27:%200%2C%20%27Strongly%20Disagree%27:%200%7D%2C%20%27q4%27:%20%7B%27Disagree%27:%200%2C%20%27No%20opinion%27:%200%2C%20%27Strongly%20Agree%27:%200%2C%20%27Agree%27:%200%2C%20%27N/A%27:%200%2C%20%27Strongly%20Disagree%27:%200%7D%2C%20%27q7%27:%20%7B%27Disagree%27:%200%2C%20%27No%20opinion%27:%200%2C%20%27Strongly%20Agree%27:%200%2C%20%27Agree%27:%200%2C%20%27N/A%27:%200%2C%20%27Strongly%20Disagree%27:%200%7D%2C%20%27q6%27:%20%7B%27Disagree%27:%200%2C%20%27No%20opinion%27:%200%2C%20%27Strongly%20Agree%27:%200%2C%20%27Agree%27:%200%2C%20%27N/A%27:%200%2C%20%27Strongly%20Disagree%27:%200%7D%2C%20%27q9%27:%20%7B%27Disagree%27:%200%2C%20%27No%20opinion%27:%200%2C%20%27Strongly%20Agree%27:%200%2C%20%27Agree%27:%200%2C%20%27N/A%27:%200%2C%20%27Strongly%20Disagree%27:%200%7D%2C%20%27q8%27:%20%7B%27Disagree%27:%200%2C%20%27No%20opinion%27:%200%2C%20%27Strongly%20Agree%27:%200%2C%20%27Agree%27:%200%2C%20%27N/A%27:%200%2C%20%27Strongly%20Disagree%27:%200%7D%7D.pdf HTTP/1.1" 404 -
+INFO:root:Database Connection Success 	2016-12-03
+INFO:werkzeug:10.30.63.52 - - [03/Dec/2016 22:45:54] "GET /report/finance HTTP/1.1" 200 -
+INFO:root:Database Connection Success 	2016-12-03
+INFO:werkzeug:10.30.63.52 - - [03/Dec/2016 22:45:55] "GET /report/finance HTTP/1.1" 200 -
+INFO:werkzeug:10.30.63.52 - - [03/Dec/2016 22:45:57] "GET /finance/%7B%27Training%27:%200%2C%20%27Forum%27:%200%2C%20%27Festival%27:%200%2C%20%27Other%27:%200%2C%20%27Speaker%27:%200%2C%20%27Panel%27:%200%7D/%7B%27Training%27:%2010073.45%2C%20%27Forum%27:%20500.0%2C%20%27Festival%27:%20526.56%2C%20%27Other%27:%200%2C%20%27Speaker%27:%209980.45%2C%20%27Panel%27:%203599.9%7D/%7B%27q15%27:%20%7B%27Disagree%27:%200%2C%20%27No%20opinion%27:%200%2C%20%27Strongly%20Agree%27:%200%2C%20%27Agree%27:%200%2C%20%27N/A%27:%200%2C%20%27Strongly%20Disagree%27:%200%7D%2C%20%27q14%27:%20%7B%27Disagree%27:%200%2C%20%27No%20opinion%27:%200%2C%20%27Strongly%20Agree%27:%200%2C%20%27Agree%27:%200%2C%20%27N/A%27:%200%2C%20%27Strongly%20Disagree%27:%200%7D%2C%20%27q13%27:%20%7B%27Disagree%27:%200%2C%20%27No%20opinion%27:%200%2C%20%27Strongly%20Agree%27:%200%2C%20%27Agree%27:%200%2C%20%27N/A%27:%200%2C%20%27Strongly%20Disagree%27:%200%7D%2C%20%27q12%27:%20%7B%27Disagree%27:%200%2C%20%27No%20opinion%27:%200%2C%20%27Strongly%20Agree%27:%200%2C%20%27Agree%27:%200%2C%20%27N/A%27:%200%2C%20%27Strongly%20Disagree%27:%200%7D%2C%20%27q1%27:%20%7B%27Disagree%27:%200%2C%20%27No%20opinion%27:%200%2C%20%27Strongly%20Agree%27:%200%2C%20%27Agree%27:%200%2C%20%27N/A%27:%200%2C%20%27Strongly%20Disagree%27:%200%7D%2C%20%27q3%27:%20%7B%27Disagree%27:%200%2C%20%27No%20opinion%27:%200%2C%20%27Strongly%20Agree%27:%200%2C%20%27Agree%27:%200%2C%20%27N/A%27:%200%2C%20%27Strongly%20Disagree%27:%200%7D%2C%20%27q2%27:%20%7B%27Disagree%27:%200%2C%20%27No%20opinion%27:%200%2C%20%27Strongly%20Agree%27:%200%2C%20%27Agree%27:%200%2C%20%27N/A%27:%200%2C%20%27Strongly%20Disagree%27:%200%7D%2C%20%27q5%27:%20%7B%27Disagree%27:%200%2C%20%27No%20opinion%27:%200%2C%20%27Strongly%20Agree%27:%200%2C%20%27Agree%27:%200%2C%20%27N/A%27:%200%2C%20%27Strongly%20Disagree%27:%200%7D%2C%20%27q4%27:%20%7B%27Disagree%27:%200%2C%20%27No%20opinion%27:%200%2C%20%27Strongly%20Agree%27:%200%2C%20%27Agree%27:%200%2C%20%27N/A%27:%200%2C%20%27Strongly%20Disagree%27:%200%7D%2C%20%27q7%27:%20%7B%27Disagree%27:%200%2C%20%27No%20opinion%27:%200%2C%20%27Strongly%20Agree%27:%200%2C%20%27Agree%27:%200%2C%20%27N/A%27:%200%2C%20%27Strongly%20Disagree%27:%200%7D%2C%20%27q6%27:%20%7B%27Disagree%27:%200%2C%20%27No%20opinion%27:%200%2C%20%27Strongly%20Agree%27:%200%2C%20%27Agree%27:%200%2C%20%27N/A%27:%200%2C%20%27Strongly%20Disagree%27:%200%7D%2C%20%27q9%27:%20%7B%27Disagree%27:%200%2C%20%27No%20opinion%27:%200%2C%20%27Strongly%20Agree%27:%200%2C%20%27Agree%27:%200%2C%20%27N/A%27:%200%2C%20%27Strongly%20Disagree%27:%200%7D%2C%20%27q8%27:%20%7B%27Disagree%27:%200%2C%20%27No%20opinion%27:%200%2C%20%27Strongly%20Agree%27:%200%2C%20%27Agree%27:%200%2C%20%27N/A%27:%200%2C%20%27Strongly%20Disagree%27:%200%7D%7D HTTP/1.1" 404 -
+INFO:werkzeug: * Detected change in '/var/www/html/hrc/hrc/__init__.py', reloading
+INFO:root:Database Connection Success 	2016-12-03
+INFO:werkzeug:10.30.63.52 - - [03/Dec/2016 22:48:08] "GET /report/finance HTTP/1.1" 200 -
+INFO:root:Database Connection Success 	2016-12-03
+INFO:werkzeug:10.30.63.52 - - [03/Dec/2016 22:48:09] "GET /report/finance HTTP/1.1" 200 -
+INFO:werkzeug:10.30.63.52 - - [03/Dec/2016 22:48:11] "GET /finance/%7B%27Training%27:%200%2C%20%27Forum%27:%200%2C%20%27Festival%27:%200%2C%20%27Other%27:%200%2C%20%27Speaker%27:%200%2C%20%27Panel%27:%200%7D/%7B%27Training%27:%2010073.45%2C%20%27Forum%27:%20500.0%2C%20%27Festival%27:%20526.56%2C%20%27Other%27:%200%2C%20%27Speaker%27:%209980.45%2C%20%27Panel%27:%203599.9%7D/%7B%27q15%27:%20%7B%27Disagree%27:%200%2C%20%27No%20opinion%27:%200%2C%20%27Strongly%20Agree%27:%200%2C%20%27Agree%27:%200%2C%20%27N/A%27:%200%2C%20%27Strongly%20Disagree%27:%200%7D%2C%20%27q14%27:%20%7B%27Disagree%27:%200%2C%20%27No%20opinion%27:%200%2C%20%27Strongly%20Agree%27:%200%2C%20%27Agree%27:%200%2C%20%27N/A%27:%200%2C%20%27Strongly%20Disagree%27:%200%7D%2C%20%27q13%27:%20%7B%27Disagree%27:%200%2C%20%27No%20opinion%27:%200%2C%20%27Strongly%20Agree%27:%200%2C%20%27Agree%27:%200%2C%20%27N/A%27:%200%2C%20%27Strongly%20Disagree%27:%200%7D%2C%20%27q12%27:%20%7B%27Disagree%27:%200%2C%20%27No%20opinion%27:%200%2C%20%27Strongly%20Agree%27:%200%2C%20%27Agree%27:%200%2C%20%27N/A%27:%200%2C%20%27Strongly%20Disagree%27:%200%7D%2C%20%27q1%27:%20%7B%27Disagree%27:%200%2C%20%27No%20opinion%27:%200%2C%20%27Strongly%20Agree%27:%200%2C%20%27Agree%27:%200%2C%20%27N/A%27:%200%2C%20%27Strongly%20Disagree%27:%200%7D%2C%20%27q3%27:%20%7B%27Disagree%27:%200%2C%20%27No%20opinion%27:%200%2C%20%27Strongly%20Agree%27:%200%2C%20%27Agree%27:%200%2C%20%27N/A%27:%200%2C%20%27Strongly%20Disagree%27:%200%7D%2C%20%27q2%27:%20%7B%27Disagree%27:%200%2C%20%27No%20opinion%27:%200%2C%20%27Strongly%20Agree%27:%200%2C%20%27Agree%27:%200%2C%20%27N/A%27:%200%2C%20%27Strongly%20Disagree%27:%200%7D%2C%20%27q5%27:%20%7B%27Disagree%27:%200%2C%20%27No%20opinion%27:%200%2C%20%27Strongly%20Agree%27:%200%2C%20%27Agree%27:%200%2C%20%27N/A%27:%200%2C%20%27Strongly%20Disagree%27:%200%7D%2C%20%27q4%27:%20%7B%27Disagree%27:%200%2C%20%27No%20opinion%27:%200%2C%20%27Strongly%20Agree%27:%200%2C%20%27Agree%27:%200%2C%20%27N/A%27:%200%2C%20%27Strongly%20Disagree%27:%200%7D%2C%20%27q7%27:%20%7B%27Disagree%27:%200%2C%20%27No%20opinion%27:%200%2C%20%27Strongly%20Agree%27:%200%2C%20%27Agree%27:%200%2C%20%27N/A%27:%200%2C%20%27Strongly%20Disagree%27:%200%7D%2C%20%27q6%27:%20%7B%27Disagree%27:%200%2C%20%27No%20opinion%27:%200%2C%20%27Strongly%20Agree%27:%200%2C%20%27Agree%27:%200%2C%20%27N/A%27:%200%2C%20%27Strongly%20Disagree%27:%200%7D%2C%20%27q9%27:%20%7B%27Disagree%27:%200%2C%20%27No%20opinion%27:%200%2C%20%27Strongly%20Agree%27:%200%2C%20%27Agree%27:%200%2C%20%27N/A%27:%200%2C%20%27Strongly%20Disagree%27:%200%7D%2C%20%27q8%27:%20%7B%27Disagree%27:%200%2C%20%27No%20opinion%27:%200%2C%20%27Strongly%20Agree%27:%200%2C%20%27Agree%27:%200%2C%20%27N/A%27:%200%2C%20%27Strongly%20Disagree%27:%200%7D%7D HTTP/1.1" 404 -
+INFO:werkzeug: * Detected change in '/var/www/html/hrc/hrc/__init__.py', reloading
+INFO:root:Database Connection Success 	2016-12-03
+INFO:werkzeug:10.30.63.52 - - [03/Dec/2016 22:53:22] "GET /report/attendance HTTP/1.1" 200 -
+INFO:root:Database Connection Success 	2016-12-03
+INFO:werkzeug:10.30.63.52 - - [03/Dec/2016 22:53:23] "GET /report/attendance HTTP/1.1" 200 -
+INFO:werkzeug:10.30.63.52 - - [03/Dec/2016 22:53:25] "GET /attendance/%7B%27Training%27:%201771L%2C%20%27Forum%27:%20500L%2C%20%27Festival%27:%20417L%2C%20%27Other%27:%200%2C%20%27Speaker%27:%201372L%2C%20%27Panel%27:%20999L%7D/%7B%27Training%27:%200%2C%20%27Forum%27:%200%2C%20%27Festival%27:%200%2C%20%27Other%27:%200%2C%20%27Speaker%27:%200%2C%20%27Panel%27:%200%7D/%7B%27q15%27:%20%7B%27Disagree%27:%200%2C%20%27No%20opinion%27:%200%2C%20%27Strongly%20Agree%27:%200%2C%20%27Agree%27:%200%2C%20%27N/A%27:%200%2C%20%27Strongly%20Disagree%27:%200%7D%2C%20%27q14%27:%20%7B%27Disagree%27:%200%2C%20%27No%20opinion%27:%200%2C%20%27Strongly%20Agree%27:%200%2C%20%27Agree%27:%200%2C%20%27N/A%27:%200%2C%20%27Strongly%20Disagree%27:%200%7D%2C%20%27q13%27:%20%7B%27Disagree%27:%200%2C%20%27No%20opinion%27:%200%2C%20%27Strongly%20Agree%27:%200%2C%20%27Agree%27:%200%2C%20%27N/A%27:%200%2C%20%27Strongly%20Disagree%27:%200%7D%2C%20%27q12%27:%20%7B%27Disagree%27:%200%2C%20%27No%20opinion%27:%200%2C%20%27Strongly%20Agree%27:%200%2C%20%27Agree%27:%200%2C%20%27N/A%27:%200%2C%20%27Strongly%20Disagree%27:%200%7D%2C%20%27q1%27:%20%7B%27Disagree%27:%200%2C%20%27No%20opinion%27:%200%2C%20%27Strongly%20Agree%27:%200%2C%20%27Agree%27:%200%2C%20%27N/A%27:%200%2C%20%27Strongly%20Disagree%27:%200%7D%2C%20%27q3%27:%20%7B%27Disagree%27:%200%2C%20%27No%20opinion%27:%200%2C%20%27Strongly%20Agree%27:%200%2C%20%27Agree%27:%200%2C%20%27N/A%27:%200%2C%20%27Strongly%20Disagree%27:%200%7D%2C%20%27q2%27:%20%7B%27Disagree%27:%200%2C%20%27No%20opinion%27:%200%2C%20%27Strongly%20Agree%27:%200%2C%20%27Agree%27:%200%2C%20%27N/A%27:%200%2C%20%27Strongly%20Disagree%27:%200%7D%2C%20%27q5%27:%20%7B%27Disagree%27:%200%2C%20%27No%20opinion%27:%200%2C%20%27Strongly%20Agree%27:%200%2C%20%27Agree%27:%200%2C%20%27N/A%27:%200%2C%20%27Strongly%20Disagree%27:%200%7D%2C%20%27q4%27:%20%7B%27Disagree%27:%200%2C%20%27No%20opinion%27:%200%2C%20%27Strongly%20Agree%27:%200%2C%20%27Agree%27:%200%2C%20%27N/A%27:%200%2C%20%27Strongly%20Disagree%27:%200%7D%2C%20%27q7%27:%20%7B%27Disagree%27:%200%2C%20%27No%20opinion%27:%200%2C%20%27Strongly%20Agree%27:%200%2C%20%27Agree%27:%200%2C%20%27N/A%27:%200%2C%20%27Strongly%20Disagree%27:%200%7D%2C%20%27q6%27:%20%7B%27Disagree%27:%200%2C%20%27No%20opinion%27:%200%2C%20%27Strongly%20Agree%27:%200%2C%20%27Agree%27:%200%2C%20%27N/A%27:%200%2C%20%27Strongly%20Disagree%27:%200%7D%2C%20%27q9%27:%20%7B%27Disagree%27:%200%2C%20%27No%20opinion%27:%200%2C%20%27Strongly%20Agree%27:%200%2C%20%27Agree%27:%200%2C%20%27N/A%27:%200%2C%20%27Strongly%20Disagree%27:%200%7D%2C%20%27q8%27:%20%7B%27Disagree%27:%200%2C%20%27No%20opinion%27:%200%2C%20%27Strongly%20Agree%27:%200%2C%20%27Agree%27:%200%2C%20%27N/A%27:%200%2C%20%27Strongly%20Disagree%27:%200%7D%7D HTTP/1.1" 404 -
+INFO:werkzeug: * Detected change in '/var/www/html/hrc/hrc/__init__.py', reloading
+INFO:root:Database Connection Success 	2016-12-03
+INFO:werkzeug:10.30.63.52 - - [03/Dec/2016 23:01:43] "GET /report/attendance HTTP/1.1" 500 -
+INFO:werkzeug:10.30.63.52 - - [03/Dec/2016 23:02:24] "GET /reports HTTP/1.1" 200 -
+INFO:root:Database Connection Success 	2016-12-03
+INFO:werkzeug:10.30.63.52 - - [03/Dec/2016 23:02:26] "GET /report/attendance HTTP/1.1" 200 -
+INFO:root:Database Connection Success 	2016-12-03
+INFO:werkzeug:10.30.63.52 - - [03/Dec/2016 23:02:27] "GET /report/attendance HTTP/1.1" 200 -
+INFO:root:Database Connection Success 	2016-12-03
+INFO:werkzeug:10.30.63.52 - - [03/Dec/2016 23:02:30] "GET /attendance/pdfreport HTTP/1.1" 500 -
+INFO:werkzeug:10.30.63.52 - - [03/Dec/2016 23:02:30] "GET /attendance/pdfreport?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO:werkzeug:10.30.63.52 - - [03/Dec/2016 23:02:30] "GET /attendance/pdfreport?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO:werkzeug:10.30.63.52 - - [03/Dec/2016 23:02:30] "GET /attendance/pdfreport?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO:werkzeug:10.30.63.52 - - [03/Dec/2016 23:02:30] "GET /attendance/pdfreport?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug:10.30.63.52 - - [03/Dec/2016 23:02:30] "GET /attendance/pdfreport?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+INFO:werkzeug:10.30.63.52 - - [03/Dec/2016 23:02:30] "GET /attendance/pdfreport?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/var/www/html/hrc/hrc/__init__.py', reloading
+INFO:root:Database Connection Success 	2016-12-03
+INFO:werkzeug:10.30.63.52 - - [03/Dec/2016 23:03:31] "GET /attendance/pdfreport HTTP/1.1" 500 -
+INFO:werkzeug:10.30.63.52 - - [03/Dec/2016 23:03:31] "GET /attendance/pdfreport?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO:werkzeug:10.30.63.52 - - [03/Dec/2016 23:03:31] "GET /attendance/pdfreport?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO:werkzeug:10.30.63.52 - - [03/Dec/2016 23:03:31] "GET /attendance/pdfreport?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO:werkzeug:10.30.63.52 - - [03/Dec/2016 23:03:31] "GET /attendance/pdfreport?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug:10.30.63.52 - - [03/Dec/2016 23:03:31] "GET /attendance/pdfreport?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/var/www/html/hrc/hrc/__init__.py', reloading
+INFO:root:Database Connection Success 	2016-12-03
+INFO:werkzeug:10.30.63.52 - - [03/Dec/2016 23:03:45] "GET /attendance/pdfreport HTTP/1.1" 500 -
+INFO:werkzeug:10.30.63.52 - - [03/Dec/2016 23:03:45] "GET /attendance/pdfreport?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO:werkzeug:10.30.63.52 - - [03/Dec/2016 23:03:45] "GET /attendance/pdfreport?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO:werkzeug:10.30.63.52 - - [03/Dec/2016 23:03:45] "GET /attendance/pdfreport?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO:werkzeug:10.30.63.52 - - [03/Dec/2016 23:03:45] "GET /attendance/pdfreport?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug:10.30.63.52 - - [03/Dec/2016 23:03:45] "GET /attendance/pdfreport?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+INFO:root:Database Connection Success 	2016-12-03
+INFO:werkzeug:10.30.63.52 - - [03/Dec/2016 23:55:08] "GET /report/attendance HTTP/1.1" 200 -
+INFO:root:Database Connection Success 	2016-12-03
+INFO:werkzeug:10.30.63.52 - - [03/Dec/2016 23:55:09] "GET /report/attendance HTTP/1.1" 200 -
+INFO:root:Database Connection Success 	2016-12-03
+INFO:werkzeug:10.30.63.52 - - [03/Dec/2016 23:55:12] "GET /attendance/pdfreport HTTP/1.1" 500 -
+INFO:werkzeug:10.30.63.52 - - [03/Dec/2016 23:55:12] "GET /attendance/pdfreport?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO:werkzeug:10.30.63.52 - - [03/Dec/2016 23:55:12] "GET /attendance/pdfreport?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO:werkzeug:10.30.63.52 - - [03/Dec/2016 23:55:12] "GET /attendance/pdfreport?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO:werkzeug:10.30.63.52 - - [03/Dec/2016 23:55:12] "GET /attendance/pdfreport?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug:10.30.63.52 - - [03/Dec/2016 23:55:12] "GET /attendance/pdfreport?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+INFO:root:Database Connection Success 	2016-12-04
+INFO:werkzeug:10.30.63.52 - - [04/Dec/2016 00:00:54] "GET /report/attendance HTTP/1.1" 200 -
+INFO:root:Database Connection Success 	2016-12-04
+INFO:werkzeug:10.30.63.52 - - [04/Dec/2016 00:00:56] "GET /attendance/pdfreport HTTP/1.1" 500 -
+INFO:werkzeug:10.30.63.52 - - [04/Dec/2016 00:00:56] "GET /attendance/pdfreport?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO:werkzeug:10.30.63.52 - - [04/Dec/2016 00:00:56] "GET /attendance/pdfreport?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO:werkzeug:10.30.63.52 - - [04/Dec/2016 00:00:56] "GET /attendance/pdfreport?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO:werkzeug:10.30.63.52 - - [04/Dec/2016 00:00:56] "GET /attendance/pdfreport?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug:10.30.63.52 - - [04/Dec/2016 00:00:56] "GET /attendance/pdfreport?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+INFO:root:Database Connection Success 	2016-12-04
+INFO:werkzeug:10.30.63.52 - - [04/Dec/2016 00:23:22] "GET /report/attendance HTTP/1.1" 200 -
+INFO:root:Database Connection Success 	2016-12-04
+INFO:werkzeug:10.30.63.52 - - [04/Dec/2016 00:23:23] "GET /report/attendance HTTP/1.1" 200 -
+INFO:root:Database Connection Success 	2016-12-04
+INFO:werkzeug:10.30.63.52 - - [04/Dec/2016 00:23:25] "GET /attendance/pdfreport HTTP/1.1" 500 -
+INFO:werkzeug:10.30.63.52 - - [04/Dec/2016 00:23:25] "GET /attendance/pdfreport?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO:werkzeug:10.30.63.52 - - [04/Dec/2016 00:23:25] "GET /attendance/pdfreport?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO:werkzeug:10.30.63.52 - - [04/Dec/2016 00:23:25] "GET /attendance/pdfreport?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO:werkzeug:10.30.63.52 - - [04/Dec/2016 00:23:25] "GET /attendance/pdfreport?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug:10.30.63.52 - - [04/Dec/2016 00:23:25] "GET /attendance/pdfreport?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/var/www/html/hrc/hrc/__init__.py', reloading
+INFO:root:Database Connection Success 	2016-12-04
+INFO:werkzeug:10.30.63.52 - - [04/Dec/2016 00:24:51] "GET /report/attendance HTTP/1.1" 200 -
+INFO:root:Database Connection Success 	2016-12-04
+INFO:werkzeug:10.30.63.52 - - [04/Dec/2016 00:24:52] "GET /report/attendance HTTP/1.1" 200 -
+INFO:root:Database Connection Success 	2016-12-04
+INFO:werkzeug:10.30.63.52 - - [04/Dec/2016 00:24:54] "GET /attendance/pdfreport HTTP/1.1" 500 -
+INFO:werkzeug:10.30.63.52 - - [04/Dec/2016 00:24:54] "GET /attendance/pdfreport?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO:werkzeug:10.30.63.52 - - [04/Dec/2016 00:24:54] "GET /attendance/pdfreport?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO:werkzeug:10.30.63.52 - - [04/Dec/2016 00:24:54] "GET /attendance/pdfreport?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO:werkzeug:10.30.63.52 - - [04/Dec/2016 00:24:54] "GET /attendance/pdfreport?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug:10.30.63.52 - - [04/Dec/2016 00:24:54] "GET /attendance/pdfreport?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+INFO:root:Database Connection Success 	2016-12-04
+INFO:werkzeug:10.30.63.52 - - [04/Dec/2016 03:38:54] "GET /report/attendance HTTP/1.1" 200 -
+INFO:root:Database Connection Success 	2016-12-04
+INFO:werkzeug:10.30.63.52 - - [04/Dec/2016 03:38:55] "GET /report/attendance HTTP/1.1" 200 -
+INFO:root:Database Connection Success 	2016-12-04
+INFO:werkzeug:10.30.63.52 - - [04/Dec/2016 03:38:57] "GET /attendance/pdfreport HTTP/1.1" 500 -
+INFO:werkzeug:10.30.63.52 - - [04/Dec/2016 03:38:57] "GET /attendance/pdfreport?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO:werkzeug:10.30.63.52 - - [04/Dec/2016 03:38:57] "GET /attendance/pdfreport?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO:werkzeug:10.30.63.52 - - [04/Dec/2016 03:38:57] "GET /attendance/pdfreport?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO:werkzeug:10.30.63.52 - - [04/Dec/2016 03:38:57] "GET /attendance/pdfreport?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug:10.30.63.52 - - [04/Dec/2016 03:38:57] "GET /attendance/pdfreport?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+INFO:root:Database Connection Success 	2016-12-04
+INFO:werkzeug:10.30.63.52 - - [04/Dec/2016 03:41:05] "GET /report/attendance HTTP/1.1" 200 -
+INFO:root:Database Connection Success 	2016-12-04
+INFO:werkzeug:10.30.63.52 - - [04/Dec/2016 03:41:07] "GET /attendance/pdfreport HTTP/1.1" 500 -
+INFO:werkzeug:10.30.63.52 - - [04/Dec/2016 03:41:07] "GET /attendance/pdfreport?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO:werkzeug:10.30.63.52 - - [04/Dec/2016 03:41:07] "GET /attendance/pdfreport?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO:werkzeug:10.30.63.52 - - [04/Dec/2016 03:41:07] "GET /attendance/pdfreport?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO:werkzeug:10.30.63.52 - - [04/Dec/2016 03:41:07] "GET /attendance/pdfreport?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug:10.30.63.52 - - [04/Dec/2016 03:41:07] "GET /attendance/pdfreport?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+INFO:root:Database Connection Success 	2016-12-04
+INFO:werkzeug:10.30.63.52 - - [04/Dec/2016 03:50:32] "GET /report/attendance HTTP/1.1" 200 -
+INFO:root:Database Connection Success 	2016-12-04
+INFO:werkzeug:10.30.63.52 - - [04/Dec/2016 03:50:33] "GET /report/attendance HTTP/1.1" 200 -
+INFO:root:Database Connection Success 	2016-12-04
+INFO:werkzeug:10.30.63.52 - - [04/Dec/2016 03:50:35] "GET /attendance/pdfreport HTTP/1.1" 500 -
+INFO:werkzeug:10.30.63.52 - - [04/Dec/2016 03:50:35] "GET /attendance/pdfreport?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO:werkzeug:10.30.63.52 - - [04/Dec/2016 03:50:35] "GET /attendance/pdfreport?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO:werkzeug:10.30.63.52 - - [04/Dec/2016 03:50:35] "GET /attendance/pdfreport?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO:werkzeug:10.30.63.52 - - [04/Dec/2016 03:50:35] "GET /attendance/pdfreport?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug:10.30.63.52 - - [04/Dec/2016 03:50:35] "GET /attendance/pdfreport?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/var/www/html/hrc/hrc/__init__.py', reloading
+INFO:root:Database Connection Success 	2016-12-04
+INFO:werkzeug:10.30.63.52 - - [04/Dec/2016 03:52:25] "GET /report/survey HTTP/1.1" 200 -
+INFO:root:Database Connection Success 	2016-12-04
+INFO:werkzeug:10.30.63.52 - - [04/Dec/2016 03:52:26] "GET /report/survey HTTP/1.1" 200 -
+INFO:root:Database Connection Success 	2016-12-04
+INFO:werkzeug:10.30.63.52 - - [04/Dec/2016 03:52:30] "GET /survey/pdfreport HTTP/1.1" 500 -
+INFO:werkzeug:10.30.63.52 - - [04/Dec/2016 03:52:30] "GET /survey/pdfreport?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO:werkzeug:10.30.63.52 - - [04/Dec/2016 03:52:30] "GET /survey/pdfreport?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO:werkzeug:10.30.63.52 - - [04/Dec/2016 03:52:30] "GET /survey/pdfreport?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO:werkzeug:10.30.63.52 - - [04/Dec/2016 03:52:30] "GET /survey/pdfreport?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug:10.30.63.52 - - [04/Dec/2016 03:52:30] "GET /survey/pdfreport?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+INFO:werkzeug:10.30.63.52 - - [04/Dec/2016 03:52:30] "GET /survey/pdfreport?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/var/www/html/hrc/hrc/__init__.py', reloading
+INFO:root:Database Connection Success 	2016-12-04
+INFO:werkzeug:10.30.63.52 - - [04/Dec/2016 03:53:53] "GET /report/attendance HTTP/1.1" 200 -
+INFO:root:Database Connection Success 	2016-12-04
+INFO:werkzeug:10.30.63.52 - - [04/Dec/2016 03:53:54] "GET /report/attendance HTTP/1.1" 200 -
+INFO:root:Database Connection Success 	2016-12-04
+INFO:werkzeug:10.30.63.52 - - [04/Dec/2016 03:53:55] "GET /attendance/pdfreport HTTP/1.1" 500 -
+INFO:werkzeug:10.30.63.52 - - [04/Dec/2016 03:53:55] "GET /attendance/pdfreport?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO:werkzeug:10.30.63.52 - - [04/Dec/2016 03:53:55] "GET /attendance/pdfreport?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO:werkzeug:10.30.63.52 - - [04/Dec/2016 03:53:55] "GET /attendance/pdfreport?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO:werkzeug:10.30.63.52 - - [04/Dec/2016 03:53:55] "GET /attendance/pdfreport?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug:10.30.63.52 - - [04/Dec/2016 03:53:55] "GET /attendance/pdfreport?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/var/www/html/hrc/hrc/__init__.py', reloading
+INFO:root:Database Connection Success 	2016-12-04
+INFO:werkzeug:10.30.63.52 - - [04/Dec/2016 03:54:26] "GET /report/attendance HTTP/1.1" 200 -
+INFO:root:Database Connection Success 	2016-12-04
+INFO:werkzeug:10.30.63.52 - - [04/Dec/2016 03:54:26] "GET /report/attendance HTTP/1.1" 200 -
+INFO:root:Database Connection Success 	2016-12-04
+INFO:werkzeug:10.30.63.52 - - [04/Dec/2016 03:54:28] "GET /attendance/pdfreport HTTP/1.1" 500 -
+INFO:werkzeug:10.30.63.52 - - [04/Dec/2016 03:54:28] "GET /attendance/pdfreport?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO:werkzeug:10.30.63.52 - - [04/Dec/2016 03:54:28] "GET /attendance/pdfreport?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO:werkzeug:10.30.63.52 - - [04/Dec/2016 03:54:28] "GET /attendance/pdfreport?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO:werkzeug:10.30.63.52 - - [04/Dec/2016 03:54:28] "GET /attendance/pdfreport?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug:10.30.63.52 - - [04/Dec/2016 03:54:28] "GET /attendance/pdfreport?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+INFO:root:Database Connection Success 	2016-12-04
+INFO:werkzeug:10.30.63.52 - - [04/Dec/2016 03:55:52] "GET /report/attendance HTTP/1.1" 200 -
+INFO:root:Database Connection Success 	2016-12-04
+INFO:werkzeug:10.30.63.52 - - [04/Dec/2016 03:55:53] "GET /attendance/pdfreport HTTP/1.1" 500 -
+INFO:werkzeug:10.30.63.52 - - [04/Dec/2016 03:55:53] "GET /attendance/pdfreport?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO:werkzeug:10.30.63.52 - - [04/Dec/2016 03:55:53] "GET /attendance/pdfreport?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO:werkzeug:10.30.63.52 - - [04/Dec/2016 03:55:53] "GET /attendance/pdfreport?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO:werkzeug:10.30.63.52 - - [04/Dec/2016 03:55:53] "GET /attendance/pdfreport?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug:10.30.63.52 - - [04/Dec/2016 03:55:53] "GET /attendance/pdfreport?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+INFO:root:Database Connection Success 	2016-12-04
+INFO:werkzeug:10.30.63.52 - - [04/Dec/2016 04:03:46] "GET /report/attendance HTTP/1.1" 200 -
+INFO:root:Database Connection Success 	2016-12-04
+INFO:werkzeug:10.30.63.52 - - [04/Dec/2016 04:03:51] "GET /attendance/pdfreport HTTP/1.1" 200 -
+INFO:root:Database Connection Success 	2016-12-04
+INFO:werkzeug:10.30.63.52 - - [04/Dec/2016 04:05:55] "GET /report/attendance HTTP/1.1" 200 -
+INFO:root:Database Connection Success 	2016-12-04
+INFO:werkzeug:10.30.63.52 - - [04/Dec/2016 04:05:56] "GET /report/attendance HTTP/1.1" 200 -
+INFO:root:Database Connection Success 	2016-12-04
+INFO:werkzeug:10.30.63.52 - - [04/Dec/2016 04:05:58] "GET /attendance/pdfreport HTTP/1.1" 200 -
+INFO:root:Database Connection Success 	2016-12-04
+INFO:werkzeug:10.30.63.52 - - [04/Dec/2016 04:07:09] "GET /report/attendance HTTP/1.1" 200 -
+INFO:root:Database Connection Success 	2016-12-04
+INFO:werkzeug:10.30.63.52 - - [04/Dec/2016 04:07:10] "GET /report/attendance HTTP/1.1" 200 -
+INFO:root:Database Connection Success 	2016-12-04
+INFO:werkzeug:10.30.63.52 - - [04/Dec/2016 04:07:11] "GET /attendance/pdfreport HTTP/1.1" 200 -
+INFO:root:Database Connection Success 	2016-12-04
+INFO:werkzeug:10.30.63.52 - - [04/Dec/2016 04:09:28] "GET /report/attendance HTTP/1.1" 200 -
+INFO:root:Database Connection Success 	2016-12-04
+INFO:werkzeug:10.30.63.52 - - [04/Dec/2016 04:09:29] "GET /report/attendance HTTP/1.1" 200 -
+INFO:root:Database Connection Success 	2016-12-04
+INFO:werkzeug:10.30.63.52 - - [04/Dec/2016 04:09:32] "GET /attendance/pdfreport HTTP/1.1" 200 -
+INFO:root:Database Connection Success 	2016-12-04
+INFO:werkzeug:10.30.63.52 - - [04/Dec/2016 04:13:15] "GET /report/attendance HTTP/1.1" 200 -
+INFO:root:Database Connection Success 	2016-12-04
+INFO:werkzeug:10.30.63.52 - - [04/Dec/2016 04:13:16] "GET /report/attendance HTTP/1.1" 200 -
+INFO:root:Database Connection Success 	2016-12-04
+INFO:werkzeug:10.30.63.52 - - [04/Dec/2016 04:13:18] "GET /attendance/pdfreport HTTP/1.1" 200 -
+INFO:root:Database Connection Success 	2016-12-04
+INFO:werkzeug:10.30.63.52 - - [04/Dec/2016 04:19:08] "GET /attendance/pdfreport HTTP/1.1" 500 -
+INFO:werkzeug:10.30.63.52 - - [04/Dec/2016 04:19:08] "GET /attendance/pdfreport?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO:werkzeug:10.30.63.52 - - [04/Dec/2016 04:19:08] "GET /attendance/pdfreport?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO:werkzeug:10.30.63.52 - - [04/Dec/2016 04:19:08] "GET /attendance/pdfreport?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO:werkzeug:10.30.63.52 - - [04/Dec/2016 04:19:08] "GET /attendance/pdfreport?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug:10.30.63.52 - - [04/Dec/2016 04:19:08] "GET /attendance/pdfreport?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+INFO:werkzeug:10.30.63.52 - - [04/Dec/2016 04:19:08] "GET /attendance/pdfreport?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/var/www/html/hrc/hrc/__init__.py', reloading
+INFO:root:Database Connection Success 	2016-12-04
+INFO:werkzeug:10.30.63.52 - - [04/Dec/2016 04:20:08] "GET /report/attendance HTTP/1.1" 200 -
+INFO:root:Database Connection Success 	2016-12-04
+INFO:werkzeug:10.30.63.52 - - [04/Dec/2016 04:20:10] "GET /attendance/pdfreport HTTP/1.1" 200 -
+INFO:root:Database Connection Success 	2016-12-04
+INFO:werkzeug:10.30.63.52 - - [04/Dec/2016 04:24:33] "GET /report/attendance HTTP/1.1" 200 -
+INFO:root:Database Connection Success 	2016-12-04
+INFO:werkzeug:10.30.63.52 - - [04/Dec/2016 04:24:34] "GET /report/attendance HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/var/www/html/hrc/hrc/__init__.py', reloading
+INFO:root:Database Connection Success 	2016-12-04
+INFO:werkzeug:10.30.63.52 - - [04/Dec/2016 04:27:37] "GET /report/finance HTTP/1.1" 200 -
+INFO:root:Database Connection Success 	2016-12-04
+INFO:werkzeug:10.30.63.52 - - [04/Dec/2016 04:27:39] "GET /report/finance HTTP/1.1" 200 -
+INFO:root:Database Connection Success 	2016-12-04
+INFO:werkzeug:10.30.63.52 - - [04/Dec/2016 04:27:41] "GET /finance/pdfreport HTTP/1.1" 200 -
+INFO:root:Database Connection Success 	2016-12-04
+INFO:werkzeug:10.30.63.52 - - [04/Dec/2016 04:32:36] "GET /report/attendance HTTP/1.1" 200 -
+INFO:root:Database Connection Success 	2016-12-04
+INFO:werkzeug:10.30.63.52 - - [04/Dec/2016 04:32:37] "GET /report/attendance HTTP/1.1" 200 -
+INFO:root:Database Connection Success 	2016-12-04
+INFO:werkzeug:10.30.63.52 - - [04/Dec/2016 04:43:46] "GET /report/attendance HTTP/1.1" 200 -
+INFO:root:Database Connection Success 	2016-12-04
+INFO:werkzeug:10.30.63.52 - - [04/Dec/2016 04:43:47] "GET /report/attendance HTTP/1.1" 200 -
+INFO:werkzeug:10.30.63.52 - - [04/Dec/2016 04:43:58] "GET /reports HTTP/1.1" 200 -
+INFO:root:Database Connection Success 	2016-12-04
+INFO:werkzeug:10.30.63.52 - - [04/Dec/2016 04:44:02] "GET /report/attendance HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/var/www/html/hrc/hrc/__init__.py', reloading
+INFO:root:Database Connection Success 	2016-12-04
+INFO:werkzeug:10.30.63.52 - - [04/Dec/2016 04:45:02] "GET /report/attendance HTTP/1.1" 200 -
+INFO:root:Database Connection Success 	2016-12-04
+INFO:werkzeug:10.30.63.52 - - [04/Dec/2016 04:45:03] "GET /report/attendance HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/var/www/html/hrc/hrc/__init__.py', reloading
+INFO:root:Database Connection Success 	2016-12-04
+INFO:werkzeug:10.30.63.52 - - [04/Dec/2016 04:46:11] "GET /report/attendance HTTP/1.1" 200 -
+INFO:root:Database Connection Success 	2016-12-04
+INFO:werkzeug:10.30.63.52 - - [04/Dec/2016 04:46:12] "GET /report/attendance HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/var/www/html/hrc/hrc/__init__.py', reloading
+INFO:root:Database Connection Success 	2016-12-04
+INFO:werkzeug:10.30.63.52 - - [04/Dec/2016 04:50:37] "GET /report/attendance HTTP/1.1" 200 -
+INFO:root:Database Connection Success 	2016-12-04
+INFO:werkzeug:10.30.63.52 - - [04/Dec/2016 04:50:38] "GET /report/attendance HTTP/1.1" 200 -
+INFO:root:Database Connection Success 	2016-12-04
+INFO:werkzeug:10.30.63.52 - - [04/Dec/2016 04:52:54] "GET /report/attendance HTTP/1.1" 200 -
+INFO:root:Database Connection Success 	2016-12-04
+INFO:werkzeug:10.30.63.52 - - [04/Dec/2016 04:52:55] "GET /report/attendance HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/var/www/html/hrc/hrc/__init__.py', reloading
+INFO:root:Database Connection Success 	2016-12-04
+INFO:werkzeug:10.30.63.52 - - [04/Dec/2016 04:53:41] "GET /attendance/pdfreport HTTP/1.1" 200 -
+INFO:root:Database Connection Success 	2016-12-04
+INFO:werkzeug:10.30.63.52 - - [04/Dec/2016 04:55:24] "GET /report/finance HTTP/1.1" 200 -
+INFO:root:Database Connection Success 	2016-12-04
+INFO:werkzeug:10.30.63.52 - - [04/Dec/2016 04:55:25] "GET /report/finance HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/var/www/html/hrc/hrc/__init__.py', reloading
+INFO:root:Database Connection Success 	2016-12-04
+INFO:werkzeug:10.30.63.52 - - [04/Dec/2016 04:56:06] "GET /finance/pdfreport HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/var/www/html/hrc/hrc/__init__.py', reloading
+INFO:root:Database Connection Success 	2016-12-04
+INFO:werkzeug:10.30.63.52 - - [04/Dec/2016 04:58:06] "GET /report/attendance HTTP/1.1" 200 -
+INFO:root:Database Connection Success 	2016-12-04
+INFO:werkzeug:10.30.63.52 - - [04/Dec/2016 04:58:07] "GET /report/attendance HTTP/1.1" 200 -
+INFO:root:Database Connection Success 	2016-12-04
+INFO:werkzeug:10.30.63.52 - - [04/Dec/2016 04:59:57] "GET /attendance/pdfreport HTTP/1.1" 200 -
+INFO:root:Database Connection Success 	2016-12-04
+INFO:werkzeug:192.168.1.1 - - [04/Dec/2016 04:59:57] "GET /report/attendance HTTP/1.1" 200 -
+INFO:werkzeug:10.30.63.52 - - [04/Dec/2016 05:00:04] "GET /other/ HTTP/1.1" 200 -
+INFO:werkzeug:10.30.63.52 - - [04/Dec/2016 05:00:05] "GET /survey/ HTTP/1.1" 200 -
+INFO:werkzeug:10.30.63.52 - - [04/Dec/2016 05:00:09] "GET /reports HTTP/1.1" 200 -
+INFO:root:Database Connection Success 	2016-12-04
+INFO:werkzeug:10.30.63.52 - - [04/Dec/2016 05:00:12] "GET /report/survey HTTP/1.1" 200 -
+INFO:root:Database Connection Success 	2016-12-04
+INFO:werkzeug:10.30.63.52 - - [04/Dec/2016 05:00:13] "GET /report/survey HTTP/1.1" 200 -
+INFO:root:Database Connection Success 	2016-12-04
+INFO:werkzeug: * Detected change in '/var/www/html/hrc/hrc/__init__.py', reloading
+INFO:root:Database Connection Success 	2016-12-04
+INFO:werkzeug:10.14.1.145 - - [04/Dec/2016 22:10:16] "GET /report/attendance HTTP/1.1" 200 -
+INFO:root:Database Connection Success 	2016-12-04
+INFO:werkzeug:10.14.1.145 - - [04/Dec/2016 22:10:17] "GET /report/attendance HTTP/1.1" 200 -
+INFO:root:Database Connection Success 	2016-12-04
+INFO:werkzeug:10.14.1.145 - - [04/Dec/2016 22:10:22] "GET /attendance/pdfreport HTTP/1.1" 500 -
+INFO:werkzeug:10.14.1.145 - - [04/Dec/2016 22:10:22] "GET /attendance/pdfreport?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO:werkzeug:10.14.1.145 - - [04/Dec/2016 22:10:22] "GET /attendance/pdfreport?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO:werkzeug:10.14.1.145 - - [04/Dec/2016 22:10:22] "GET /attendance/pdfreport?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO:werkzeug:10.14.1.145 - - [04/Dec/2016 22:10:22] "GET /attendance/pdfreport?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug:10.14.1.145 - - [04/Dec/2016 22:10:22] "GET /attendance/pdfreport?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+INFO:werkzeug:10.14.1.145 - - [04/Dec/2016 22:10:22] "GET /attendance/pdfreport?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:root:Database Connection Success 	2016-12-05
+INFO:werkzeug:24.106.138.186 - - [05/Dec/2016 09:20:40] "GET /report/attendance HTTP/1.1" 200 -
+INFO:root:Database Connection Success 	2016-12-05
+INFO:werkzeug:24.106.138.186 - - [05/Dec/2016 09:20:49] "GET /report/attendance HTTP/1.1" 200 -
+INFO:root:Database Connection Success 	2016-12-05
+INFO:werkzeug:24.106.138.186 - - [05/Dec/2016 09:20:51] "GET /attendance/pdfreport HTTP/1.1" 500 -
+INFO:werkzeug:24.106.138.186 - - [05/Dec/2016 09:20:51] "GET /attendance/pdfreport?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO:werkzeug:24.106.138.186 - - [05/Dec/2016 09:20:51] "GET /attendance/pdfreport?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO:werkzeug:24.106.138.186 - - [05/Dec/2016 09:20:51] "GET /attendance/pdfreport?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO:werkzeug:24.106.138.186 - - [05/Dec/2016 09:20:51] "GET /attendance/pdfreport?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug:24.106.138.186 - - [05/Dec/2016 09:20:51] "GET /attendance/pdfreport?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+INFO:root:Database Connection Success 	2016-12-05
+INFO:werkzeug:24.106.138.186 - - [05/Dec/2016 09:21:44] "GET /report/survey HTTP/1.1" 200 -
+INFO:root:Database Connection Success 	2016-12-05
+INFO:werkzeug:24.106.138.186 - - [05/Dec/2016 09:21:45] "GET /report/survey HTTP/1.1" 200 -
+INFO:root:Database Connection Success 	2016-12-05
+INFO:werkzeug:24.106.138.186 - - [05/Dec/2016 10:45:04] "GET /report/finance HTTP/1.1" 200 -
+INFO:root:Database Connection Success 	2016-12-05
+INFO:werkzeug:24.106.138.186 - - [05/Dec/2016 10:45:05] "GET /report/finance HTTP/1.1" 200 -
+INFO:werkzeug:24.106.138.186 - - [05/Dec/2016 10:50:17] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:24.106.138.186 - - [05/Dec/2016 10:50:17] "GET /static/images/logo.png HTTP/1.1" 304 -
+INFO:werkzeug:24.106.138.186 - - [05/Dec/2016 10:50:17] "GET /static/images/backgro.jpg HTTP/1.1" 304 -
+INFO:werkzeug:24.106.138.186 - - [05/Dec/2016 10:53:27] "GET /home HTTP/1.1" 200 -
+INFO:werkzeug:24.106.138.186 - - [05/Dec/2016 10:53:47] "GET /survey/ HTTP/1.1" 200 -
+INFO:werkzeug:10.16.0.222 - - [05/Dec/2016 10:54:04] "GET /other HTTP/1.1" 301 -
+INFO:werkzeug:10.16.0.222 - - [05/Dec/2016 10:54:04] "GET /other/ HTTP/1.1" 200 -
+INFO:werkzeug:10.16.0.222 - - [05/Dec/2016 10:54:04] "GET /favicon.ico HTTP/1.1" 404 -
+INFO:werkzeug:10.16.0.222 - - [05/Dec/2016 10:54:08] "GET /survey HTTP/1.1" 301 -
+INFO:werkzeug:10.16.0.222 - - [05/Dec/2016 10:54:08] "GET /survey/ HTTP/1.1" 200 -
+INFO:werkzeug:10.16.0.222 - - [05/Dec/2016 10:54:20] "POST /result2/ HTTP/1.1" 200 -
+INFO:werkzeug:10.16.0.222 - - [05/Dec/2016 10:54:25] "GET /survey/ HTTP/1.1" 200 -
+INFO:werkzeug:24.106.138.186 - - [05/Dec/2016 10:54:41] "POST /result2/ HTTP/1.1" 200 -
+INFO:werkzeug:10.16.0.222 - - [05/Dec/2016 10:54:48] "POST /result2/ HTTP/1.1" 200 -
+INFO:werkzeug:24.106.138.186 - - [05/Dec/2016 10:54:48] "GET /home HTTP/1.1" 200 -
+INFO:werkzeug:10.16.0.222 - - [05/Dec/2016 10:54:49] "GET /home HTTP/1.1" 200 -
+INFO:werkzeug:24.106.138.186 - - [05/Dec/2016 10:55:07] "GET /other/ HTTP/1.1" 200 -
+INFO:werkzeug:24.106.138.186 - - [05/Dec/2016 10:56:07] "GET /reports HTTP/1.1" 200 -
+INFO:root:Database Connection Success 	2016-12-05
+INFO:werkzeug:24.106.138.186 - - [05/Dec/2016 10:56:14] "GET /report/attendance HTTP/1.1" 200 -
+INFO:root:Database Connection Success 	2016-12-05
+INFO:werkzeug:24.106.138.186 - - [05/Dec/2016 10:56:16] "GET /report/attendance HTTP/1.1" 200 -
+INFO:root:Database Connection Success 	2016-12-05
+INFO:werkzeug:24.106.138.186 - - [05/Dec/2016 10:57:02] "GET /report/survey HTTP/1.1" 200 -
+INFO:root:Database Connection Success 	2016-12-05
+INFO:werkzeug:24.106.138.186 - - [05/Dec/2016 10:57:03] "GET /report/survey HTTP/1.1" 200 -
+INFO:werkzeug:24.106.138.186 - - [05/Dec/2016 11:01:23] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:10.16.0.222 - - [05/Dec/2016 11:04:59] "GET /reports HTTP/1.1" 200 -
+INFO:werkzeug:10.16.0.222 - - [05/Dec/2016 11:05:00] "GET /other/ HTTP/1.1" 200 -
+INFO:werkzeug:10.16.0.222 - - [05/Dec/2016 11:05:10] "GET /reports HTTP/1.1" 200 -
+INFO:werkzeug:24.106.138.186 - - [05/Dec/2016 11:15:23] "GET / HTTP/1.1" 200 -
+INFO:root:Database Connection Success 	2016-12-05
+INFO:werkzeug:24.106.138.186 - - [05/Dec/2016 11:15:44] "GET /report/finance HTTP/1.1" 200 -
+INFO:root:Database Connection Success 	2016-12-05
+INFO:werkzeug:192.168.1.1 - - [05/Dec/2016 11:16:51] "GET /report/finance HTTP/1.1" 200 -

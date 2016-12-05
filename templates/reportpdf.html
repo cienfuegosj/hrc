@@ -32,15 +32,6 @@
 {% set select = "Survey Statistics" %}
 {% endif %}
 
-function export2pdf() {
-	var selection = "{{select}}";
-	if (selection != "") {
-		window.location.href="http://tango.berea.edu:5006/reportpdf/".concat(selection);
-	}
-	else {
-		alert("Connections between database have not been made");
-	}
-}
 
 //This will load the Visualization API and the packages.
 google.charts.load('current', {'packages':['corechart']});
@@ -341,9 +332,7 @@ function drawChart() {
 		{% endif %}	
 	</div>
 	
-	<div class="panel-footer">
-		<a href="{{ url_for('ReportPDF',selection=selection)}}"><button type="button" class="btn btn-primary btn-block">Export to PDF</button></a>
-	</div>
+	<div class="panel-footer"></div>
 
 </div>
 
