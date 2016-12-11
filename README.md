@@ -6,12 +6,15 @@
 <ul>
   <li><a href="https://github.com/gitextensions/gitextensions/releases/tag/v2.49">Git Extensions Source Control</a></li>
     <ol>
-    <li>Click on the link above.</li>
-    <li>Scroll down to the bottom of the page.</li>
+    <li>Click on the link above</li>
+    <li>Scroll down to the bottom of the page</li>
     <li>Download the latest version of GitExtensions-2.XX-Setup.msi</li>
     <li>Go through the easy installation process</li>
     </ol>
   <li><a href="http://flask.pocoo.org/docs/0.11/installation/">Flask Web Framework</a></li>
+    <ol>
+    <li>Click on the link above</li>
+    </ol>
   <li><a href="https://www.python.org/download/releases/2.7/">Python 2.7 </a></li>
   <li><a href="http://dev.mysql.com/downloads/mysql/">MySQL Database</a></li>
   <li><a href="https://www.phpmyadmin.net/downloads/">phpmyadmin(Optional) Database Configuration</a></li>
