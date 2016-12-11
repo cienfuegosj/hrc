@@ -16,6 +16,11 @@
     <li>Click on the link above</li>
     </ol>
   <li><a href="https://www.python.org/download/releases/2.7/">Python 2.7 </a></li>
+    <ol>
+    <li>Click on the link above</li>
+    <li>Download <b>Windows x86 MSI Installer</b> <i> or whichever one applies to your platform</i></li>
+    <li>Go through the easy installation process</li>
+    </ol>
   <li><a href="http://dev.mysql.com/downloads/mysql/">MySQL Database</a></li>
   <li><a href="https://www.phpmyadmin.net/downloads/">phpmyadmin(Optional) Database Configuration</a></li>
   <li><a href="http://stackoverflow.com/questions/25865270/how-to-install-python-mysqldb-module-using-pip">MySQLdb Module</a></li>
