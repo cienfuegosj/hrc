@@ -30,7 +30,6 @@
   <li><a href="https://www.phpmyadmin.net/downloads/">phpmyadmin(Optional) Database Configuration</a></li>
     <ol>
     <li>Click on the link above</li>
-    <li></li>
     </ol>
   <li><a href="http://stackoverflow.com/questions/25865270/how-to-install-python-mysqldb-module-using-pip">MySQLdb Module</a></li>
     <ol>
