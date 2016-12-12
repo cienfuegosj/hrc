@@ -1,8 +1,6 @@
 from flask import Flask, render_template, redirect, url_for, make_response, send_file, request
 from db_connect import connection
 from DBConnection import DBConnection
-import os
-import pdfkit
 import logging
 import datetime
 import copy
@@ -50,7 +48,7 @@ def result():
         conn.close()    # closes the final connnection 
 
      except:
-         msg = "error in insert operation"       # gets message if the connection fails
+         msg = "Error in Insert Operation."       # gets message if the connection fails
      
      return render_template("result.html", msg = msg)
    
@@ -138,7 +136,7 @@ def result2():
 
 @app.route('/register')
 def register_page():
-     '''this is a test function'''
+     '''This is a test function'''
      try:
     	c, conn=connection()
      except Exception as e:
@@ -166,25 +164,21 @@ def BuildReport(report_selection):
     
   # Query the database and extract data in a form of a container datatype
   
-  raweventdata = conn.query("SELECT * FROM event")
-  
+  raweventdata = conn.query("SELECT * FROM event") 
   attendance_dic_data = {'Speaker': 0, 'Panel':0, 'Training':0, 'Forum':0, 'Festival':0, 'Other':0}
   finance_dic_data = {'Speaker': 0, 'Panel':0, 'Training':0, 'Forum':0, 'Festival':0, 'Other':0}
   
-  #QDO = Question Dictionary Options
+
+  rawsurveydata = conn.query("SELECT * FROM survey")
   qdo = {'N/A': 0, 'Strongly Disagree': 0, 'Disagree': 0, 'No opinion': 0,
   						'Agree': 0, 'Strongly Agree': 0
   						}
-  
-  
   questions_dic_data = {'q1': copy.deepcopy(qdo), 'q2': copy.deepcopy(qdo), 'q3': copy.deepcopy(qdo),
   					 	'q4': copy.deepcopy(qdo), 'q5': copy.deepcopy(qdo), 'q6': copy.deepcopy(qdo),
   					 	'q7': copy.deepcopy(qdo), 'q8': copy.deepcopy(qdo), 'q9': copy.deepcopy(qdo),
   					 	'q12': copy.deepcopy(qdo), 'q13': copy.deepcopy(qdo), 'q14': copy.deepcopy(qdo),
   					 	'q15': copy.deepcopy(qdo)
   						}
-
-  rawsurveydata = conn.query("SELECT * FROM survey")
   
   if report_selection == "attendance":
   	for item in raweventdata:
@@ -192,7 +186,7 @@ def BuildReport(report_selection):
   elif report_selection == "finance":
   	for item in raweventdata:
   		finance_dic_data[item['type']] += item['finance']
-  else:
+  elif report_selection=="survey":
   	for i in range(1,10):
   		for item in rawsurveydata:
   			if item['q' + str(i)] == 'N/A':
@@ -221,127 +215,33 @@ def BuildReport(report_selection):
 				questions_dic_data['q' + str(i)]['Agree'] += 1
 			elif item['q' + str(i)] == 'Strongly Agree':
 				questions_dic_data['q' + str(i)]['Strongly Agree'] += 1
-
 	
   del conn
   
-  return render_template("currentreport.html", selection = report_selection,
-  						 adata = attendance_dic_data, fdata = finance_dic_data,
-  						 qdata = questions_dic_data)
+  if report_selection == "attendance" or report_selection == "finance" or report_selection == "survey":
   
-@app.route('/<selection>/pdfreport', methods = ['GET','POST'])
-def ReportPDF(selection):
-  '''
-  	Creates the pdf version of the html in order to retrieve the bar chart.
-  	selection is a string variable that holds either attendance, finance, or other.
-  '''
-  logging.basicConfig(filename='Report.log',level=logging.DEBUG)
+  	return render_template("generatereport.html", selection = report_selection,
+  						 	adata = attendance_dic_data, fdata = finance_dic_data,
+  						 	qdata = questions_dic_data)
+  						 	
+  elif report_selection == "rawsurvey":
   
-  
-  #Connect to the database
-  try:
-    conn = DBConnection()
-    logging.info("Database Connection Success \t" + str(datetime.date.today()))
-  except Exception as e:
-    logging.info("Database Connection Failed \t" + str(datetime.date.today()))
-    
-    
-  # Query the database and extract data in a form of a container datatype
-  
-  raweventdata = conn.query("SELECT * FROM event")
-  
-  attendance_dic_data = {'Speaker': 0, 'Panel':0, 'Training':0, 'Forum':0, 'Festival':0, 'Other':0}
-  finance_dic_data = {'Speaker': 0, 'Panel':0, 'Training':0, 'Forum':0, 'Festival':0, 'Other':0}
-  
-  #QDO = Question Dictionary Options
-  qdo = {'N/A': 0, 'Strongly Disagree': 0, 'Disagree': 0, 'No opinion': 0,
-  						'Agree': 0, 'Strongly Agree': 0
-  						}
-  
-  
-  questions_dic_data = {'q1': copy.deepcopy(qdo), 'q2': copy.deepcopy(qdo), 'q3': copy.deepcopy(qdo),
-  					 	'q4': copy.deepcopy(qdo), 'q5': copy.deepcopy(qdo), 'q6': copy.deepcopy(qdo),
-  					 	'q7': copy.deepcopy(qdo), 'q8': copy.deepcopy(qdo), 'q9': copy.deepcopy(qdo),
-  					 	'q12': copy.deepcopy(qdo), 'q13': copy.deepcopy(qdo), 'q14': copy.deepcopy(qdo),
-  					 	'q15': copy.deepcopy(qdo)
-  						}
-
-  rawsurveydata = conn.query("SELECT * FROM survey")
-  
-  if selection == "attendance":
-  	for item in raweventdata:
-  		attendance_dic_data[item['type']] += item['attendance']
-  elif selection == "finance":
-  	for item in raweventdata:
-  		finance_dic_data[item['type']] += item['finance']
-  else:
-  	for i in range(1,10):
-  		for item in rawsurveydata:
-  			if item['q' + str(i)] == 'N/A':
-				questions_dic_data['q' + str(i)]['N/A'] += 1
-			elif item['q' + str(i)] == 'Strongly Disagree':
-				questions_dic_data['q' + str(i)]['Strongly Disagree'] += 1
-			elif item['q' + str(i)] == 'Disagree':
-				questions_dic_data['q' + str(i)]['Disagree'] += 1
-			elif item['q' + str(i)] == 'No opinion':
-				questions_dic_data['q' + str(i)]['No opinion'] += 1
-			elif item['q' + str(i)] == 'Agree':
-				questions_dic_data['q' + str(i)]['Agree'] += 1
-			elif item['q' + str(i)] == 'Strongly Agree':
-				questions_dic_data['q' + str(i)]['Strongly Agree'] += 1
-	for i in range(12, 16):
-  		for item in rawsurveydata:
-  			if item['q' + str(i)] == 'N/A':
-				questions_dic_data['q' + str(i)]['N/A'] += 1
-			elif item['q' + str(i)] == 'Strongly Disagree':
-				questions_dic_data['q' + str(i)]['Strongly Disagree'] += 1
-			elif item['q' + str(i)] == 'Disagree':
-				questions_dic_data['q' + str(i)]['Disagree'] += 1
-			elif item['q' + str(i)] == 'No opinion':
-				questions_dic_data['q' + str(i)]['No opinion'] += 1
-			elif item['q' + str(i)] == 'Agree':
-				questions_dic_data['q' + str(i)]['Agree'] += 1
-			elif item['q' + str(i)] == 'Strongly Agree':
-				questions_dic_data['q' + str(i)]['Strongly Agree'] += 1
-
-	
-  del conn	  
+  	return render_template("rawsurveys.html", surveys=rawsurveydata)
   	
-  	
-  rendered = render_template("reportpdf.html", selection = selection,
-  						 adata = attendance_dic_data, fdata = finance_dic_data,
-  						 qdata = questions_dic_data)
-  
-  '''	 
-  
-  if selection == "attendance":
-  	url = "http://tango.berea.edu:5006/report/attendance"
-  elif selection == "finance":
-  	url = "http://tango.berea.edu:5006/report/finance"
-  elif selection == "survey":
-  	url = "http://tango.berea.edu:5006/report/survey"
-  
-  
-  filename = " current.pdf"
-  bashCommand = "bash /var/www/html/hrc/hrc/wkhtmltopdf.sh " + url + filename
-  print bashCommand
-  os.system(bashCommand)
-  
-  try:
-  	return send_file('/var/www/html/hrc/hrc/current.pdf', attachment_filename="test.pdf")
-  except Exception as e:
-	return str(e)
-  '''
-  
-  html = render_template('reportpdf.html', selection=selection, adata=adata,
-  						fdata=fdata, qdata=qdata)
-  						
-  
-  config = pdfkit.configuration(wkhtmltopdf='wkhtmltopdf.sh')
-  pdfkit.from_string(html, 'test.pdf', configuration=config)
-  
-  return "OK"
+@app.route('/survey/<SID>', methods=['GET'])
+def SpecificSurvey(SID):
 
-	
+	#Connect to the database
+	try:
+		conn = DBConnection()
+		logging.info("Database Connection Success \t" + str(datetime.date.today()))
+	except Exception as e:
+		logging.info("Database Connection Failed \t" + str(datetime.date.today()))
+    	
+	surveys = conn.query("SELECT * FROM survey WHERE SID = '" + str(SID) + "'") 
+	survey = surveys[0]	
+	return render_template("specificsurvey.html", survey=survey)
+  
+
 if __name__ == "__main__":
     app.run(debug = True, host="0.0.0.0", port=5006)

@@ -101,16 +101,16 @@ function no_survey (){
 <div class="modal-content">  <!-- creates modal content -->
 <div class="modal-header">
 <!--<span class="close" onclick="closed()">×</span>-->
-<h2>Confirmation Box</h2>    <!-- writes modal header -->
+<h2>Confirmation - Other Details</h2>    <!-- writes modal header -->
 </div>
-<div class="modal-body">
+<div class="modal-body" style="margin-bottom:2%;">
 <h3>{{ msg }}</h3>     <!-- displays the status of the insertion of the data on the page -->
 <h3> Do you want to add more details?</h3>
 </div>
-<div class="modal-footer">
+<div class="modal-footer" style="padding-top: 1%;">
 <!-- Creates yes and no buttons to allow the user add more information or return to the home page -->
-<button onclick="yes_survey()" class="btn  btn-warning" style="margin-bottom:5px; margin-right:140px;" type="submit">Yes</button>
-<button onclick="no_survey()" class="btn  btn-danger" style="margin-right:540px;" type="submit">No</button>
+<button onclick="yes_survey()" class="btn  btn-primary" style="padding-left:3%;padding-right:3%;margin-bottom:5px; margin-right:140px;" type="submit">Yes</button>
+<button onclick="no_survey()" class="btn  btn-success" style="padding-left:3%;padding-right:3%;margin-right:38%;" type="submit">No</button>
 </div>
 </div>
 </div>

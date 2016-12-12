@@ -18,10 +18,14 @@
 
 <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 
+<style>
+@media print
+{
+	.no-print {display:none;}
+}
+</style>
+
 <script type="text/javascript">
-
-
-
 
 {% block body %}
 {% if selection == "attendance" %}
@@ -30,17 +34,10 @@
 {% set select = "Finance" %}
 {% elif selection == "survey" %}
 {% set select = "Survey Statistics" %}
+{% elif selection == "rawsurvey" %}
+{% set select = "Raw Surveys" %}
 {% endif %}
 
-function export2pdf() {
-	var selection = "{{select}}";
-	if (selection != "") {
-		window.location.href="http://tango.berea.edu:5006/reportpdf/".concat(selection);
-	}
-	else {
-		alert("Connections between database have not been made");
-	}
-}
 
 //This will load the Visualization API and the packages.
 google.charts.load('current', {'packages':['corechart']});
@@ -285,17 +282,17 @@ function drawChart() {
 		chartq14.draw(dataq14, optionsq14);
 		chartq15.draw(dataq15, optionsq15);
 		
-
-
 	{% endif %}
 }
+
+	function Home() {
+		window.location.href="http://tango.berea.edu:5006/home";
+	}
 
 </script>
 </head>
 
 <body>	
-
-
 
 <div class="panel panel-default" id = "report-panel">
 	<div style="text-align: center;" class = "panel-heading"><h3><b>{{select}} Report</b></h3></div>
@@ -340,11 +337,13 @@ function drawChart() {
   		</div>
 		{% endif %}	
 	</div>
-	
-	<div class="panel-footer">
-		<a href="{{ url_for('ReportPDF',selection=selection)}}"><button type="button" class="btn btn-primary btn-block">Export to PDF</button></a>
-	</div>
 
+<div class="no-print">	
+	<div class="panel-footer">
+		<button onclick="window.print()" type="button" class="btn btn-primary btn-block">Save</button>
+		<button onclick="Home()" type="button" class="btn btn-success btn-block">Return to Home</button>
+	</div>
+</div<>
 </div>
 
 </body>

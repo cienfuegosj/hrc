@@ -9,30 +9,30 @@
 <div class="row">
 <div class="col-sm-8">
 <div class="panel panel-default">
-<div class="panel-heading"><h3 style="text-align:center;">Other Details</h3></div>  <!--creates the header for the container-->
+<div class="panel-heading"><h3 style="text-align:center;"><b>Other Details</b></h3></div>  <!--creates the header for the container-->
 <div class="panel-body">
 
  <!--creates a drop down menue for the selection of the event type-->
  <form action="{{ url_for('result') }}" method="POST">   <!--creates a form region-->
-      <label for="type">Event Type</label>  
-      <select  id = "type" name="type_data">
-      <option value="" disabled selected>Select Event Type</option>
-      <option value="Speaker" >Speaker</option>
-      <option value="Panel" >Panel</option>
-      <option value="Training" >Training</option>
-      <option value="Forum">Forum</option>
-      <option value="Festival">Festival/Celebration</option>
-      <option value="Other">Other</option>
+      <label for="type">Event Type:</label>  
+      <select style="margin-left: 5%;"  id = "type" name="type_data">
+      	<option value="" disabled selected>Select Event Type</option>
+      	<option value="Speaker" >Speaker</option>
+      	<option value="Panel" >Panel</option>
+      	<option value="Training" >Training</option>
+      	<option value="Forum">Forum</option>
+      	<option value="Festival">Festival/Celebration</option>
+      	<option value="Other">Other</option>
       </select>
            <br/>
-           <h5>Finance: <input type="text" id="finance" name="finance_data"></h5>  <!--creates a text box for finance-->
-           <h5>Attendance: <input type="text" id="attendance" name="attendance_data"></h5>  <!--creates a text box for attendance-->
-           <h5>Response Rate: <input type="text" id="response_rate" name="rate_data"></h5>   <!--creates a text box for response rate-->          
-           <br/>
+           <h5><b>Finance:</b><input style="margin-left: 9%;" type="text" id="finance" name="finance_data"></h5>  <!--creates a text box for finance-->
+           <h5><b>Attendance:</b><input style="margin-left: 5%;" type="text" id="attendance" name="attendance_data"></h5>  <!--creates a text box for attendance-->
+           <h5><b>Response Rate:</b><input style="margin-left: 1%" type="text" id="response_rate" name="rate_data"></h5>   <!--creates a text box for response rate-->          
            <br/>
                   <!--Onlick submit and reset buttons-->
-                  <button  onclick="ODSubmit()"  id="myBtn" class="btn  btn-primary" style="margin-left:34.5%; margin-bottom:10px;"type="submit">Submit</button>
-                  <button  onclick="reset_other()" class="btn  btn-success" style="margin-left:160px;"type="reset">Reset</button>
+                  <button  onclick="ODSubmit()"  id="myBtn" class="btn  btn-primary" style="margin-left:22%; margin-bottom:10px;padding-left: 5%;
+                  padding-right:5%;"type="submit">Submit</button>
+                  <button  onclick="reset_other()" class="btn  btn-success" style="margin-left:160px;padding-left: 5%;padding-right: 5%;"type="reset">Reset</button>
            </form>
 </div></div></div></div></div></div></div>
  <!--End of container opened at the beginning -->

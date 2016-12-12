@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<title>Berea Human Rights</title>
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+<script type="text/javascript">
+
+function Home() {
+	window.location.href="http://tango.berea.edu:5006/home";
+}
+
+$(document).ready(function($) {
+    $(".table-row").click(function() {
+        window.document.location = $(this).data("href");
+    });
+});
+</script>
+
+<style type="text/css">
+.table-row{
+cursor:pointer;
+}
+</style>
+
+
+</head>
+
+<body>
+
+<div class="container-fluid">   <!-- Creates the container--> 
+    <div style="margin-top:80px; margin-left:70px; margin-right:90px;">
+    <div class="panel panel-default">
+		<div style="text-align:center" class="panel-heading"><h1><b>Surveys</b></h1></div>
+		<div class="panel-body">
+			<table class="table table-striped table-hover">
+    			<thead>
+      				<tr>
+        				<th>Type</th>
+        				<th>Title</th>
+        				<th>Location</th>
+        				<th>Date</th>
+      				</tr>
+    			</thead>
+    			<tbody>
+    				{% for item in surveys %}
+    				<tr class="table-row" data-href="http://tango.berea.edu:5006/survey/{{item['SID']}}">
+    					<td>{{item['eventype']}}</td>
+    					<td>{{item['title']}}</td>
+    					<td>{{item['location']}}</td>
+    					<td>{{item['date']}}</td>
+    				<tr>
+    				{% endfor %}
+    			</tbody>
+  			</table>
+		</div>
+		<div class="panel-footer">
+			<button onclick="Home()" type="button" class="btn btn-success btn-block">Return to Home</button>
+		</div>
+	</div>
+	</div>	
+</div>
+
+</body>
+
+</html>
