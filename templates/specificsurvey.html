@@ -1,41 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-	
-	<title>Berea Human Rights</title>
-    <!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
-<!-- Optional theme -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-
-<!-- Latest compiled and minified JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-
-<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-
-<style type="text/css">
-	.panel-heading {
-		text-align: center;
-	}
-	@media print
-	{
-		.no-print {display:none;}
-	}
-</style>
-
-<script type="text/javascript">
-	function Surveys() {
-		window.location.href="http://tango.berea.edu:5006/report/rawsurvey"
-	}
-</script>
-
+{% extends "head.html" %}
+{% block body %}
 <div class="container-fluid">  
     <div style="margin-top:80px; margin-left:70px; margin-right:90px;">
     	<div class="panel panel-default">
@@ -43,144 +7,140 @@
     		<div class="panel-body">
     		
     				<h2>Event Information</h2>
-		
-				    <div class="form-group">
+    				
+    					
+						<label>Survey ID</label>
+						<input class="form-control" placeholder="{{survey['SID']}}" id = "SID" name="SID_data" type="text" disabled>
+
+
       					<label>Event Title</label>
-      					<input class="form-control" placeholder="{{survey['title']}}" id="disabledInput" type="text" disabled>
-    				</div>
-    				<div class="form-group">
+      					<input class="form-control" placeholder="{{survey['title']}}" id="title" name="title_data" type="text" disabled>
+
+
       					<label>Event Date</label>
-      					<input class="form-control" placeholder="{{survey['date']}}" id="disabledInput" type="text" disabled>
-    				</div>
-    				<div class="form-group">
+      					<input class="form-control" placeholder="{{survey['date']}}" id="date" name="date_data" type="text" disabled>
+
+
       					<label>Event Location</label>
-      					<input class="form-control" placeholder="{{survey['location']}}" id="disabledInput" type="text" disabled>
-    				</div>
-    				<div class="form-group">
+      					<input class="form-control" placeholder="{{survey['location']}}" id="location" name="location_data" type="text" disabled>
+
+
       					<label>Event Type</label>
-      					<input class="form-control" placeholder="{{survey['eventype']}}" id="disabledInput" type="text" disabled>
-    				</div>
-    				<div class="form-group">
+      					<input class="form-control" placeholder="{{survey['eventype']}}" id="types" name="types_data" type="text" disabled>
+
+
       					<label>Government Official</label>
-      					<input class="form-control" placeholder="{{survey['govt']}}" id="disabledInput" type="text" disabled>
-    				</div>
+      					<input class="form-control" placeholder="{{survey['govt']}}" id="govt" name="govt_data" type="text" disabled>
+
     				
     				<h2>Demographic Information</h2>
     				
-    				<div class="form-group">
+
       					<label>Residence</label>
-      					<input class="form-control" placeholder="{{survey['residency']}}" id="disabledInput" type="text" disabled>
-    				</div>
-    				<div class="form-group">
+      					<input class="form-control" placeholder="{{survey['residency']}}" id="residency" name="residency_data" type="text" disabled>
+
+
       					<label>Race/Ethnicity</label>
-      					<input class="form-control" placeholder="{{survey['race']}}" id="disabledInput" type="text" disabled>
-    				</div>
-    				<div class="form-group">
+      					<input class="form-control" placeholder="{{survey['race']}}" id="race" name="race_data" type="text" disabled>
+
+
       					<label>Sex</label>
-      					<input class="form-control" placeholder="{{survey['sex']}}" id="disabledInput" type="text" disabled>
-    				</div>
-    				<div class="form-group">
+      					<input class="form-control" placeholder="{{survey['sex']}}" id="sex" name="sex_data" type="text" disabled>
+
+ 
       					<label>Age</label>
-      					<input class="form-control" placeholder="{{survey['age']}}" id="disabledInput" type="text" disabled>
-    				</div>
+      					<input class="form-control" placeholder="{{survey['age']}}" id="age" name="age_data" type="text" disabled>
+
     				
     				<h2>Workshop Evaluation</h2>
     				
-    				<div class="form-group">
+
       					<label>I found this program topic to be timely, stimulating and engaging.</label>
-      					<input class="form-control" placeholder="{{survey['q1']}}" id="disabledInput" type="text" disabled>
-    				</div>
+      					<input class="form-control" placeholder="{{survey['q1']}}" id="d1" name="q1" type="text" disabled>
+
     				
-    				<div class="form-group">
+
       					<label>The organization of the event was user friendly.</label>
-      					<input class="form-control" placeholder="{{survey['q2']}}" id="disabledInput" type="text" disabled>
-    				</div>
+      					<input class="form-control" placeholder="{{survey['q2']}}" id="d2" name="q2" type="text" disabled>
+
     				
-    				<div class="form-group">
+
       					<label>I found the speaker(s)/panel/film to be knowledgeable and relevant.</label>
-      					<input class="form-control" placeholder="{{survey['q3']}}" id="disabledInput" type="text" disabled>
-    				</div>
+      					<input class="form-control" placeholder="{{survey['q3']}}" id="d3" name="q3" type="text" disabled>
+
     				
-    				<div class="form-group">
+
       					<label>I was able to ask questions, receive answers and comment.</label>
-      					<input class="form-control" placeholder="{{survey['q4']}}" id="disabledInput" type="text" disabled>
-    				</div>
+      					<input class="form-control" placeholder="{{survey['q4']}}" id="d4" name="q4" type="text" disabled>
+
     				
-    				<div class="form-group">
+
       					<label>The speaker/presenter/panel was effective.</label>
-      					<input class="form-control" placeholder="{{survey['q5']}}" id="disabledInput" type="text" disabled>
-    				</div>
+      					<input class="form-control" placeholder="{{survey['q5']}}" id="d5" name="q5" type="text" disabled>
+
     				
-    				<div class="form-group">
+
       					<label>The handout materials were useful.</label>
-      					<input class="form-control" placeholder="{{survey['q6']}}" id="disabledInput" type="text" disabled>
-    				</div>
+      					<input class="form-control" placeholder="{{survey['q6']}}" id="d6" name="q6" type="text" disabled>
+
     				
-    				<div class="form-group">
+
       					<label>There was opportunity for questions.</label>
-      					<input class="form-control" placeholder="{{survey['q7']}}" id="disabledInput" type="text" disabled>
-    				</div>
+      					<input class="form-control" placeholder="{{survey['q7']}}" id="d7" name="q7" type="text" disabled>
+
     				
-    				<div class="form-group">
+
       					<label>The overall program was what I expected.</label>
-      					<input class="form-control" placeholder="{{survey['q8']}}" id="disabledInput" type="text" disabled>
-    				</div>
+      					<input class="form-control" placeholder="{{survey['q8']}}" id="d8" name="q8" type="text" disabled>
+
     				
-    				<div class="form-group">
+
       					<label>The information was relevant.</label>
-      					<input class="form-control" placeholder="{{survey['q9']}}" id="disabledInput" type="text" disabled>
-    				</div>
+      					<input class="form-control" placeholder="{{survey['q9']}}" id="d9" name="q9" type="text" disabled>
+
     				
-    				<div class="form-group">
+
   						<label>What were the strengths of the workshop?</label>
-  						<textarea placeholder="{{survey['q10']}}" class="form-control" rows="6" id="comment" disabled></textarea>
-					</div>
+  						<textarea placeholder="{{survey['q10']}}" class="form-control" rows="6" id="d10" name="q10" disabled></textarea>
+
 					
-					<div class="form-group">
+
   						<label>What were the weaknesses of the workshop?</label>
-  						<textarea placeholder="{{survey['q11']}}" class="form-control" rows="6" id="comment" disabled></textarea>
-					</div>
+  						<textarea placeholder="{{survey['q11']}}" class="form-control" rows="6" id="d11" name="q11" disabled></textarea>
+
     				
     				<h2>Accommodations</h2>
     				
-    				<div class="form-group">
+
       					<label>The accommodations(location, seating, sound,lighting, room) were adequate.</label>
-      					<input class="form-control" placeholder="{{survey['q12']}}" id="disabledInput" type="text" disabled>
-    				</div>
-    				
-    				<div class="form-group">
+      					<input class="form-control" placeholder="{{survey['q12']}}" id="d12" name="q12" type="text" disabled>
+
+
       					<label>The refreshments were adequate.</label>
-      					<input class="form-control" placeholder="{{survey['q13']}}" id="disabledInput" type="text" disabled>
-    				</div>
+      					<input class="form-control" placeholder="{{survey['q13']}}" id="d13" name="q13" type="text" disabled>
+
     				
-    				<div class="form-group">
       					<label>The event coordinators were pleasant and helpful.</label>
-      					<input class="form-control" placeholder="{{survey['q14']}}" id="disabledInput" type="text" disabled>
-    				</div>
+      					<input class="form-control" placeholder="{{survey['q14']}}" id="d14" name="q14" type="text" disabled>
+
     				
-    				<div class="form-group">
       					<label>The event began and ended on time.</label>
-      					<input class="form-control" placeholder="{{survey['q15']}}" id="disabledInput" type="text" disabled>
-    				</div>
-    				
-    				<div class="form-group">
+      					<input class="form-control" placeholder="{{survey['q15']}}" id="d15" name="q15" type="text" disabled>
+			
+
       					<label>Would you recommend this event to others?</label>
-      					<input class="form-control" placeholder="{{survey['q16']}}" id="disabledInput" type="text" disabled>
-    				</div>
+      					<input class="form-control" placeholder="{{survey['q16']}}" id="d16" name="q16" type="text" disabled>
+
     				
-    				<div class="form-group">
   						<label>Additional Comments</label>
-  						<textarea placeholder="{{survey['q17']}}" class="form-control" rows="6" id="comment" disabled></textarea>
-					</div>
+  						<textarea placeholder="{{survey['q17']}}" class="form-control" rows="6" id="d17" name="q17" disabled></textarea>
+  					
 			</div>
-			<div class="no-print">
-				<div class="panel-footer">
-					<button onclick="window.print()" type="button" class="btn btn-primary btn-block">Save</button>
+				<div class="panel-footer">	
 					<button onclick="Surveys()" type="button" class="btn btn-success btn-block">Return to Surveys</button>
-				</div>
-			</div>		
-			</div>
+				</div>	
 		</div>
+	</div>
 </div>
 
-</html>
+{% endblock %}

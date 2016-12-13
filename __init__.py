@@ -241,7 +241,7 @@ def SpecificSurvey(SID):
 	surveys = conn.query("SELECT * FROM survey WHERE SID = '" + str(SID) + "'") 
 	survey = surveys[0]	
 	return render_template("specificsurvey.html", survey=survey)
-  
+
 
 if __name__ == "__main__":
     app.run(debug = True, host="0.0.0.0", port=5006)

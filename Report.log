@@ -2782,3 +2782,239 @@ INFO:root:Database Connection Success 	2016-12-12
 INFO:werkzeug:10.12.1.223 - - [12/Dec/2016 10:46:17] "GET /report/attendance HTTP/1.1" 200 -
 INFO:root:Database Connection Success 	2016-12-12
 INFO:werkzeug:10.12.1.223 - - [12/Dec/2016 10:46:18] "GET /report/attendance HTTP/1.1" 200 -
+INFO:root:Database Connection Success 	2016-12-12
+INFO:werkzeug:24.106.138.186 - - [12/Dec/2016 15:38:52] "GET /report/survey HTTP/1.1" 200 -
+INFO:root:Database Connection Success 	2016-12-12
+INFO:werkzeug:24.106.138.186 - - [12/Dec/2016 15:38:53] "GET /report/survey HTTP/1.1" 200 -
+INFO:werkzeug:24.106.138.186 - - [12/Dec/2016 15:38:56] "GET /home HTTP/1.1" 200 -
+INFO:werkzeug:24.106.138.186 - - [12/Dec/2016 15:38:58] "GET /reports HTTP/1.1" 200 -
+INFO:root:Database Connection Success 	2016-12-12
+INFO:werkzeug:24.106.138.186 - - [12/Dec/2016 15:39:02] "GET /report/rawsurvey HTTP/1.1" 200 -
+INFO:root:Database Connection Success 	2016-12-12
+INFO:werkzeug:24.106.138.186 - - [12/Dec/2016 15:39:04] "GET /report/rawsurvey HTTP/1.1" 200 -
+INFO:root:Database Connection Success 	2016-12-12
+INFO:werkzeug:24.106.138.186 - - [12/Dec/2016 15:39:05] "GET /survey/26 HTTP/1.1" 200 -
+INFO:root:Database Connection Success 	2016-12-12
+INFO:werkzeug:24.106.138.186 - - [12/Dec/2016 15:40:20] "GET /report/rawsurvey HTTP/1.1" 200 -
+INFO:werkzeug:24.106.138.186 - - [12/Dec/2016 15:40:22] "GET /home HTTP/1.1" 200 -
+INFO:werkzeug:24.106.138.186 - - [12/Dec/2016 15:47:06] "GET /survey/ HTTP/1.1" 200 -
+INFO:werkzeug:24.106.138.186 - - [12/Dec/2016 15:47:09] "POST /result2/ HTTP/1.1" 200 -
+INFO:werkzeug:24.106.138.186 - - [12/Dec/2016 15:47:12] "GET /home HTTP/1.1" 200 -
+INFO:werkzeug:24.106.138.186 - - [12/Dec/2016 15:47:15] "GET /reports HTTP/1.1" 200 -
+INFO:werkzeug:24.106.138.186 - - [12/Dec/2016 15:47:26] "GET /survey/ HTTP/1.1" 200 -
+INFO:werkzeug:24.106.138.186 - - [12/Dec/2016 15:47:28] "POST /result2/ HTTP/1.1" 200 -
+INFO:werkzeug:24.106.138.186 - - [12/Dec/2016 15:47:31] "GET /home HTTP/1.1" 200 -
+INFO:werkzeug:24.106.138.186 - - [12/Dec/2016 16:23:31] "GET /reports HTTP/1.1" 200 -
+INFO:root:Database Connection Success 	2016-12-12
+INFO:werkzeug:24.106.138.186 - - [12/Dec/2016 16:23:35] "GET /report/rawsurvey HTTP/1.1" 200 -
+INFO:root:Database Connection Success 	2016-12-12
+INFO:werkzeug:24.106.138.186 - - [12/Dec/2016 16:23:36] "GET /report/rawsurvey HTTP/1.1" 200 -
+INFO:root:Database Connection Success 	2016-12-12
+INFO:werkzeug:24.106.138.186 - - [12/Dec/2016 16:23:38] "GET /survey/3 HTTP/1.1" 500 -
+INFO:werkzeug:24.106.138.186 - - [12/Dec/2016 16:23:38] "GET /survey/3?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO:werkzeug:24.106.138.186 - - [12/Dec/2016 16:23:38] "GET /survey/3?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO:werkzeug:24.106.138.186 - - [12/Dec/2016 16:23:38] "GET /survey/3?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO:werkzeug:24.106.138.186 - - [12/Dec/2016 16:23:38] "GET /survey/3?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+INFO:werkzeug:24.106.138.186 - - [12/Dec/2016 16:23:38] "GET /survey/3?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug:24.106.138.186 - - [12/Dec/2016 16:23:38] "GET /survey/3?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/var/www/html/hrc/hrc/__init__.py', reloading
+INFO:root:Database Connection Success 	2016-12-12
+INFO:werkzeug:24.106.138.186 - - [12/Dec/2016 18:10:21] "GET /report/survey HTTP/1.1" 200 -
+INFO:root:Database Connection Success 	2016-12-12
+INFO:werkzeug:24.106.138.186 - - [12/Dec/2016 18:10:22] "GET /report/survey HTTP/1.1" 200 -
+INFO:werkzeug:24.106.138.186 - - [12/Dec/2016 18:10:25] "GET /home HTTP/1.1" 200 -
+INFO:werkzeug:24.106.138.186 - - [12/Dec/2016 18:10:26] "GET /reports HTTP/1.1" 200 -
+INFO:root:Database Connection Success 	2016-12-12
+INFO:werkzeug:24.106.138.186 - - [12/Dec/2016 18:10:29] "GET /report/rawsurvey HTTP/1.1" 200 -
+INFO:root:Database Connection Success 	2016-12-12
+INFO:werkzeug:24.106.138.186 - - [12/Dec/2016 18:10:30] "GET /report/rawsurvey HTTP/1.1" 200 -
+INFO:root:Database Connection Success 	2016-12-12
+INFO:werkzeug:24.106.138.186 - - [12/Dec/2016 18:10:32] "GET /survey/2 HTTP/1.1" 200 -
+INFO:root:Database Connection Success 	2016-12-12
+INFO:werkzeug:24.106.138.186 - - [12/Dec/2016 18:10:42] "GET /report/rawsurvey HTTP/1.1" 200 -
+INFO:root:Database Connection Success 	2016-12-12
+INFO:werkzeug:24.106.138.186 - - [12/Dec/2016 18:10:52] "GET /survey/26 HTTP/1.1" 200 -
+INFO:root:Database Connection Success 	2016-12-12
+INFO:werkzeug:24.106.138.186 - - [12/Dec/2016 18:10:56] "GET /report/rawsurvey HTTP/1.1" 200 -
+INFO:root:Database Connection Success 	2016-12-12
+INFO:werkzeug:24.106.138.186 - - [12/Dec/2016 18:10:58] "GET /survey/26 HTTP/1.1" 200 -
+INFO:root:Database Connection Success 	2016-12-12
+INFO:werkzeug:24.106.138.186 - - [12/Dec/2016 18:28:06] "GET /survey/26 HTTP/1.1" 200 -
+INFO:root:Database Connection Success 	2016-12-12
+INFO:werkzeug:24.106.138.186 - - [12/Dec/2016 18:34:42] "GET /survey/26 HTTP/1.1" 200 -
+INFO:root:Database Connection Success 	2016-12-12
+INFO:werkzeug:24.106.138.186 - - [12/Dec/2016 18:38:54] "GET /report/rawsurvey HTTP/1.1" 200 -
+INFO:root:Database Connection Success 	2016-12-12
+INFO:werkzeug:24.106.138.186 - - [12/Dec/2016 18:39:03] "GET /survey/26 HTTP/1.1" 200 -
+INFO:werkzeug:24.106.138.186 - - [12/Dec/2016 18:50:20] "GET /reports HTTP/1.1" 200 -
+INFO:root:Database Connection Success 	2016-12-12
+INFO:werkzeug:24.106.138.186 - - [12/Dec/2016 18:50:23] "GET /report/rawsurvey HTTP/1.1" 200 -
+INFO:root:Database Connection Success 	2016-12-12
+INFO:werkzeug:24.106.138.186 - - [12/Dec/2016 18:50:24] "GET /report/rawsurvey HTTP/1.1" 200 -
+INFO:root:Database Connection Success 	2016-12-12
+INFO:werkzeug:24.106.138.186 - - [12/Dec/2016 18:50:27] "GET /survey/26 HTTP/1.1" 200 -
+INFO:werkzeug:24.106.138.186 - - [12/Dec/2016 18:52:07] "GET /survey/ HTTP/1.1" 200 -
+INFO:werkzeug:24.106.138.186 - - [12/Dec/2016 18:52:11] "POST /result2/ HTTP/1.1" 200 -
+INFO:werkzeug:24.106.138.186 - - [12/Dec/2016 18:52:14] "GET /home HTTP/1.1" 200 -
+INFO:werkzeug:24.106.138.186 - - [12/Dec/2016 18:52:18] "GET /survey/ HTTP/1.1" 200 -
+INFO:werkzeug:24.106.138.186 - - [12/Dec/2016 18:59:23] "GET /reports HTTP/1.1" 200 -
+INFO:root:Database Connection Success 	2016-12-12
+INFO:werkzeug:24.106.138.186 - - [12/Dec/2016 18:59:27] "GET /report/rawsurvey HTTP/1.1" 200 -
+INFO:root:Database Connection Success 	2016-12-12
+INFO:werkzeug:24.106.138.186 - - [12/Dec/2016 18:59:29] "GET /report/rawsurvey HTTP/1.1" 200 -
+INFO:root:Database Connection Success 	2016-12-12
+INFO:werkzeug:24.106.138.186 - - [12/Dec/2016 18:59:31] "GET /survey/26 HTTP/1.1" 200 -
+INFO:werkzeug:24.106.138.186 - - [12/Dec/2016 19:12:44] "GET /reports HTTP/1.1" 200 -
+INFO:root:Database Connection Success 	2016-12-12
+INFO:werkzeug:24.106.138.186 - - [12/Dec/2016 19:12:48] "GET /report/rawsurvey HTTP/1.1" 200 -
+INFO:root:Database Connection Success 	2016-12-12
+INFO:werkzeug:24.106.138.186 - - [12/Dec/2016 19:12:50] "GET /report/rawsurvey HTTP/1.1" 200 -
+INFO:root:Database Connection Success 	2016-12-12
+INFO:werkzeug:24.106.138.186 - - [12/Dec/2016 19:12:55] "GET /survey/26 HTTP/1.1" 200 -
+INFO:werkzeug:24.106.138.186 - - [12/Dec/2016 19:23:01] "GET /other/ HTTP/1.1" 200 -
+INFO:werkzeug:24.106.138.186 - - [12/Dec/2016 19:23:02] "GET /reports HTTP/1.1" 200 -
+INFO:root:Database Connection Success 	2016-12-12
+INFO:werkzeug:24.106.138.186 - - [12/Dec/2016 19:23:05] "GET /report/rawsurvey HTTP/1.1" 200 -
+INFO:root:Database Connection Success 	2016-12-12
+INFO:werkzeug:24.106.138.186 - - [12/Dec/2016 19:23:06] "GET /report/rawsurvey HTTP/1.1" 200 -
+INFO:root:Database Connection Success 	2016-12-12
+INFO:werkzeug:24.106.138.186 - - [12/Dec/2016 19:23:09] "GET /survey/26 HTTP/1.1" 200 -
+INFO:root:Database Connection Success 	2016-12-12
+INFO:werkzeug:24.106.138.186 - - [12/Dec/2016 19:27:41] "GET /report/rawsurvey HTTP/1.1" 200 -
+INFO:root:Database Connection Success 	2016-12-12
+INFO:werkzeug:24.106.138.186 - - [12/Dec/2016 19:46:49] "GET /report/rawsurvey HTTP/1.1" 200 -
+INFO:root:Database Connection Success 	2016-12-12
+INFO:werkzeug:24.106.138.186 - - [12/Dec/2016 19:46:51] "GET /report/rawsurvey HTTP/1.1" 200 -
+INFO:root:Database Connection Success 	2016-12-12
+INFO:werkzeug:24.106.138.186 - - [12/Dec/2016 19:46:54] "GET /survey/3 HTTP/1.1" 200 -
+INFO:werkzeug:24.106.138.186 - - [12/Dec/2016 19:47:04] "GET /editsurvey HTTP/1.1" 200 -
+INFO:werkzeug:24.106.138.186 - - [12/Dec/2016 19:47:06] "GET /home HTTP/1.1" 200 -
+INFO:werkzeug:24.106.138.186 - - [12/Dec/2016 19:53:08] "GET /reports HTTP/1.1" 200 -
+INFO:root:Database Connection Success 	2016-12-12
+INFO:werkzeug:24.106.138.186 - - [12/Dec/2016 19:53:11] "GET /report/rawsurvey HTTP/1.1" 200 -
+INFO:root:Database Connection Success 	2016-12-12
+INFO:werkzeug:24.106.138.186 - - [12/Dec/2016 19:53:12] "GET /report/rawsurvey HTTP/1.1" 200 -
+INFO:root:Database Connection Success 	2016-12-12
+INFO:werkzeug:24.106.138.186 - - [12/Dec/2016 19:53:14] "GET /survey/3 HTTP/1.1" 200 -
+INFO:werkzeug:24.106.138.186 - - [12/Dec/2016 19:56:00] "GET /survey/ HTTP/1.1" 200 -
+INFO:werkzeug:24.106.138.186 - - [12/Dec/2016 19:56:02] "GET /survey/ HTTP/1.1" 200 -
+INFO:werkzeug:24.106.138.186 - - [12/Dec/2016 19:58:21] "GET /reports HTTP/1.1" 200 -
+INFO:root:Database Connection Success 	2016-12-12
+INFO:werkzeug:24.106.138.186 - - [12/Dec/2016 19:58:24] "GET /report/rawsurvey HTTP/1.1" 200 -
+INFO:root:Database Connection Success 	2016-12-12
+INFO:werkzeug:24.106.138.186 - - [12/Dec/2016 19:58:25] "GET /report/rawsurvey HTTP/1.1" 200 -
+INFO:root:Database Connection Success 	2016-12-12
+INFO:werkzeug:24.106.138.186 - - [12/Dec/2016 19:58:28] "GET /survey/2 HTTP/1.1" 200 -
+INFO:werkzeug:24.106.138.186 - - [12/Dec/2016 20:01:47] "GET /reports HTTP/1.1" 200 -
+INFO:root:Database Connection Success 	2016-12-12
+INFO:werkzeug:24.106.138.186 - - [12/Dec/2016 20:01:49] "GET /report/rawsurvey HTTP/1.1" 200 -
+INFO:root:Database Connection Success 	2016-12-12
+INFO:werkzeug:24.106.138.186 - - [12/Dec/2016 20:01:50] "GET /report/rawsurvey HTTP/1.1" 200 -
+INFO:root:Database Connection Success 	2016-12-12
+INFO:werkzeug:24.106.138.186 - - [12/Dec/2016 20:01:52] "GET /survey/3 HTTP/1.1" 200 -
+INFO:werkzeug:24.106.138.186 - - [12/Dec/2016 20:02:37] "GET /survey/ HTTP/1.1" 200 -
+INFO:werkzeug:24.106.138.186 - - [12/Dec/2016 20:04:11] "GET /reports HTTP/1.1" 200 -
+INFO:root:Database Connection Success 	2016-12-12
+INFO:werkzeug:24.106.138.186 - - [12/Dec/2016 20:04:14] "GET /report/rawsurvey HTTP/1.1" 200 -
+INFO:root:Database Connection Success 	2016-12-12
+INFO:werkzeug:24.106.138.186 - - [12/Dec/2016 20:04:15] "GET /report/rawsurvey HTTP/1.1" 200 -
+INFO:root:Database Connection Success 	2016-12-12
+INFO:werkzeug:24.106.138.186 - - [12/Dec/2016 20:04:17] "GET /survey/2 HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/var/www/html/hrc/hrc/__init__.py', reloading
+INFO:root:Database Connection Success 	2016-12-12
+INFO:werkzeug:24.106.138.186 - - [12/Dec/2016 20:05:13] "GET /report/rawsurvey HTTP/1.1" 200 -
+INFO:root:Database Connection Success 	2016-12-12
+INFO:werkzeug:24.106.138.186 - - [12/Dec/2016 20:05:14] "GET /report/rawsurvey HTTP/1.1" 200 -
+INFO:root:Database Connection Success 	2016-12-12
+INFO:werkzeug:24.106.138.186 - - [12/Dec/2016 20:05:19] "GET /survey/3 HTTP/1.1" 200 -
+INFO:werkzeug:24.106.138.186 - - [12/Dec/2016 20:05:40] "GET /survey/ HTTP/1.1" 200 -
+INFO:werkzeug:24.106.138.186 - - [12/Dec/2016 20:06:06] "GET /reports HTTP/1.1" 200 -
+INFO:root:Database Connection Success 	2016-12-12
+INFO:werkzeug:24.106.138.186 - - [12/Dec/2016 20:06:09] "GET /report/rawsurvey HTTP/1.1" 200 -
+INFO:root:Database Connection Success 	2016-12-12
+INFO:werkzeug:24.106.138.186 - - [12/Dec/2016 20:06:10] "GET /report/rawsurvey HTTP/1.1" 200 -
+INFO:root:Database Connection Success 	2016-12-12
+INFO:werkzeug:24.106.138.186 - - [12/Dec/2016 20:06:11] "GET /survey/2 HTTP/1.1" 200 -
+INFO:werkzeug:24.106.138.186 - - [12/Dec/2016 20:12:23] "GET /reports HTTP/1.1" 200 -
+INFO:root:Database Connection Success 	2016-12-12
+INFO:werkzeug:24.106.138.186 - - [12/Dec/2016 20:12:27] "GET /report/rawsurvey HTTP/1.1" 200 -
+INFO:root:Database Connection Success 	2016-12-12
+INFO:werkzeug:24.106.138.186 - - [12/Dec/2016 20:12:28] "GET /report/rawsurvey HTTP/1.1" 200 -
+INFO:root:Database Connection Success 	2016-12-12
+INFO:werkzeug:24.106.138.186 - - [12/Dec/2016 20:12:30] "GET /survey/3 HTTP/1.1" 200 -
+INFO:root:Database Connection Success 	2016-12-12
+INFO:werkzeug:24.106.138.186 - - [12/Dec/2016 20:17:08] "GET /survey/3 HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/var/www/html/hrc/hrc/__init__.py', reloading
+INFO:root:Database Connection Success 	2016-12-12
+INFO:werkzeug:24.106.138.186 - - [12/Dec/2016 20:19:52] "GET /report/rawsurvey HTTP/1.1" 200 -
+INFO:root:Database Connection Success 	2016-12-12
+INFO:werkzeug:24.106.138.186 - - [12/Dec/2016 20:19:53] "GET /report/rawsurvey HTTP/1.1" 200 -
+INFO:root:Database Connection Success 	2016-12-12
+INFO:werkzeug:24.106.138.186 - - [12/Dec/2016 20:19:56] "GET /survey/26 HTTP/1.1" 200 -
+INFO:werkzeug:24.106.138.186 - - [12/Dec/2016 20:21:08] "GET /other HTTP/1.1" 301 -
+INFO:werkzeug:24.106.138.186 - - [12/Dec/2016 20:21:08] "GET /other/ HTTP/1.1" 200 -
+INFO:werkzeug:24.106.138.186 - - [12/Dec/2016 20:21:09] "GET /favicon.ico HTTP/1.1" 404 -
+INFO:werkzeug:24.106.138.186 - - [12/Dec/2016 20:21:12] "GET /survey HTTP/1.1" 301 -
+INFO:werkzeug:24.106.138.186 - - [12/Dec/2016 20:21:12] "GET /survey/ HTTP/1.1" 200 -
+INFO:root:Database Connection Success 	2016-12-12
+INFO:werkzeug:24.106.138.186 - - [12/Dec/2016 20:22:27] "GET /report/rawsurvey HTTP/1.1" 200 -
+INFO:root:Database Connection Success 	2016-12-12
+INFO:werkzeug:24.106.138.186 - - [12/Dec/2016 20:22:27] "GET /report/rawsurvey HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/var/www/html/hrc/hrc/__init__.py', reloading
+INFO:root:Database Connection Success 	2016-12-12
+INFO:werkzeug:24.106.138.186 - - [12/Dec/2016 20:23:07] "GET /report/rawsurvey HTTP/1.1" 200 -
+INFO:root:Database Connection Success 	2016-12-12
+INFO:werkzeug:24.106.138.186 - - [12/Dec/2016 20:23:09] "GET /survey/26 HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/var/www/html/hrc/hrc/__init__.py', reloading
+INFO:root:Database Connection Success 	2016-12-12
+INFO:werkzeug:24.106.138.186 - - [12/Dec/2016 21:29:59] "GET /report/rawsurvey HTTP/1.1" 200 -
+INFO:root:Database Connection Success 	2016-12-12
+INFO:werkzeug:24.106.138.186 - - [12/Dec/2016 21:30:00] "GET /report/rawsurvey HTTP/1.1" 200 -
+INFO:root:Database Connection Success 	2016-12-12
+INFO:werkzeug:24.106.138.186 - - [12/Dec/2016 21:30:10] "GET /survey/29 HTTP/1.1" 200 -
+INFO:root:Database Connection Success 	2016-12-12
+INFO:werkzeug:24.106.138.186 - - [12/Dec/2016 21:30:15] "GET /report/rawsurvey HTTP/1.1" 200 -
+INFO:root:Database Connection Success 	2016-12-12
+INFO:werkzeug:24.106.138.186 - - [12/Dec/2016 21:30:18] "GET /survey/29 HTTP/1.1" 200 -
+INFO:root:Database Connection Success 	2016-12-12
+INFO:werkzeug:24.106.138.186 - - [12/Dec/2016 21:31:01] "GET /report/rawsurvey HTTP/1.1" 200 -
+INFO:werkzeug:24.106.138.186 - - [12/Dec/2016 21:32:23] "GET /home HTTP/1.1" 200 -
+INFO:werkzeug:24.106.138.186 - - [12/Dec/2016 21:32:25] "GET /reports HTTP/1.1" 200 -
+INFO:root:Database Connection Success 	2016-12-12
+INFO:werkzeug:24.106.138.186 - - [12/Dec/2016 21:32:28] "GET /report/rawsurvey HTTP/1.1" 200 -
+INFO:root:Database Connection Success 	2016-12-12
+INFO:werkzeug:24.106.138.186 - - [12/Dec/2016 21:32:29] "GET /report/rawsurvey HTTP/1.1" 200 -
+INFO:root:Database Connection Success 	2016-12-12
+INFO:werkzeug:24.106.138.186 - - [12/Dec/2016 21:32:31] "GET /survey/26 HTTP/1.1" 200 -
+INFO:root:Database Connection Success 	2016-12-12
+INFO:werkzeug:24.106.138.186 - - [12/Dec/2016 21:32:57] "GET /report/rawsurvey HTTP/1.1" 200 -
+INFO:root:Database Connection Success 	2016-12-12
+INFO:werkzeug:24.106.138.186 - - [12/Dec/2016 21:33:13] "GET /survey/29 HTTP/1.1" 200 -
+INFO:root:Database Connection Success 	2016-12-12
+INFO:werkzeug:24.106.138.186 - - [12/Dec/2016 21:33:17] "GET /report/rawsurvey HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/var/www/html/hrc/hrc/__init__.py', reloading
+INFO:root:Database Connection Success 	2016-12-12
+INFO:werkzeug:24.106.138.186 - - [12/Dec/2016 21:36:16] "GET /report/survey HTTP/1.1" 200 -
+INFO:root:Database Connection Success 	2016-12-12
+INFO:werkzeug:24.106.138.186 - - [12/Dec/2016 21:36:17] "GET /report/survey HTTP/1.1" 200 -
+INFO:werkzeug:24.106.138.186 - - [12/Dec/2016 21:36:19] "GET /home HTTP/1.1" 200 -
+INFO:werkzeug:24.106.138.186 - - [12/Dec/2016 21:36:21] "GET /reports HTTP/1.1" 200 -
+INFO:root:Database Connection Success 	2016-12-12
+INFO:werkzeug:24.106.138.186 - - [12/Dec/2016 21:36:24] "GET /report/rawsurvey HTTP/1.1" 200 -
+INFO:root:Database Connection Success 	2016-12-12
+INFO:werkzeug:24.106.138.186 - - [12/Dec/2016 21:36:25] "GET /report/rawsurvey HTTP/1.1" 200 -
+INFO:root:Database Connection Success 	2016-12-12
+INFO:werkzeug:24.106.138.186 - - [12/Dec/2016 21:36:28] "GET /survey/3 HTTP/1.1" 200 -
+INFO:root:Database Connection Success 	2016-12-12
+INFO:werkzeug:24.106.138.186 - - [12/Dec/2016 21:36:39] "GET /report/rawsurvey HTTP/1.1" 200 -
+INFO:werkzeug:24.106.138.186 - - [12/Dec/2016 21:36:40] "GET /home HTTP/1.1" 200 -
+INFO:werkzeug:24.106.138.186 - - [12/Dec/2016 21:36:53] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:24.106.138.186 - - [12/Dec/2016 21:36:56] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:24.106.138.186 - - [12/Dec/2016 21:38:11] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:24.106.138.186 - - [12/Dec/2016 21:38:14] "GET /home HTTP/1.1" 200 -
+INFO:werkzeug:24.106.138.186 - - [12/Dec/2016 21:38:14] "GET /reports HTTP/1.1" 200 -
+INFO:root:Database Connection Success 	2016-12-12
+INFO:werkzeug:24.106.138.186 - - [12/Dec/2016 21:38:17] "GET /report/rawsurvey HTTP/1.1" 200 -
+INFO:root:Database Connection Success 	2016-12-12
+INFO:werkzeug:24.106.138.186 - - [12/Dec/2016 21:38:18] "GET /report/rawsurvey HTTP/1.1" 200 -
+INFO:werkzeug:24.106.138.186 - - [12/Dec/2016 21:38:22] "GET /home HTTP/1.1" 200 -
