@@ -10,6 +10,10 @@ import time
 
 app = Flask(__name__)
 
+app.config.update(
+	SECRET_KEY = 'BHRC'
+)
+
 # Login Manager
 login_manager = LoginManager()
 login_manager.init_app(app)
