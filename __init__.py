@@ -50,20 +50,20 @@ def login():
 		else:
 			return abort(401)
 	else:
-		return redirect(url_for("loginpage", msg=""))
+		return redirect(url_for("loginpage"))
 
 # Log out and return to the index page
 @app.route("/logout")
 @login_required
 def logout():
     logout_user()
-    return redirect(url_for("loginpage", msg=""))
+    return redirect(url_for("loginpage"))
 
 
 # Handle login 
 @app.errorhandler(401)
 def page_not_found(e):
-    return redirect(url_for('loginpage', msg="Please enter the correct credentials."))
+    return redirect(url_for('loginpage'))
     
     
 # Callback to reload the user object        
@@ -73,12 +73,8 @@ def load_user(userid):
 
 
 @app.route('/')
-def loginpage(msg):
-
-	if msg != "":
-		return render_template("index.html", msg=msg)
-	else:
-		return render_template("index.html", msg="")
+def loginpage():
+	return render_template("index.html")
 
 
 @app.route('/home')
