@@ -33,7 +33,7 @@ def login():
 	if request.method == "POST":
 		print("POST method reached")
 		username = request.form['username']
-		password = request.form['password']
+		password = request.form['pwd']
 		conn = DBConnection()
 		users = conn.query("SELECT * FROM useres WHERE username = {0} AND password = {1};".format(username, password))
 		print(users)
