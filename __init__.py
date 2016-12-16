@@ -1,4 +1,5 @@
 from flask import Flask, render_template, redirect, url_for, make_response, send_file, request
+from flask.ext.login import LoginManager, UserMixin, login_required, login_user, logout_user 
 from db_connect import connection
 from DBConnection import DBConnection
 import logging
@@ -8,6 +9,65 @@ import time
 
 
 app = Flask(__name__)
+
+# Login Manager
+login_manager = LoginManager()
+login_manager.init_app(app)
+login_manager.login_view = "login" # This will be the html filename
+
+
+class User(UserMixin):
+
+    def __init__(self, name='mharrington'):
+        self.name = name
+        self.password = 'harrington12qwaszx!'
+        
+    def __repr__(self):
+        return "%s/%s" % (self.name, self.password)
+
+
+# Login Page
+@app.route("/login", methods=["GET", "POST"])
+def login():
+    if request.method == 'POST':
+        username = request.form['username']
+        password = request.form['password']        
+        if password == 'harrington12qwaszx!' and username == 'mharrington':
+            user = User()
+            login_user(user)
+            return redirect(request.args.get("next"))
+        else:
+            return abort(401)
+    else:
+        return Response('''
+        <form action="" method="post">
+            <p><input type=text name=username>
+            <p><input type=password name=password>
+            <p><input type=submit value=Login>
+        </form>
+        ''')
+
+
+# Log out and return to the index page
+@app.route("/logout")
+@login_required
+def logout():
+    logout_user()
+    return Response('<p>Logged out</p>')
+
+
+# Handle login 
+@app.errorhandler(401)
+def page_not_found(e):
+    return Response('<p>Login failed</p>')
+    
+    
+# Callback to reload the user object        
+@login_manager.user_loader
+def load_user():
+    return User()
+    
+
 
 @app.route('/')                      
 def loginpage():
@@ -244,4 +304,4 @@ def SpecificSurvey(SID):
 
 
 if __name__ == "__main__":
-    app.run(debug = True, host="0.0.0.0", port=5006)
+    app.run(host="0.0.0.0", port=5006)
