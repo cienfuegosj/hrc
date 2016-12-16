@@ -35,8 +35,8 @@ def login():
 		username = request.form['username']
 		password = request.form['pwd']
 		conn = DBConnection()
-		users = conn.query("SELECT * FROM users WHERE username = {0} AND password = {1};".format(username, password))
-		print(users)
+		users = conn.query("SELECT * FROM users WHERE username = '{0}' AND password = '{1}';".format(username, password))
+
 		del conn
 
 		if users.size() == 1:
