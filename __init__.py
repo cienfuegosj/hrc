@@ -63,7 +63,7 @@ def logout():
 # Handle login 
 @app.errorhandler(401)
 def page_not_found(e):
-    return redirect(url_for('loginpage', msg="Please enter the correct credentials.")
+    return redirect(url_for('loginpage', msg="Please enter the correct credentials."))
     
     
 # Callback to reload the user object        
