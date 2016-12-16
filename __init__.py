@@ -28,31 +28,23 @@ class User(UserMixin):
 
 
 # Login Page
-@app.route("/index", methods=["GET", "POST"])
+@app.route('/index', methods=['GET', 'POST'])
 def login():
+	if request.method == "POST":
+		username = request.form['username']
+		password = request.form['password']
+		conn = DBConnection()
+		users = conn.query("SELECT * FROM useres WHERE username = {0} AND password = {1};".format(username, password))
 
-    if request.method == 'POST':
-        username = request.form['username']
-        password = request.form['password']
+		if users.size() == 1:
+			user = User(users[0]['UID'], users[0]['username'], users[0]['password'])
+			login_user(user)
+			return redirect(request.args.get("next"))
+		else:
+			return abort(401)
 
-		try:
-			conn = DBConnection()
-			logging.info("Database Connection Success \t" + str(datetime.date.today()))
-		except Exception as e:
-			logging.info("Database Connection Failed \t" + str(datetime.date.today()))
-
-		users = conn.query("SELECT * FROM users WHERE username = {0} AND password = {1};".format(username, password))
-
-        if users.size() == 1:
-            user = User(users[0]['UID'], users[0]['username'], users[0]['password'])
-            login_user(user)
-            return redirect(request.args.get("next"))
-        else:
-            return abort(401)
 	else:
-
 		return Response(redirect(url_for("login")))
-
 
 # Log out and return to the index page
 @app.route("/logout")
