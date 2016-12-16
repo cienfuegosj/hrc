@@ -1,5 +1,5 @@
-from flask import Flask, render_template, redirect, url_for, make_response, send_file, request
-from flask.ext.login import LoginManager, UserMixin, login_required, login_user, logout_user 
+from flask import Flask, render_template, redirect, url_for, make_response, send_file, request, Response, abort
+from flask_login import LoginManager, UserMixin, login_required, login_user, logout_user
 from db_connect import connection
 from DBConnection import DBConnection
 import logging
@@ -13,39 +13,45 @@ app = Flask(__name__)
 # Login Manager
 login_manager = LoginManager()
 login_manager.init_app(app)
-login_manager.login_view = "login" # This will be the html filename
+login_manager.login_view = "index" # This will be the html filename
 
 
 class User(UserMixin):
 
-    def __init__(self, name='mharrington'):
+    def __init__(self, id, name, password):
+
         self.name = name
-        self.password = 'harrington12qwaszx!'
+        self.password = password
         
     def __repr__(self):
-        return "%s/%s" % (self.name, self.password)
+        return "%d/%s/%s" % (self.id, self.name, self.password)
 
 
 # Login Page
-@app.route("/login", methods=["GET", "POST"])
+@app.route("/index", methods=["GET", "POST"])
 def login():
+
     if request.method == 'POST':
         username = request.form['username']
-        password = request.form['password']        
-        if password == 'harrington12qwaszx!' and username == 'mharrington':
-            user = User()
+        password = request.form['password']
+
+		try:
+			conn = DBConnection()
+			logging.info("Database Connection Success \t" + str(datetime.date.today()))
+		except Exception as e:
+			logging.info("Database Connection Failed \t" + str(datetime.date.today()))
+
+		users = conn.query("SELECT * FROM users WHERE username = {0} AND password = {1};".format(username, password))
+
+        if users.size() == 1:
+            user = User(users[0]['UID'], users[0]['username'], users[0]['password'])
             login_user(user)
             return redirect(request.args.get("next"))
         else:
             return abort(401)
-    else:
-        return Response('''
-        <form action="" method="post">
-            <p><input type=text name=username>
-            <p><input type=password name=password>
-            <p><input type=submit value=Login>
-        </form>
-        ''')
+	else:
+
+		return Response(redirect(url_for("login")))
 
 
 # Log out and return to the index page
@@ -66,7 +72,6 @@ def page_not_found(e):
 @login_manager.user_loader
 def load_user():
     return User()
-    
 
 
 @app.route('/')                      
@@ -75,21 +80,23 @@ def loginpage():
     return render_template ("index.html")
 
 
-
-@app.route('/home')                  
+@app.route('/home')
+@login_required
 def home():
     '''this function displays the home page'''
     return render_template ("home.html")
 
 
 
-@app.route('/other/')                
+@app.route('/other/')
+@login_required
 def otherpage():
    '''this function displays the other details page'''
    return render_template ("other.html")
 
 
-@app.route('/result/', methods=['POST', 'GET']) 
+@app.route('/result/', methods=['POST', 'GET'])
+@login_required
 def result():
    '''this function handles the post method and sends the values to the database'''
 
@@ -117,6 +124,7 @@ def result():
 
 
 @app.route('/reports')
+@login_required
 def reportspage():
     '''this function displays the reports page'''
     return render_template ("reports.html")
@@ -124,12 +132,14 @@ def reportspage():
 
 
 @app.route('/survey/')
+@login_required
 def survey():
     '''this function displays the survey page'''
     return render_template ("survey.html")
 
 
 @app.route('/result2/', methods=['POST', 'GET'])
+@login_required
 def result2():
    '''this function handles the post method and sends the values to the database'''
 
@@ -195,6 +205,7 @@ def result2():
 
 
 @app.route('/register')
+@login_required
 def register_page():
      '''This is a test function'''
      try:
@@ -205,6 +216,7 @@ def register_page():
 
 
 @app.route('/report/<report_selection>', methods = ['GET'])
+@login_required
 def BuildReport(report_selection):
   '''
     Builds a report by querying the database and asking for the selected information.
@@ -289,6 +301,7 @@ def BuildReport(report_selection):
   	return render_template("rawsurveys.html", surveys=rawsurveydata)
   	
 @app.route('/survey/<SID>', methods=['GET'])
+@login_required
 def SpecificSurvey(SID):
 
 	#Connect to the database
