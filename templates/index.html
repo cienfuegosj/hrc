@@ -51,11 +51,11 @@ function begin_redirect() {
 		<div class="panel-body">
 			<form method="post" action="{{url_for('login')}}">
 				<div class="form-group">
-					<label for="username">Username:</label>
+					<label for="username" name="username">Username:</label>
 					<input type="text" class="form-control" id="username">
 				</div>
 				<div class="form-group">
-					<label for="pwd">Password:</label>
+					<label for="pwd" name="pwd">Password:</label>
 					<input type="password" class="form-control" id="pwd">
 				</div>
 				<input type="submit" value="Login"/>
