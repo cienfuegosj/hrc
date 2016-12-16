@@ -22,7 +22,7 @@ login_manager.login_view = "loginpage"
 
 
 class User(UserMixin):
-	def __init__(self, id, name, password):
+	def __init__(self, id, name="mharrington", password="harrington12qwaszx!"):
 		self.id = id
 		self.name = name
 		self.password = password
@@ -68,8 +68,8 @@ def page_not_found(e):
     
 # Callback to reload the user object        
 @login_manager.user_loader
-def load_user():
-    return User()
+def load_user(userid):
+    return User(userid)
 
 @app.route('/')                      
 def loginpage():
