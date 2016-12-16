@@ -48,7 +48,13 @@ def login():
 			return abort(401)
 
 	else:
-		return render_template("index.html")
+		return Response('''
+		<form action="" method="post">
+		<p><input type=text name=username>
+		<p><input type=password name=password>
+		<p><input type-submit value=Login>
+		</form>
+		''')
 
 # Log out and return to the index page
 @app.route("/logout")
