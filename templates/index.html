@@ -49,13 +49,13 @@ function begin_redirect() {
 	<div class="panel panel-default">
 		<div class="panel-heading" style="text-align:center;">BHRC Login</div>
 		<div class="panel-body">
-			<form method="post" action="{{url_for('login')}}">
+			<form method="POST" action="{{url_for('login')}}">
 				<div class="form-group">
-					<label name="username">Username:</label>
+					<label name="uname">Username:</label>
 					<input type="text" class="form-control" id="username">
 				</div>
 				<div class="form-group">
-					<label name="pwd">Password:</label>
+					<label name="pase">Password:</label>
 					<input type="password" class="form-control" id="pwd">
 				</div>
 				<input type="submit" value="Login"/>

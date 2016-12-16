@@ -28,11 +28,15 @@ class User(UserMixin):
 
 
 # Login Page
-@app.route('/login', methods=['GET', 'POST'])
+@app.route('/login', methods=['POST'])
 def login():
+
 	if request.method == "POST":
-		username = request.form['username']
-		password = request.form['pwd']
+		print(1)
+		username = request.form['uname']
+		print(2)
+		password = request.form['pase']
+		print(3)
 		print(username)
 		print(password)
 		conn = DBConnection()
@@ -46,7 +50,6 @@ def login():
 			return redirect(url_for("home"))
 		else:
 			return abort(401)
-
 	else:
 		return redirect(url_for("loginpage"))
 
