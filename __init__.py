@@ -39,7 +39,7 @@ def login():
 
 		del conn
 
-		if users.size() == 1:
+		if len(users) == 1:
 			user = User(users[0]['UID'], users[0]['username'], users[0]['password'])
 			login_user(user)
 			return redirect(url_for("home"))
