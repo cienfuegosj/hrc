@@ -50,14 +50,14 @@ def login():
 		else:
 			return abort(401)
 	else:
-		return redirect(url_for("loginpage"))
+		return redirect(url_for("loginpage", msg=""))
 
 # Log out and return to the index page
 @app.route("/logout")
 @login_required
 def logout():
     logout_user()
-    return redirect(url_for("loginpage"))
+    return redirect(url_for("loginpage", msg=""))
 
 
 # Handle login 
@@ -73,8 +73,12 @@ def load_user(userid):
 
 
 @app.route('/')
-def loginpage(msg=""):
-	return render_template("index.html", msg=msg)
+def loginpage(msg):
+
+	if msg != "":
+		return render_template("index.html", msg=msg)
+	else:
+		return render_template("index.html", msg="")
 
 
 @app.route('/home')
