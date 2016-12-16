@@ -32,11 +32,8 @@ class User(UserMixin):
 def login():
 
 	if request.method == "POST":
-		print(1)
-		username = request.form['uname']
-		print(2)
-		password = request.form['pase']
-		print(3)
+		username = request.form['username']
+		password = request.form['pwd']
 		print(username)
 		print(password)
 		conn = DBConnection()
