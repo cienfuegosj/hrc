@@ -13,7 +13,7 @@ app = Flask(__name__)
 # Login Manager
 login_manager = LoginManager()
 login_manager.init_app(app)
-login_manager.login_view = "login" # This will be the html filename
+login_manager.login_view = "login"
 
 
 
@@ -28,7 +28,7 @@ class User(UserMixin):
 
 
 # Login Page
-@app.route('/login', methods=['GET', 'POST'])
+@app.route('/', methods=['GET', 'POST'])
 def login():
 	if request.method == "POST":
 		print("POST method reached")
