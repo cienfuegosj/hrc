@@ -13,22 +13,22 @@ app = Flask(__name__)
 # Login Manager
 login_manager = LoginManager()
 login_manager.init_app(app)
-login_manager.login_view = "index" # This will be the html filename
+login_manager.login_view = "login" # This will be the html filename
+
 
 
 class User(UserMixin):
+	def __init__(self, id, name, password):
+		self.id = id
+		self.name = name
+		self.password = password
 
-    def __init__(self, id, name, password):
-
-        self.name = name
-        self.password = password
-        
-    def __repr__(self):
-        return "%d/%s/%s" % (self.id, self.name, self.password)
+	def __repr__(self):
+		return "%d/%s/%s" % (self.id, self.name, self.password)
 
 
 # Login Page
-@app.route('/index', methods=['GET', 'POST'])
+@app.route('/login', methods=['GET', 'POST'])
 def login():
 	if request.method == "POST":
 		username = request.form['username']
@@ -46,7 +46,7 @@ def login():
 			return abort(401)
 
 	else:
-		return Response(redirect(url_for("login")))
+		return render_template("index.html")
 
 # Log out and return to the index page
 @app.route("/logout")
