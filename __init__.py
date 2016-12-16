@@ -28,7 +28,7 @@ class User(UserMixin):
 
 
 # Login Page
-@app.route('/', methods=['GET', 'POST'])
+@app.route('/login', methods=['GET', 'POST'])
 def login():
 	if request.method == "POST":
 		username = request.form['username']
