@@ -45,11 +45,11 @@ function begin_redirect() {
 </div>	
 </div>
 
-<div style="margin-top:250px; margin-left:280px;">
+<div style="margin-top:10%; margin-left:280px;">
 	<div class="row">
 		<div class="col-sm-8">
 			<div class="panel panel-default">
-				<div class="panel-heading" style="text-align:center;">BHRC Login</div>
+				<div class="panel-heading" style="text-align:center;"><h2>BHRC Login</h2></div>
 				<div class="panel-body">
 					<form method="POST" action="{{url_for('login')}}">
 						<div class="form-group">
@@ -60,9 +60,14 @@ function begin_redirect() {
 							<label>Password:</label>
 							<input type="password" class="form-control" name="pwd" id="pwd">
 						</div>
-						<input type="submit" value="Login"/>
+						<button type="submit" class="btn btn-primary btn-block">Log In</button>
 					</form>
 				</div>
+				{% if msg != "" %}
+				<div class="panel-footer">
+					<p style="color: red;">{{msg}}</p>
+				</div>
+				{% endif %}
 			</div>
 		</div>
 	</div>
