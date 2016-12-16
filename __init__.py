@@ -13,7 +13,7 @@ app = Flask(__name__)
 # Login Manager
 login_manager = LoginManager()
 login_manager.init_app(app)
-login_manager.login_view = "login"
+login_manager.login_view = "loginpage"
 
 
 
@@ -48,7 +48,7 @@ def login():
 			return abort(401)
 
 	else:
-		return render_template("index.html")
+		return redirect(url_for("loginpage"))
 
 # Log out and return to the index page
 @app.route("/logout")
@@ -69,12 +69,11 @@ def page_not_found(e):
 def load_user():
     return User()
 
-'''
 @app.route('/')                      
 def loginpage():
-    this function displays the loginpage
+    '''this function displays the loginpage'''
     return render_template ("index.html")
-'''
+
 
 @app.route('/home')
 @login_required
