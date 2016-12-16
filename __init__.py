@@ -35,11 +35,12 @@ def login():
 		password = request.form['password']
 		conn = DBConnection()
 		users = conn.query("SELECT * FROM useres WHERE username = {0} AND password = {1};".format(username, password))
+		print(users)
 
 		if users.size() == 1:
 			user = User(users[0]['UID'], users[0]['username'], users[0]['password'])
 			login_user(user)
-			return redirect(request.args.get("next"))
+			return redirect(url_for("home"))
 		else:
 			return abort(401)
 
