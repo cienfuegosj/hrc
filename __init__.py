@@ -36,6 +36,7 @@ def login():
 		conn = DBConnection()
 		users = conn.query("SELECT * FROM useres WHERE username = {0} AND password = {1};".format(username, password))
 		print(users)
+		del conn
 
 		if users.size() == 1:
 			user = User(users[0]['UID'], users[0]['username'], users[0]['password'])
@@ -66,12 +67,12 @@ def page_not_found(e):
 def load_user():
     return User()
 
-
+'''
 @app.route('/')                      
 def loginpage():
-    '''this function displays the loginpage'''
+    this function displays the loginpage
     return render_template ("index.html")
-
+'''
 
 @app.route('/home')
 @login_required
