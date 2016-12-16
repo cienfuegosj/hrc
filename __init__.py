@@ -31,6 +31,7 @@ class User(UserMixin):
 @app.route('/login', methods=['GET', 'POST'])
 def login():
 	if request.method == "POST":
+		print("POST method reached")
 		username = request.form['username']
 		password = request.form['password']
 		conn = DBConnection()

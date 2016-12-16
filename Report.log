@@ -3144,3 +3144,9 @@ INFO:werkzeug:10.16.0.222 - - [12/Dec/2016 23:43:12] "GET /survey/1 HTTP/1.1" 20
 INFO:root:Database Connection Success 	2016-12-12
 INFO:werkzeug:10.16.0.222 - - [12/Dec/2016 23:47:11] "GET /report/rawsurvey HTTP/1.1" 200 -
 INFO:werkzeug:10.16.0.222 - - [12/Dec/2016 23:48:15] "GET /home HTTP/1.1" 200 -
+INFO:root:Database Connection Success 	2016-12-15
+INFO:werkzeug:10.30.63.52 - - [15/Dec/2016 23:59:40] "GET /report/rawsurvey HTTP/1.1" 200 -
+INFO:root:Database Connection Success 	2016-12-15
+INFO:werkzeug:10.30.63.52 - - [15/Dec/2016 23:59:41] "GET /report/rawsurvey HTTP/1.1" 200 -
+INFO:werkzeug:10.30.63.52 - - [15/Dec/2016 23:59:43] "GET /home HTTP/1.1" 200 -
+INFO:werkzeug:10.30.63.52 - - [15/Dec/2016 23:59:49] "GET / HTTP/1.1" 200 -
